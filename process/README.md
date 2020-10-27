@@ -1,1 +1,0 @@
-./process.sh arunachalam_2020

@@ -8,17 +8,20 @@ option_list = list(
   make_option(c("-o", "--outpath"),
               help = "path to store final seurat object",
               default = ""),
-  make_option(c("-d", "--debugdir"), 
+  make_option(c("-d", "--debugdir"),
               help = "path to store intermediate objects for debugging",
               default = ""),
-  make_option(c("-r", "--referencedat"), 
+  make_option(c("-r", "--referencedat"),
               help = "path to reference data for mapping",
               default = ""),
   make_option(c("-s", "--hpath"),
               help = "path to save h5Seurat object"),
   make_option(c("-l", "--plotdir"),
               help = "path to write plots",
-              default = "")
+              default = ""),
+  make_option(c("-b", "--batch"),
+              help = "(optional) batch field. If specified, batches will be aligned using SCTransform methods.",
+              default = "null")
 )
 
 opt_parser = OptionParser(option_list=option_list)
@@ -27,7 +30,7 @@ message(paste0(capture.output(opt), collaps = "\n"))
 # check args
 if (!file.exists(opt$inpath)) {
   stop("could not find ", opt$inpath)
-} 
+}
 if (!dir.exists(opt$debugdir)) {
   message("creating debug dir: ", opt$debugdir)
   dir.create(opt$debugdir)
@@ -49,23 +52,26 @@ suppressPackageStartupMessages({
   library(SeuratDisk)
   library(ggplot2)
   library(patchwork)
-}) 
+})
 
 set.seed(1001)
 ncores <- Sys.getenv("SLURM_CPUS_PER_TASK")
+# Set the maxSize for future to 2G per core
+options(future.globals.maxSize = 2 * as.integer(ncores) * 1024^3)
 if (FALSE) {
 # if (ncores != "") {
-  # TODO: Set reproducible seed 
+  # TODO: Set reproducible seed
   # https://github.com/satijalab/seurat/issues/3622
   message(">>> Setting future strategy with ", ncores, " cores")
   future::plan(strategy = "multicore", workers = as.integer(ncores))
-  # Set the maxSize for future to 2G per core
-  options(future.globals.maxSize = 2 * as.integer(ncores) * 1024^3)
 }
 
 # ----- START -----
 message(">>> Reading input: ", opt$inpath)
 seu <- readRDS(opt$inpath)
+seu <- UpdateSeuratObject(seu)
+DefaultAssay(seu) <- "RNA"
+
 
 
 ### ----- Process RNA -----
@@ -77,18 +83,40 @@ seu[["percent.mt"]] <- PercentageFeatureSet(seu, pattern = "^MT-")
 pdf(file=file.path(plotDir, "QC.pdf"),
     paper="USr")
 plot1 <- VlnPlot(seu, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
-plot2 <- FeatureScatter(seu, feature1 = "nCount_RNA", feature2 = "percent.mt") + 
+plot2 <- FeatureScatter(seu, feature1 = "nCount_RNA", feature2 = "percent.mt") +
   geom_hline(yintercept = 50)
-plot3 <- FeatureScatter(seu, feature1 = "nCount_RNA", feature2 = "nFeature_RNA") + 
+plot3 <- FeatureScatter(seu, feature1 = "nCount_RNA", feature2 = "nFeature_RNA") +
   geom_hline(yintercept = 200)
-plot1 + plot2 + plot3 
+plot1 + plot2 + plot3
 dev.off()
 
 seu <- subset(seu, subset = nFeature_RNA > 200 & percent.mt < 50)
 
 ### RNA data with SCTransform
-message(">>> Normalizing with SCTransform...")
-seu <- SCTransform(seu, verbose = TRUE)
+if (opt$batch == "null") {
+  message(">>> Normalizing with SCTransform...")
+  seu <- SCTransform(seu, verbose = TRUE)
+} else {
+  message(">>> Normalizing with SCTransform by batch...")
+  seu.list <- SplitObject(seu, split.by = opt$batch)
+  seu.list <- lapply(seu.list, SCTransform, verbose = TRUE)
+  message(">>> Integrating batches using SCTransform...")
+  seu.features <- SelectIntegrationFeatures(object.list = seu.list, nfeatures = 2000)
+  seu.list <- PrepSCTIntegration(object.list = seu.list, anchor.features = seu.features,
+                                 verbose = TRUE)
+  seu.anchors <- FindIntegrationAnchors(object.list = seu.list, normalization.method = "SCT",
+                                        anchor.features = seu.features, verbose = TRUE)
+  seu <- IntegrateData(anchorset = seu.anchors, normalization.method = "SCT",
+                                  verbose = FALSE)
+  rm(seu.list)
+  rm(seu.anchors)
+  message(">>> Saving integrated data to ", opt$debugdir)
+  saveRDS(seu, file.path(opt$debugdir, "integrated.rds"))
+}
+
+# If batch integration has occured, PCs, clusters, and UMAP will
+# be caluclated based on integrated data.
+
 message(">>> Calculating PCs...")
 seu <- RunPCA(seu, verbose=TRUE)
 
@@ -100,7 +128,7 @@ seu[["rnaClusterID"]] <- Idents(seu)
 
 ### RNA UMAP
 message(">>> Calculating RNA UMAP")
-seu <- RunUMAP(seu, reduction = 'pca', dims = 1:30, assay = 'RNA', 
+seu <- RunUMAP(seu, reduction = 'pca', dims = 1:30, assay = 'RNA',
                reduction.name = 'rna.umap', reduction.key = 'rnaUMAP_')
 
 
@@ -109,35 +137,35 @@ adt <- "ADT" %in% Assays(seu)
 if (adt) {
   message(">>> Processing ADT")
   DefaultAssay(seu) <- 'ADT'
-  
+
   ### use all ADT features for dimensional reduction
   message(">>> Calculating CLR transformation...")
   VariableFeatures(seu) <- rownames(seu[["ADT"]])
-  seu <- NormalizeData(seu, normalization.method = 'CLR') %>% 
+  seu <- NormalizeData(seu, normalization.method = 'CLR') %>%
     ScaleData() %>% RunPCA(verbose=FALSE, reduction.name = 'adt.pca')
-  
+
 
   ### clustering based ADT
   message(">>> finding clusters...")
   seu <- FindNeighbors(seu, dims = 1:20, graph.name="adt.snn") %>%
     FindClusters(graph.name="adt.snn")
   seu[["adtClusterID"]] <- Idents(seu)
-  
+
   ### Identify multimodal neighbors
   message(">>> Calculating wnn graph...")
   seu <- FindMultiModalNeighbors(
-    seu, reduction.list = list("pca", "adt.pca"), 
+    seu, reduction.list = list("pca", "adt.pca"),
     dims.list = list(1:30, 1:20), modality.weight.name = "RNA.weight"
   )
-  
+
   ### clustering based on wnn
   message(">>> Finding wnn clusters...")
   seu <- FindClusters(seu, graph.name = "wsnn")
   seu[["wsnnClusterID"]] <- Idents(seu)
-  
+
   ### UMAPs based on RNA, ADT, and WNN
   message(">>> Calculating UMAPs...")
-  seu <- RunUMAP(seu, reduction = 'adt.pca', dims = 1:20, assay = 'ADT', 
+  seu <- RunUMAP(seu, reduction = 'adt.pca', dims = 1:20, assay = 'ADT',
                  reduction.name = 'adt.umap', reduction.key = 'adtUMAP_')
   seu <- RunUMAP(seu, nn.name = "weighted.nn", reduction.name = "wnn.umap",
                  reduction.key = "wnnUMAP_")
@@ -174,7 +202,7 @@ seu <- MapQuery(
     celltype.l2 = "celltype.l2",
     predicted_ADT = "ADT"
   ),
-  reference.reduction = "spca", 
+  reference.reduction = "spca",
   reduction.model = "wnn.umap"
 )
 
@@ -185,7 +213,7 @@ seu$id <- "query"
 refquery <- merge(reference, seu)
 refquery[["spca"]] <- merge(reference[["spca"]], seu[["ref.spca"]])
 refquery <- RunUMAP(refquery, reduction = "spca", dims = 1:50)
-# Add new UMAP to misc slot in seurat object. 
+# Add new UMAP to misc slot in seurat object.
 merged_umap <- refquery[["umap"]]
 merged_umap@misc <- list(id = refquery$id)
 seu@misc <- list(merged_umap = merged_umap)
@@ -195,7 +223,7 @@ rm(refquery)
 message(">>> Saving Seurat object...")
 saveRDS(seu, file.path(opt$outpath))
 message(">>> Saving h5Seurat object...")
-SaveH5Seurat(seu, file.path(opt$hpath))
+SaveH5Seurat(seu, file.path(opt$hpath), overwrite = TRUE)
 
 
 # ----- Plots -----
@@ -205,13 +233,13 @@ pdf(file=file.path(plotDir, "celltypel1.pdf"),
 p1 <- DimPlot(seu,
               reduction = 'rna.umap',
               group.by = 'predicted.celltype.l1',
-              label = TRUE, 
+              label = TRUE,
               repel = TRUE, label.size = 2.5) + NoLegend()
 if (adt) {
   p2 <- DimPlot(seu,
                 reduction = 'adt.umap',
                 group.by = 'predicted.celltype.l1',
-                label = TRUE, 
+                label = TRUE,
                 repel = TRUE, label.size = 2.5) + NoLegend()
   p3 <- DimPlot(seu,
                 reduction = 'wnn.umap',
@@ -234,13 +262,13 @@ pdf(file=file.path(plotDir, "celltypel2.pdf"),
 p1 <- DimPlot(seu,
               reduction = 'rna.umap',
               group.by = 'predicted.celltype.l2',
-              label = TRUE, 
+              label = TRUE,
               repel = TRUE, label.size = 2.5) + NoLegend()
 if (adt) {
   p2 <- DimPlot(seu,
                 reduction = 'adt.umap',
                 group.by = 'predicted.celltype.l2',
-                label = TRUE, 
+                label = TRUE,
                 repel = TRUE, label.size = 2.5) + NoLegend()
   p3 <- DimPlot(seu,
                 reduction = 'wnn.umap',
