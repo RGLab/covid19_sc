@@ -8,7 +8,7 @@ sbatch --constraint=gizmok \
   --mail-user=$(whoami)@fredhutch.org \
   --mail-type=ALL \
   --cpus-per-task=$2 \
-  --time=08:00:00 \
+  --time=48:00:00 \
   --export=wd=${0%/*},batch=${3-null}\
   process.sh ${1}
 

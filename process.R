@@ -99,15 +99,23 @@ if (opt$batch == "null") {
 } else {
   message(">>> Normalizing with SCTransform by batch...")
   seu.list <- SplitObject(seu, split.by = opt$batch)
-  seu.list <- lapply(seu.list, SCTransform, verbose = TRUE)
+  seu.list <- lapply(seu.list, SCTransform)
+  lapply(seu.list, function(s) {
+    # circumvent Seurat bug https://github.com/satijalab/seurat/pull/3658
+    Misc(s[["SCT"]], "vst.out")$cells_step1 <- rownames(Misc(s[["SCT"]], "vst.out")$cell_attr)
+  })
   message(">>> Integrating batches using SCTransform...")
   seu.features <- SelectIntegrationFeatures(object.list = seu.list, nfeatures = 2000)
-  seu.list <- PrepSCTIntegration(object.list = seu.list, anchor.features = seu.features,
+  seu.list <- PrepSCTIntegration(object.list = seu.list,
+                                 anchor.features = seu.features,
                                  verbose = TRUE)
-  seu.anchors <- FindIntegrationAnchors(object.list = seu.list, normalization.method = "SCT",
-                                        anchor.features = seu.features, verbose = TRUE)
-  seu <- IntegrateData(anchorset = seu.anchors, normalization.method = "SCT",
-                                  verbose = FALSE)
+  seu.anchors <- FindIntegrationAnchors(object.list = seu.list,
+                                        normalization.method = "SCT",
+                                        anchor.features = seu.features,
+                                        verbose = TRUE)
+  seu <- IntegrateData(anchorset = seu.anchors,
+                       normalization.method = "SCT",
+                       verbose = FALSE)
   rm(seu.list)
   rm(seu.anchors)
   message(">>> Saving integrated data to ", opt$debugdir)
