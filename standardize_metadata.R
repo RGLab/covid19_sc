@@ -1,4 +1,7 @@
+# Standardize metadata
+
 library(data.table)
+setDTthreads(4)
 library(readxl)
 
 metadataDir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata/"
@@ -13,11 +16,11 @@ files
 
 
 
-# dataset, sample_source, patient, sample, tissue, sex (male, female, other), age, disease_status (CoV, healthy, flu), disease_severity (mild, severe), timepoint
+# dataset, sample_source, patient, sample, tissue, sex (male, female, other), age, disease_status (COVID-19, healthy, flu), disease_severity (mild, severe), timepoint
 
 # ----- wilk_2020 -----
 # severe = hospitalized
-wilk <- unique(mList$wilk_2020[, .(Donor, Sex, Status)])[, .(
+wilk <- unique(mList$wilk_2020[, .(Donor, Sex, Status, Admission.level)])[, .(
   dataset = "wilk_2020",
   sample_source_field = "Donor",
   patient = Donor,
@@ -25,8 +28,9 @@ wilk <- unique(mList$wilk_2020[, .(Donor, Sex, Status)])[, .(
   tissue = "PBMC",
   sex = ifelse(Sex == "M", "male", "female"),
   age = NA,
-  disease_status = ifelse(Status == "COVID", "CoV", "healthy"),
-  disease_severity = ifelse(Status == "COVID", "severe", NA),
+  disease_status = ifelse(Status == "COVID", "COVID-19", "healthy"),
+  disease_severity = ifelse(Admission.level == "ICU", "severe",
+                            ifelse(Admission.level == "Floor", "moderate", "healthy")),
   timepoint = 1
 )]
 
@@ -70,7 +74,7 @@ meta_chua$patient <- names
 setnames(meta_chua, c("V1", "V2", "V3"), c("age", "sex", "disease_severity"))
 
 
-# All patients were hospitalized
+# All patients were hospitalized. Severe = ICU
 chua <- unique(mList$chua_2020[, .(patient, sample, infection, location)])
 chua <- merge(chua, meta_chua, by = "patient", all.x = TRUE)[, .(
   dataset = "chua_2020",
@@ -80,7 +84,7 @@ chua <- merge(chua, meta_chua, by = "patient", all.x = TRUE)[, .(
   tissue = location,
   sex = sex,
   age = age,
-  disease_status = ifelse(infection == "SARS-CoV-2", "CoV", "healthy"),
+  disease_status = ifelse(infection == "SARS-CoV-2", "COVID-19", "healthy"),
   disease_severity = disease_severity,
   timepoint = as.numeric(substr(sample, 15, 15))
 )]
@@ -88,25 +92,28 @@ chua <- merge(chua, meta_chua, by = "patient", all.x = TRUE)[, .(
 # ----- silvin -----
 silvin <- unique(mList$silvin_2020[, .(
   Characteristics.individual.,
+  sample,
   Characteristics.sex.,
   Characteristics.age.,
   Characteristics.disease.,
   Characteristics.clinical.history.,
   Factor.Value.sampling.time.point.)])[, .(
     dataset = "silvin_2020",
-    sample_source_field = "Characteristics.individual.",
-    sample = Characteristics.individual.,
+    sample_source_field = "sample",
+    sample = sample,
     patient = Characteristics.individual.,
     tissue = "RBC",
-    sex = Characteristics.sex.,
-    age = Characteristics.age.,
-    disease_status = ifelse(Characteristics.disease. == "COVID-19", "CoV", "healthy"),
+    sex = ifelse(Characteristics.sex. == "not available", NA, Characteristics.sex.),
+    age = ifelse(Characteristics.age. == "not available", NA, as.numeric(Characteristics.age.)),
+    disease_status = ifelse(Characteristics.disease. == "COVID-19", "COVID-19", "healthy"),
     disease_severity = ifelse(Characteristics.clinical.history. == "severe COVID-19",
                               "severe",
                               ifelse(Characteristics.clinical.history. == "mild COVID-19", "mild", NA)
                               ),
     timepoint = Factor.Value.sampling.time.point.
   )]
+
+
 
 # ----- wen -----
 # data from supplementary figure https://static-content.springer.com/esm/art%3A10.1038%2Fs41421-020-0168-9/MediaObjects/41421_2020_168_MOESM1_ESM.pdf
@@ -129,8 +136,8 @@ wen <- wen[, .(
   tissue = "PBMC",
   sex = sex,
   age = NA,
-  disease_status = ifelse(grepl("Healthy", patient), "healthy", "CoV"),
-  disease_severity = disease_severity,
+  disease_status = ifelse(grepl("Healthy", patient), "healthy", "COVID-19"),
+  disease_severity = ifelse(grepl("Healthy", patient), "healthy", disease_severity),
   timepoint = 1
 )]
 
@@ -158,10 +165,10 @@ lee <- merge(lee, meta_lee, by = "SampleName", all.x = TRUE)[, .(
   sex = ifelse(Sex == "M", "male", "female"),
   age = Age,
   disease_status = ifelse(grepl("influenza", `Disease group`), "flu",
-                          ifelse(grepl("COVID", `Disease group`), "CoV", "healthy")),
+                          ifelse(grepl("COVID", `Disease group`), "COVID-19", "healthy")),
   disease_severity = ifelse(grepl("COVID", `Disease group`),
-                            ifelse(grepl("severe", `Disease group`), "severe", "mild"),
-                            NA),
+                            ifelse(grepl("severe", `Disease group`), "severe", "moderate"),
+                            ifelse(grepl("influenza", `Disease group`), "flu", "healthy")),
   timepoint = 1
 
 )]
@@ -194,9 +201,10 @@ liao <- liao[, .(
   tissue = "BL", # bronchial lavage fluid
   sex = sex,
   age = age,
-  disease_status = ifelse(disease == "Y", "CoV", "healthy"),
-  disease_severity = ifelse(group == "M", "moderate",
-                            ifelse(group == "S", "severe", NA)),
+  disease_status = ifelse(disease == "Y", "COVID-19", "healthy"),
+  disease_severity = ifelse(grepl("HC", sample_new_old), "healthy",
+                            ifelse(grepl("C", sample_new_old), "severe", # labeled "critical"
+                                   "moderate")),
   timepoint = 1
 )]
 
@@ -219,9 +227,10 @@ zhu <- merge(zhu, meta_zhu, by = "subject", all.x = TRUE)[, .(
   tissue = "PBMC",
   sex = tolower(Gender),
   age = Age,
-  disease_status = ifelse(grepl("COV", subject), "CoV",
+  disease_status = ifelse(grepl("COV", subject), "COVID-19",
                           ifelse(grepl("Flu", subject), "flu", "healthy")),
-  disease_severity = tolower(Severity),
+  disease_severity = ifelse(grepl("COV", subject), "moderate",
+                            ifelse(grepl("Flu", subject), "flu", "healthy")),
   timepoint = as.numeric(gsub(".+-D", "", batch))
 )][is.na(timepoint), timepoint := 1]
 
@@ -229,6 +238,8 @@ zhu <- merge(zhu, meta_zhu, by = "subject", all.x = TRUE)[, .(
 
 
 # ----- arunachalam -----
+meta_arunachalam <- fread(file.path(metadataDir, "supplemental", "arunachalam_table_2.tsv"))
+
 # Severity: severe vs moderate
 arunachalam <- unique(mList$arunachalam_2020[, .(sample_name,
                                                  sex,
@@ -240,12 +251,15 @@ arunachalam <- unique(mList$arunachalam_2020[, .(sample_name,
   sample = sample_name,
   patient = sample_name,
   tissue = "PBMC",
-  sex = sex,
+  sex = ifelse(sex == "M", "male", "female"),
   age = age,
-  disease_status = ifelse(disease_status == "COVID-19", "CoV", "healthy"),
-  disease_severity = tolower(disease_severity),
+  disease_status = ifelse(disease_status == "COVID-19", "COVID-19", "healthy"),
+  disease_severity = ifelse(disease_status == "COVID-19", "moderate", "healthy"),
   timepoint = 1
 )]
+
+# update to severe based on supplementary table ICU
+arunachalam[age == 60 & sex == "female", disease_severity := "severe"]
 
 # ----- yu -----
 # NOTE:  missing severe samples
@@ -257,8 +271,8 @@ yu <- unique(mList$yu_2020[, .(patient, sample, sex, description)])[, .(
   tissue = "PBMC",
   sex = sex,
   age = NA,
-  disease_status = ifelse(grepl("HD", patient), "healthy", "CoV"),
-  disease_severity = ifelse(grepl("mild", description), "mild", NA),
+  disease_status = ifelse(grepl("HD", patient), "healthy", "COVID-19"),
+  disease_severity = ifelse(grepl("mild", description), "moderate", "healthy"),
   timepoint = 1
 )]
 
@@ -266,6 +280,7 @@ yu <- unique(mList$yu_2020[, .(patient, sample, sex, description)])[, .(
 # ----- su -----
 # severity: ICU vs no ICU. Also have info on hospital vs home.
 meta_su_cov <- data.table(read_xlsx(file.path(metadataDir, "supplemental", "su_2020_Table_S1.xlsx"), sheet = 2))
+
 meta_su_cov <- meta_su_cov[, .(
   sample = gsub("INCOV0*", "", `Sample ID`),
   patient = gsub("INCOV0*", "", `Study Subject ID`),
@@ -273,7 +288,7 @@ meta_su_cov <- meta_su_cov[, .(
   sex = tolower(Sex),
   location = `Patient Location`,
   WHO = `Who Ordinal Scale`,
-  disease_status = "CoV",
+  disease_status = "COVID-19",
   timepoint = `Blood draw time point`
 )]
 meta_su_healthy <- data.table(read_xlsx(file.path(metadataDir, "supplemental", "su_2020_Table_S1.xlsx"), sheet = 3))
@@ -282,9 +297,12 @@ meta_su_healthy <- meta_su_healthy[, .(
   patient = `Sample ID`,
   sex = tolower(sex),
   age = age,
-  disease_status = "healthy"
+  disease_status = "healthy",
+  location = "healthy"
 )]
 meta_su <- rbind(meta_su_cov, meta_su_healthy, fill = TRUE)
+# Fill in missing severity info for 129-2
+meta_su[sample == "129-2", location := "Home (mobile phlebotomy)"]
 
 su <- unique(mList$su_2020[, .(patient, sample)])
 su <- merge(su, meta_su, by = c("sample", "patient"), all.x = TRUE)
@@ -297,8 +315,9 @@ su <- su[, .(
   sex = sex,
   age = age,
   disease_status = disease_status,
-  disease_severity = ifelse(is.na(location), NA,
-                            ifelse(grepl("ICU", location), "severe", "mild")),
+  disease_severity = ifelse(location == "Hospital", "moderate",
+                            ifelse(location == "ICU", "severe",
+                                   ifelse(location == "healthy", "healthy", "mild"))),
   timepoint = as.numeric(gsub("T", "", timepoint))
 )]
 
@@ -321,8 +340,8 @@ meckiff <- meckiff[, .(
   tissue = "PBMC",
   sex = tolower(orig.sex),
   age = as.numeric(AGE),
-  disease_status = ifelse(is.na(HOSPITALIZATION), "healthy", "CoV"),
-  disease_severity = ifelse(is.na(HOSPITALIZATION), NA,
+  disease_status = ifelse(is.na(HOSPITALIZATION), "healthy", "COVID-19"),
+  disease_severity = ifelse(is.na(HOSPITALIZATION), "healthy",
                             ifelse(grepl("ICU", HOSPITALIZATION), "severe",
                                    ifelse(grepl("Ward", HOSPITALIZATION), "moderate", "mild"))),
   timepoint = 1
@@ -341,4 +360,6 @@ all_meta <- rbind(
   su,
   meckiff
 )
+all_meta <- all_meta[disease_status == "healthy", disease_severity := "healthy"][, -"timepoint"]
+
 fwrite(all_meta, file.path(metadataDir, "all_meta.tsv"), sep = "\t")
