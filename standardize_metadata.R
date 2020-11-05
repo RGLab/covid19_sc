@@ -20,18 +20,19 @@ files
 
 # ----- wilk_2020 -----
 # severe = hospitalized
-wilk <- unique(mList$wilk_2020[, .(Donor, Sex, Status, Admission.level)])[, .(
+wilk <- unique(mList$wilk_2020[, .(Donor, Donor.full, DPS, Sex, Status, Admission.level)])[, .(
   dataset = "wilk_2020",
-  sample_source_field = "Donor",
+  sample_source_field = "Donor.full",
   patient = Donor,
-  sample = Donor,
+  sample = Donor.full,
   tissue = "PBMC",
   sex = ifelse(Sex == "M", "male", "female"),
   age = NA,
   disease_status = ifelse(Status == "COVID", "COVID-19", "healthy"),
   disease_severity = ifelse(Admission.level == "ICU", "severe",
                             ifelse(Admission.level == "Floor", "moderate", "healthy")),
-  timepoint = 1
+  days_since_symptom_onset = DPS,
+  days_since_hospitalization = NA
 )]
 
 
@@ -74,9 +75,45 @@ meta_chua$patient <- names
 setnames(meta_chua, c("V1", "V2", "V3"), c("age", "sex", "disease_severity"))
 
 
+
+
 # All patients were hospitalized. Severe = ICU
 chua <- unique(mList$chua_2020[, .(patient, sample, infection, location)])
-chua <- merge(chua, meta_chua, by = "patient", all.x = TRUE)[, .(
+chua <- merge(meta_chua, chua, by = "patient", all.y = TRUE, sort = FALSE)
+# Add days since symptom onset
+chua[, days_since_symptom_onset := as.numeric(NA)]
+chua[sample == "BIH-CoV-15_NS_1", days_since_symptom_onset := 25]
+chua[sample == "BIH-CoV-15_NS_2", days_since_symptom_onset := 27]
+chua[sample == "BIH-CoV-15_NS_4", days_since_symptom_onset := 30]
+chua[sample == "BIH-CoV-15_NS_3", days_since_symptom_onset := 33]
+chua[sample == "BIH-CoV-14_NS_1", days_since_symptom_onset := 11]
+chua[sample == "BIH-CoV-14_NS_2", days_since_symptom_onset := 16]
+chua[sample == "BIH-CoV-16_NS_1", days_since_symptom_onset := 10]
+chua[sample == "BIH-CoV-13_NS_1", days_since_symptom_onset := 10]
+chua[sample == "BIH-CoV-19_NS_1", days_since_symptom_onset := 11]
+chua[sample == "BIH-CoV-12_NS_1", days_since_symptom_onset := 16]
+chua[sample == "BIH-CoV-12_NS_2", days_since_symptom_onset := 18]
+chua[sample == "BIH-CoV-12_NS_3", days_since_symptom_onset := 21]
+chua[sample == "BIH-CoV-17_NS_1", days_since_symptom_onset := 30]
+chua[sample == "BIH-CoV-18_NS_1", days_since_symptom_onset := 3]
+chua[sample == "BIH-CoV-07_NS_1", days_since_symptom_onset := 8]
+chua[sample == "BIH-CoV-07_NS_2", days_since_symptom_onset := 11]
+chua[sample == "BIH-CoV-11_NS_1", days_since_symptom_onset := 11]
+chua[sample == "BIH-CoV-06_NS_1", days_since_symptom_onset := 4]
+chua[sample == "BIH-CoV-06_NS_2", days_since_symptom_onset := 7]
+chua[sample == "BIH-CoV-05_NS_1", days_since_symptom_onset := 7]
+chua[sample == "BIH-CoV-09_NS_1", days_since_symptom_onset := 12]
+chua[sample == "BIH-CoV-03_NS_1", days_since_symptom_onset := 10]
+chua[sample == "BIH-CoV-08_NS_1", days_since_symptom_onset := 8]
+chua[sample == "BIH-CoV-04_BL_1", days_since_symptom_onset := 13]
+chua[sample == "BIH-CoV-04_PS_1", days_since_symptom_onset := 13]
+chua[sample == "BIH-CoV-04_NS_1", days_since_symptom_onset := 13]
+chua[sample == "BIH-CoV-10_NS_1", days_since_symptom_onset := 20]
+chua[sample == "BIH-CoV-01_BL_1", days_since_symptom_onset := 17]
+chua[sample == "BIH-CoV-01_PS_1", days_since_symptom_onset := 17]
+chua[sample == "BIH-CoV-01_NS_1", days_since_symptom_onset := 17]
+
+chua <- chua[, .(
   dataset = "chua_2020",
   sample_source_field = "sample",
   sample = sample,
@@ -86,7 +123,8 @@ chua <- merge(chua, meta_chua, by = "patient", all.x = TRUE)[, .(
   age = age,
   disease_status = ifelse(infection == "SARS-CoV-2", "COVID-19", "healthy"),
   disease_severity = disease_severity,
-  timepoint = as.numeric(substr(sample, 15, 15))
+  days_since_symptom_onset = days_since_symptom_onset,
+  days_since_hospitalization = NA
 )]
 
 # ----- silvin -----
@@ -97,7 +135,21 @@ silvin <- unique(mList$silvin_2020[, .(
   Characteristics.age.,
   Characteristics.disease.,
   Characteristics.clinical.history.,
-  Factor.Value.sampling.time.point.)])[, .(
+  Factor.Value.sampling.time.point.)])
+# Get time since hospitalization from fig 2
+offset <- data.table(
+  Characteristics.individual. = c("SARS-CoV2 pos Severe #1",
+              "SARS-CoV2 pos Mild",
+              "SARS-CoV2 pos Severe #2",
+              "SARS-CoV2 pos Severe #3"),
+  day0_offset = c(14,
+           0,
+           10,
+           0)
+)
+silvin <- merge(silvin, offset, all.x = TRUE)
+
+silvin <- silvin[, .(
     dataset = "silvin_2020",
     sample_source_field = "sample",
     sample = sample,
@@ -110,14 +162,14 @@ silvin <- unique(mList$silvin_2020[, .(
                               "severe",
                               ifelse(Characteristics.clinical.history. == "mild COVID-19", "mild", NA)
                               ),
-    timepoint = Factor.Value.sampling.time.point.
+    days_since_symptom_onset = NA,
+    days_since_hospitalization = day0_offset + Factor.Value.sampling.time.point.
   )]
 
 
 
 # ----- wen -----
 # data from supplementary figure https://static-content.springer.com/esm/art%3A10.1038%2Fs41421-020-0168-9/MediaObjects/41421_2020_168_MOESM1_ESM.pdf
-# TODO: what to do with "moderate?"
 
 wen_meta <- data.table(
   patient = c("ERS1", "ERS2", "ERS3", "ERS4", "ERS5", "LRS1", "LRS2", "LRS3", "LRS4", "LRS5"),
@@ -138,7 +190,9 @@ wen <- wen[, .(
   age = NA,
   disease_status = ifelse(grepl("Healthy", patient), "healthy", "COVID-19"),
   disease_severity = ifelse(grepl("Healthy", patient), "healthy", disease_severity),
-  timepoint = 1
+  days_since_symptom_onset = ifelse(grepl("ERS", patient), 15,
+                                    ifelse(grepl("LRS", patient), 29, NA)),
+  days_since_hospitalization = NA
 )]
 
 # ----- lee -----
@@ -152,11 +206,18 @@ for (i in 1:nrow(meta_lee)) {
                      Sex = meta_lee[i-1, "Sex"])
              ]
   }
+
 }
 meta_lee[, SampleName := paste0(`Sample ID`, " scRNA-seq")]
 
+meta_lee2 <- data.table(read_xlsx(file.path(metadataDir, "supplemental", "lee_2020_Table_S3.xlsx")))
+meta_lee2 <- meta_lee2[grepl("nCoV", `Sample ID`), .(`Sample ID`, `Hospital \nday`)]
+meta_lee2[, SampleName := paste0(`Sample ID`, " scRNA-seq")]
+
 lee <- unique(mList$lee_2020[, .(SampleName = Patient, SampleID = Sample)])
-lee <- merge(lee, meta_lee, by = "SampleName", all.x = TRUE)[, .(
+lee <- merge(lee, meta_lee, by = "SampleName", all.x = TRUE)
+lee <- merge(lee, meta_lee2, by = "SampleName", all.x = TRUE)
+lee <- lee[, .(
   dataset = "lee_2020",
   sample_source_field = "Patient",
   sample = SampleName,
@@ -169,7 +230,8 @@ lee <- merge(lee, meta_lee, by = "SampleName", all.x = TRUE)[, .(
   disease_severity = ifelse(grepl("COVID", `Disease group`),
                             ifelse(grepl("severe", `Disease group`), "severe", "moderate"),
                             ifelse(grepl("influenza", `Disease group`), "flu", "healthy")),
-  timepoint = 1
+  days_since_symptom_onset = NA,
+  days_since_hospitalization = `Hospital \nday`
 
 )]
 
@@ -186,8 +248,16 @@ meta_liao <- fread(file.path(metadataDir, "supplemental", "liao_2020_meta.txt"))
 meta2_liao <- data.table(
   patient = c("M1", "M2", "M3", "S1", "S2", "S3", "S4", "S5", "S6"),
   age = c(36, 37, 35, 62, 66, 63, 65, 57, 46),
-  sex = c("male", "female", "male", "male", "male", "male", "female", "female", "male")
+  sex = c("male", "female", "male", "male", "male", "male", "female", "female", "male"),
+  symptom_onset_date = c("2020-01-09", "2020-01-11", "2020-01-09", "2020-01-11", "2020-01-03", "2020-01-08", "2020-01-04", "2020-01-21", "2020-01-21"),
+  hospitalization_date = c("2020-01-16", "2020-01-16", "2020-01-15", "2020-01-18", "2020-01-11", "2020-01-15", "2020-01-20", "2020-01-23", "2020-01-22"),
+  sampling_date = c("2020-01-20", "2020-01-20", "2020-01-22", "2020-01-22", "2020-01-21", "2020-01-22", "2020-01-29", "2020-01-29", "2020-02-02")
 )
+meta2_liao[, `:=`(
+  symptom_onset_date = strptime(symptom_onset_date, "%Y-%m-%d"),
+  hospitalization_date = strptime(hospitalization_date, "%Y-%m-%d"),
+  sampling_date = strptime(sampling_date, "%Y-%m-%d")
+)]
 
 
 liao <- unique(mList$liao_2020[, .(sample)])
@@ -205,7 +275,8 @@ liao <- liao[, .(
   disease_severity = ifelse(grepl("HC", sample_new_old), "healthy",
                             ifelse(grepl("C", sample_new_old), "severe", # labeled "critical"
                                    "moderate")),
-  timepoint = 1
+  days_since_symptom_onset = as.numeric(difftime(sampling_date, symptom_onset_date, units = "days")),
+  days_since_hospitalization = as.numeric(difftime(sampling_date, hospitalization_date, units = "days"))
 )]
 
 # ----- zhu -----
@@ -218,8 +289,17 @@ meta_zhu <- data.table(t(meta_zhu[, 2:ncol(meta_zhu)]))
 colnames(meta_zhu) <- names
 setnames(meta_zhu, "V1", "subject")
 
+day1_offset <- data.table(
+  subject = c("COV-1", "COV-2", "COV-3", "COV-4", "COV-5", "IAV-1", "IAV-2"),
+  symptom_offset = c(7, 7, 13, 10, 3, NA, NA),
+  hospitalization_offset = c(4, 4, 4, 2, 1, 1, 5)
+)
+
 zhu <- unique(mList$zhu_2020[, .(batch, Stage)])[, subject := gsub("-D\\d+", "", batch)]
-zhu <- merge(zhu, meta_zhu, by = "subject", all.x = TRUE)[, .(
+zhu <- merge(zhu, meta_zhu, by = "subject", all.x = TRUE)
+zhu <- merge(zhu, day1_offset, by = "subject", all.x = TRUE)
+zhu[, timepoint := as.numeric(gsub(".+-D", "", batch))]
+zhu <- zhu[, .(
   dataset = "zhu_2020",
   sample_source_field = "batch",
   sample = batch,
@@ -231,8 +311,9 @@ zhu <- merge(zhu, meta_zhu, by = "subject", all.x = TRUE)[, .(
                           ifelse(grepl("Flu", subject), "flu", "healthy")),
   disease_severity = ifelse(grepl("COV", subject), "moderate",
                             ifelse(grepl("Flu", subject), "flu", "healthy")),
-  timepoint = as.numeric(gsub(".+-D", "", batch))
-)][is.na(timepoint), timepoint := 1]
+  days_since_symptom_onset = symptom_offset + timepoint - 1,
+  days_since_hospitalization = hospitalization_offset + timepoint -1
+)]
 
 
 
@@ -245,7 +326,8 @@ arunachalam <- unique(mList$arunachalam_2020[, .(sample_name,
                                                  sex,
                                                  disease_status,
                                                  disease_severity,
-                                                 age)])[, .(
+                                                 age,
+                                                 days_since_symptom_onset)])[, .(
   dataset = "arunachalam_2020",
   sample_source_field = "sample_name",
   sample = sample_name,
@@ -255,7 +337,8 @@ arunachalam <- unique(mList$arunachalam_2020[, .(sample_name,
   age = age,
   disease_status = ifelse(disease_status == "COVID-19", "COVID-19", "healthy"),
   disease_severity = ifelse(disease_status == "COVID-19", "moderate", "healthy"),
-  timepoint = 1
+  days_since_symptom_onset = days_since_symptom_onset,
+  days_since_hospitalization = NA
 )]
 
 # update to severe based on supplementary table ICU
@@ -263,7 +346,14 @@ arunachalam[age == 60 & sex == "female", disease_severity := "severe"]
 
 # ----- yu -----
 # NOTE:  missing severe samples
-yu <- unique(mList$yu_2020[, .(patient, sample, sex, description)])[, .(
+# NOTE:  PM = post mild disease (hospitalized), CM = convalescence of mild disease (no longer hospitalized)
+timepoints <- data.table(
+  patient = c("CM1", "CM2", "CM3", "PM1", "PM2", "PM3"),
+  days_since_hospitalization = c(14, 9, 14, 14, 7, 7)
+)
+yu <- unique(mList$yu_2020[, .(patient, sample, sex, description)])
+yu <- merge(yu, timepoints, all.x = TRUE)
+yu <- yu[, .(
   dataset = "yu_2020",
   sample_source_field = "sample",
   sample = sample,
@@ -273,7 +363,8 @@ yu <- unique(mList$yu_2020[, .(patient, sample, sex, description)])[, .(
   age = NA,
   disease_status = ifelse(grepl("HD", patient), "healthy", "COVID-19"),
   disease_severity = ifelse(grepl("mild", description), "moderate", "healthy"),
-  timepoint = 1
+  days_since_symptom_onset = NA,
+  days_since_hospitalization = days_since_hospitalization
 )]
 
 
@@ -318,7 +409,9 @@ su <- su[, .(
   disease_severity = ifelse(location == "Hospital", "moderate",
                             ifelse(location == "ICU", "severe",
                                    ifelse(location == "healthy", "healthy", "mild"))),
-  timepoint = as.numeric(gsub("T", "", timepoint))
+  days_since_symptom_onset = ifelse(timepoint == "T1", 7,
+                                    ifelse(timepoint == "T2", 14, NA)),
+  days_since_hospitalization = NA
 )]
 
 
@@ -344,7 +437,8 @@ meckiff <- meckiff[, .(
   disease_severity = ifelse(is.na(HOSPITALIZATION), "healthy",
                             ifelse(grepl("ICU", HOSPITALIZATION), "severe",
                                    ifelse(grepl("Ward", HOSPITALIZATION), "moderate", "mild"))),
-  timepoint = 1
+  days_since_symptom_onset = `INTERVAL BETWEEN SYMPTOM ONSET TO SAMPLE COLLECTION (DAYS)`,
+  days_since_hospitalization = NA
 )]
 
 all_meta <- rbind(
@@ -361,5 +455,9 @@ all_meta <- rbind(
   meckiff
 )
 all_meta <- all_meta[disease_status == "healthy", disease_severity := "healthy"][, -"timepoint"]
+all_meta[, `:=`(days_since_symptom_onset = as.numeric(days_since_symptom_onset),
+                days_since_hospitalization = as.numeric(days_since_hospitalization))]
+all_meta[, days_since_symptom_onset := ifelse(is.na(days_since_symptom_onset), (days_since_hospitalization + 7), days_since_symptom_onset)]
+all_meta[disease_status != "COVID-19", days_since_symptom_onset := NA]
 
 fwrite(all_meta, file.path(metadataDir, "all_meta.tsv"), sep = "\t")

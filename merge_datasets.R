@@ -50,6 +50,7 @@ seuList <- lapply(datasets, function(dataset_name) {
                            "age",
                            "disease_status",
                            "disease_severity",
+                           "days_since_symptom_onset",
                            "predicted.celltype.l1",
                            "predicted.celltype.l2",
                            "predicted.celltype.l1.score",
@@ -68,4 +69,4 @@ bigSeu <- merge(seuList[[1]],
                 merge.data = TRUE,
                 merge.dr = "ref.umap")
 message(">>> saving to ", file.path(h5seuratDir, "covid19_datasets.h5seurat"))
-SaveH5Seurat(bigSeu, file.path(h5seuratDir, "covid19_datasets.h5seurat"))
+SaveH5Seurat(bigSeu, file.path(h5seuratDir, "covid19_datasets.h5seurat"), overwrite = TRUE)
