@@ -1,3 +1,6 @@
+# Map processed dataset to reference dataset.
+# Option to batch mapping process for large datasets.
+#
 # sbatch --constraint=gizmok -J su_2020 -o logs/su_2020_map.log --mail-user=$(whoami)@fredhutch.org --mail-type=ALL --time=08:00:00 map_to_reference_su_2020.sh
 
 # ----- Parse options ------
@@ -65,8 +68,8 @@ if (opt$batch != "null") {
       reduction.model = "wnn.umap"
     )
   }
-    message(">>> Saving seuList to /fh/scratch/delete10/gottardo_r/hmiller/su_2020/seuList_mapped.rds")
-    saveRDS(seuList, "/fh/scratch/delete10/gottardo_r/hmiller/su_2020/seuList_mapped.rds")
+    # message(">>> Saving seuList to /fh/scratch/delete10/gottardo_r/hmiller/su_2020/seuList_mapped.rds")
+    # saveRDS(seuList, "/fh/scratch/delete10/gottardo_r/hmiller/su_2020/seuList_mapped.rds")
   seu <- merge(seuList[[1]], seuList[2:length(seuList)], merge.dr = "ref.umap")
 } else {
 

@@ -1,3 +1,7 @@
+# Process seurat dataset. Save output as rds and h5seurat object.
+# Intermediate objects will be saved to debugdir
+#
+#
 # ----- Parse options ------
 message(getwd())
 library(optparse)

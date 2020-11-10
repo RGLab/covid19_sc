@@ -68,5 +68,13 @@ bigSeu <- merge(seuList[[1]],
                 add.cell.ids = datasets,
                 merge.data = TRUE,
                 merge.dr = "ref.umap")
-message(">>> saving to ", file.path(h5seuratDir, "covid19_datasets.h5seurat"))
-SaveH5Seurat(bigSeu, file.path(h5seuratDir, "covid19_datasets.h5seurat"), overwrite = TRUE)
+
+# ref.umap assay should be "SCT" but Seurat assigns it to "RNA"
+# LoadH5Seurat will not load ref.umap unless it is assigned to a
+# current assay.
+bigSeu[["ref.umap"]]@assay.used <- "SCT"
+
+message(">>> saving to /fh/fast/gottardo_r/ytian_working/covid19_datasets/seu/covid19_datasets.rds")
+saveRDS(bigSeu, "/fh/fast/gottardo_r/ytian_working/covid19_datasets/seu/covid19_datasets.rds")
+# message(">>> saving to ", file.path(h5seuratDir, "covid19_datasets.h5seurat"))
+# SaveH5Seurat(bigSeu, file.path(h5seuratDir, "covid19_datasets.h5seurat"), overwrite = TRUE)

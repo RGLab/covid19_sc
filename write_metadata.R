@@ -1,5 +1,6 @@
 # Extract metadata from h5seurat file and write as tsv
-# Ex: Rscript write_metadata.R liao_2020
+# Eg: Rscript write_metadata.R liao_2020
+
 library(SeuratDisk)
 library(data.table)
 args = commandArgs(trailingOnly=TRUE)

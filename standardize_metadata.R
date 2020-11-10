@@ -1,4 +1,7 @@
-# Standardize metadata
+# Standardize metadata. Reads in metadata provided with the dataset
+# and standardizes fields for all datasets, writing the result to
+# a file. Looks for metadata written to a tsv file in metadataDir.
+# These tsv files can be written using write_metadata.R.
 
 library(data.table)
 setDTthreads(4)
@@ -16,7 +19,7 @@ files
 
 
 
-# dataset, sample_source, patient, sample, tissue, sex (male, female, other), age, disease_status (COVID-19, healthy, flu), disease_severity (mild, severe), timepoint
+# dataset, sample_source, patient, sample, tissue, sex (male, female, other), age, disease_status (COVID-19, healthy, flu), disease_severity (mild, severe)
 
 # ----- wilk_2020 -----
 # severe = hospitalized
@@ -32,7 +35,9 @@ wilk <- unique(mList$wilk_2020[, .(Donor, Donor.full, DPS, Sex, Status, Admissio
   disease_severity = ifelse(Admission.level == "ICU", "severe",
                             ifelse(Admission.level == "Floor", "moderate", "healthy")),
   days_since_symptom_onset = DPS,
-  days_since_hospitalization = NA
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = FALSE,
+  days_since_hospitalization_estimated = TRUE
 )]
 
 
@@ -112,6 +117,7 @@ chua[sample == "BIH-CoV-10_NS_1", days_since_symptom_onset := 20]
 chua[sample == "BIH-CoV-01_BL_1", days_since_symptom_onset := 17]
 chua[sample == "BIH-CoV-01_PS_1", days_since_symptom_onset := 17]
 chua[sample == "BIH-CoV-01_NS_1", days_since_symptom_onset := 17]
+chua[sample == "BIH-CoV-02_NS_1", days_since_symptom_onset := 7]
 
 chua <- chua[, .(
   dataset = "chua_2020",
@@ -124,7 +130,9 @@ chua <- chua[, .(
   disease_status = ifelse(infection == "SARS-CoV-2", "COVID-19", "healthy"),
   disease_severity = disease_severity,
   days_since_symptom_onset = days_since_symptom_onset,
-  days_since_hospitalization = NA
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = FALSE,
+  days_since_hospitalization_estimated = TRUE
 )]
 
 # ----- silvin -----
@@ -163,7 +171,9 @@ silvin <- silvin[, .(
                               ifelse(Characteristics.clinical.history. == "mild COVID-19", "mild", NA)
                               ),
     days_since_symptom_onset = NA,
-    days_since_hospitalization = day0_offset + Factor.Value.sampling.time.point.
+    days_since_hospitalization = day0_offset + Factor.Value.sampling.time.point.,
+    days_since_symptom_onset_estimated = TRUE,
+    days_since_hospitalization_estimated = FALSE
   )]
 
 
@@ -192,7 +202,9 @@ wen <- wen[, .(
   disease_severity = ifelse(grepl("Healthy", patient), "healthy", disease_severity),
   days_since_symptom_onset = ifelse(grepl("ERS", patient), 15,
                                     ifelse(grepl("LRS", patient), 29, NA)),
-  days_since_hospitalization = NA
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = TRUE,
+  days_since_hospitalization_estimated = TRUE
 )]
 
 # ----- lee -----
@@ -231,7 +243,9 @@ lee <- lee[, .(
                             ifelse(grepl("severe", `Disease group`), "severe", "moderate"),
                             ifelse(grepl("influenza", `Disease group`), "flu", "healthy")),
   days_since_symptom_onset = NA,
-  days_since_hospitalization = `Hospital \nday`
+  days_since_hospitalization = `Hospital \nday`,
+  days_since_symptom_onset_estimated = TRUE,
+  days_since_hospitalization_estimated = FALSE
 
 )]
 
@@ -276,7 +290,9 @@ liao <- liao[, .(
                             ifelse(grepl("C", sample_new_old), "severe", # labeled "critical"
                                    "moderate")),
   days_since_symptom_onset = as.numeric(difftime(sampling_date, symptom_onset_date, units = "days")),
-  days_since_hospitalization = as.numeric(difftime(sampling_date, hospitalization_date, units = "days"))
+  days_since_hospitalization = as.numeric(difftime(sampling_date, hospitalization_date, units = "days")),
+  days_since_symptom_onset_estimated = FALSE,
+  days_since_hospitalization_estimated = FALSE
 )]
 
 # ----- zhu -----
@@ -312,7 +328,9 @@ zhu <- zhu[, .(
   disease_severity = ifelse(grepl("COV", subject), "moderate",
                             ifelse(grepl("Flu", subject), "flu", "healthy")),
   days_since_symptom_onset = symptom_offset + timepoint - 1,
-  days_since_hospitalization = hospitalization_offset + timepoint -1
+  days_since_hospitalization = hospitalization_offset + timepoint -1,
+  days_since_symptom_onset_estimated = FALSE,
+  days_since_hospitalization_estimated = FALSE
 )]
 
 
@@ -338,7 +356,9 @@ arunachalam <- unique(mList$arunachalam_2020[, .(sample_name,
   disease_status = ifelse(disease_status == "COVID-19", "COVID-19", "healthy"),
   disease_severity = ifelse(disease_status == "COVID-19", "moderate", "healthy"),
   days_since_symptom_onset = days_since_symptom_onset,
-  days_since_hospitalization = NA
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = FALSE,
+  days_since_hospitalization_estimated = TRUE
 )]
 
 # update to severe based on supplementary table ICU
@@ -364,8 +384,15 @@ yu <- yu[, .(
   disease_status = ifelse(grepl("HD", patient), "healthy", "COVID-19"),
   disease_severity = ifelse(grepl("mild", description), "moderate", "healthy"),
   days_since_symptom_onset = NA,
-  days_since_hospitalization = days_since_hospitalization
+  days_since_hospitalization = days_since_hospitalization,
+  days_since_symptom_onset_estimated = TRUE,
+  days_since_hospitalization_estimated = FALSE
 )]
+# NA timepoine for PM3CM3-Combine
+yu[is.na(days_since_hospitalization), `:=`(days_since_symptom_onset_estimated = NA,
+                                           days_since_hospitalization_estimated = NA)]
+
+
 
 
 # ----- su -----
@@ -411,7 +438,9 @@ su <- su[, .(
                                    ifelse(location == "healthy", "healthy", "mild"))),
   days_since_symptom_onset = ifelse(timepoint == "T1", 7,
                                     ifelse(timepoint == "T2", 14, NA)),
-  days_since_hospitalization = NA
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = TRUE,
+  days_since_hospitalization_estimated = TRUE
 )]
 
 
@@ -438,7 +467,9 @@ meckiff <- meckiff[, .(
                             ifelse(grepl("ICU", HOSPITALIZATION), "severe",
                                    ifelse(grepl("Ward", HOSPITALIZATION), "moderate", "mild"))),
   days_since_symptom_onset = `INTERVAL BETWEEN SYMPTOM ONSET TO SAMPLE COLLECTION (DAYS)`,
-  days_since_hospitalization = NA
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = FALSE,
+  days_since_hospitalization_estimated = TRUE
 )]
 
 all_meta <- rbind(
@@ -454,10 +485,25 @@ all_meta <- rbind(
   su,
   meckiff
 )
-all_meta <- all_meta[disease_status == "healthy", disease_severity := "healthy"][, -"timepoint"]
+all_meta <- all_meta[disease_status == "healthy", disease_severity := "healthy"]
 all_meta[, `:=`(days_since_symptom_onset = as.numeric(days_since_symptom_onset),
                 days_since_hospitalization = as.numeric(days_since_hospitalization))]
-all_meta[, days_since_symptom_onset := ifelse(is.na(days_since_symptom_onset), (days_since_hospitalization + 7), days_since_symptom_onset)]
-all_meta[disease_status != "COVID-19", days_since_symptom_onset := NA]
+
+# estimate days_since_symptom_onset and days_since_hospitalization where missing
+all_meta[days_since_symptom_onset_estimated == TRUE, days_since_symptom_onset := ifelse(is.na(days_since_symptom_onset), (days_since_hospitalization + 7), days_since_symptom_onset)]
+all_meta[days_since_hospitalization_estimated == TRUE, days_since_hospitalization := ifelse(is.na(days_since_hospitalization), (days_since_symptom_onset - 7), days_since_hospitalization)]
+
+# remove estimated days_since_hospitalization for non-hospitalized patients
+all_meta[disease_severity %in% c("mild", "healthy"), `:=`(days_since_hospitalization = NA,
+                                                          days_since_hospitalization_estimated = NA)]
+
+# floor "days_since_symptom_onset" at 0
+all_meta[days_since_hospitalization < 0, days_since_hospitalization := 0]
+
+all_meta[disease_status != "COVID-19", `:=`(
+  days_since_symptom_onset = NA,
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = NA,
+  days_since_hospitalization_estimated = NA)]
 
 fwrite(all_meta, file.path(metadataDir, "all_meta.tsv"), sep = "\t")

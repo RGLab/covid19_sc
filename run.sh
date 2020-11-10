@@ -1,6 +1,7 @@
 #!/bin/bash
 # Usage: ./run.sh dataset_name ncores batch
-# batch is optional
+# batch is optional. If given, normalization will be calculated by
+# batch, and batches will be integrated using SCTransform.
 
 sbatch --constraint=gizmok \
   -J ${1} \
