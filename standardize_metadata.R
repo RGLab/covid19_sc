@@ -252,10 +252,10 @@ lee <- lee[, .(
 # ----- liao -----
 # Disease severity: moderate vs severe
 # NOTE: sex and age missing for controls
-if (!file.exists("/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata/supplemental/liao_2020_meta.txt")) {
+if ( !file.exists(file.path(metadataDir, "supplemental", "liao_2020_meta.txt")) ) {
   # Pull in new version of metadata
   meta_liao <- fread("https://raw.githubusercontent.com/zhangzlab/covid_balf/master/meta.txt")
-  fwrite(meta_liao, "/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata/supplemental/liao_2020_meta.txt")
+  fwrite(meta_liao, file.path(metadataDir, "supplemental", "liao_2020_meta.txt"))
 }
 meta_liao <- fread(file.path(metadataDir, "supplemental", "liao_2020_meta.txt"))
 

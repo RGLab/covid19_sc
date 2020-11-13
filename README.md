@@ -30,9 +30,11 @@ Two datasets also included protein expression data. On these datasets, we also n
   * `run.sh su_2020 16`
   * `run.sh yu_2020 16`
   * `run.sh wen_2020 4`
+  
 Two datasets were run with batch correction: 
   * `run.sh liao_2020 8 sample`
   * `run.sh zhu_2020 8 batch`
+  
 One dataset was too large to run the mapping step in one batch, so the mapping was done using the `map_to_reference.R` script: 
   ```
   run.sh su_2020 16
@@ -63,8 +65,8 @@ onset are known:
   and hospitalization would happen on a similar timeline. `T2` (approximately 
   one week later) was assigned `14`. 
   2. wen_2020: Early recovery stage (ERS) patients were assigned `15`. Late recovery stage (LRS) patients
-  were assigned `29`. These numbers are rough estimates, based on the CDC guidelines for healthcare workers (https://www.cdc.gov/coronavirus/2019-ncov/hcp/duration-isolation.html).
-    1. The early-recovery stage (ERS) of COVID-19 patients are defined as the date of nucleic acid turning negative to blood sampling is less than seven days.
+  were assigned `29`. These numbers are rough estimates, based on the CDC guidelines for healthcare workers (https://www.cdc.gov/coronavirus/2019-ncov/hcp/duration-isolation.html).  
+    1. The early-recovery stage (ERS) of COVID-19 patients are defined as the date of nucleic acid turning negative to blood sampling is less than seven days.  
     2. The late-recovery stage (LRS) of COVID-19 patients are defined as the date of nucleic acid turning negative to blood sampling is more than fourteen days.
 
 

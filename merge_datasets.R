@@ -4,6 +4,7 @@ setDTthreads(4)
 
 h5seuratDir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/h5seurat"
 metadataDir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata"
+savePath <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/seu/covid19_datasets.rds"
 datasets <- c("wilk_2020",
               "chua_2020",
               "silvin_2020",
@@ -17,7 +18,6 @@ datasets <- c("wilk_2020",
               "meckiff_2020")
 all_meta <- fread(file.path(metadataDir, "all_meta.tsv"))
 
-# hfile <- Connect("/fh/fast/gottardo_r/hmiller_working/silvin_2020_test.h5seurat")
 # Load
 seuList <- lapply(datasets, function(dataset_name) {
   message("-----", dataset_name, "-----")
@@ -74,7 +74,7 @@ bigSeu <- merge(seuList[[1]],
 # current assay.
 bigSeu[["ref.umap"]]@assay.used <- "SCT"
 
-message(">>> saving to /fh/fast/gottardo_r/ytian_working/covid19_datasets/seu/covid19_datasets.rds")
-saveRDS(bigSeu, "/fh/fast/gottardo_r/ytian_working/covid19_datasets/seu/covid19_datasets.rds")
+message(">>> saving to ", savePath)
+saveRDS(bigSeu, savePath)
 # message(">>> saving to ", file.path(h5seuratDir, "covid19_datasets.h5seurat"))
 # SaveH5Seurat(bigSeu, file.path(h5seuratDir, "covid19_datasets.h5seurat"), overwrite = TRUE)

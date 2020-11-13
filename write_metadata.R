@@ -7,6 +7,7 @@ args = commandArgs(trailingOnly=TRUE)
 
 dataset <- args[1]
 datadir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/h5seurat"
+metadatadir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata"
 
 # Add sample field with timepoint to silvin dataset
 if (dataset == "silvin_2020") {
@@ -37,6 +38,6 @@ metadataList <- lapply(metadataInfo$name, function(x) {
 })
 metadata <- Reduce(cbind, metadataList)
 fwrite(metadata,
-       paste0("/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata/", dataset, ".tsv"),
+       file.path(metadatadir, paste0(dataset, ".tsv")),
        sep = "\t")
 
