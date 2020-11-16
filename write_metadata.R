@@ -6,8 +6,8 @@ library(data.table)
 args = commandArgs(trailingOnly=TRUE)
 
 dataset <- args[1]
-datadir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/h5seurat"
-metadatadir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata"
+datadir <- file.path(Sys.getenv("DATA_DIR"), "h5seurat")
+metadatadir <- file.path(Sys.getenv("DATA_DIR"), "metadata")
 
 # Add sample field with timepoint to silvin dataset
 if (dataset == "silvin_2020") {

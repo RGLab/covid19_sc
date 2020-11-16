@@ -7,7 +7,7 @@ library(data.table)
 setDTthreads(4)
 library(readxl)
 
-metadataDir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata/"
+metadataDir <- file.path(Sys.getenv("DATA_DIR"), "metadata")
 files <- list.files(metadataDir, pattern = ".tsv")
 files <- files[!grepl("all_meta", files)]
 mList <- lapply(file.path(metadataDir, files), fread)

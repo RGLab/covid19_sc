@@ -6,25 +6,28 @@
 message(getwd())
 library(optparse)
 option_list = list(
-  make_option(c("-i", "--inpath"),
-              help = "path to load input seurat object",
-              default = ""),
-  make_option(c("-o", "--outpath"),
-              help = "path to store final seurat object",
-              default = ""),
+  make_option(c("-D", "--dataset"),
+              help = "name of dataset"),
+  make_option(c("-i", "--indir"),
+              help = "directory with preprocessed datasets",
+              default = file.path(Sys.getenv("DATA_DIR"), "seu")),
+  make_option(c("-o", "--outdir"),
+              help = "directory to store final processed dataset",
+              default = file.path(Sys.getenv("DATA_DIR"), "seu")),
   make_option(c("-d", "--debugdir"),
               help = "path to store intermediate objects for debugging",
-              default = ""),
+              default = Sys.getenv("DEBUG_DIR")),
   make_option(c("-r", "--referencedat"),
               help = "path to reference data for mapping",
-              default = ""),
-  make_option(c("-s", "--hpath"),
-              help = "path to save h5Seurat object"),
+              default = Sys.getenv("REFERENCE_DATASET")),
+  make_option(c("-s", "--hdir"),
+              help = "directory to save h5Seurat object",
+              default = file.path(Sys.getenv("DATA_DIR", "h5seurat"))),
   make_option(c("-l", "--plotdir"),
               help = "path to write plots",
-              default = ""),
+              default = file.path(Sys.getenv("DATA_DIR", "plots_seurat"))),
   make_option(c("-b", "--batch"),
-              help = "(optional) batch field. If specified, batches will be aligned using SCTransform methods.",
+              help = "(optional) batch field. If specified, batches will be noramalized separately and aligned using SCTransform methods.",
               default = "null")
 )
 
@@ -32,17 +35,20 @@ opt_parser = OptionParser(option_list=option_list)
 opt = parse_args(opt_parser)
 message(paste0(capture.output(opt), collaps = "\n"))
 # check args
-if (!file.exists(opt$inpath)) {
-  stop("could not find ", opt$inpath)
+inpath <- file.path(opt$indir, paste0(opt$dataset, "_step1.rds"))
+if (!file.exists(inpath)) {
+  stop("could not find ", inpath)
 }
-if (!dir.exists(opt$debugdir)) {
-  message("creating debug dir: ", opt$debugdir)
-  dir.create(opt$debugdir)
+debugdir <- file.path(opt$debugdir, opt$dataset)
+if (!dir.exists(debugdir)) {
+  message("creating debug dir: ", debugdir)
+  dir.create(debugdir)
 }
-if (!dir.exists(opt$plotdir)) {
-  dir.create(opt$plotdir)
+plotdir <- file.path(opt$plotdir, opt$dataset)
+if (!dir.exists(plotdir)) {
+  dir.create(plotdir)
 }
-plotDir <- opt$plotdir
+
 if (!file.exists(opt$referencedat)) {
   stop("could not find ", opt$referencedat)
 }
@@ -71,8 +77,8 @@ if (FALSE) {
 }
 
 # ----- START -----
-message(">>> Reading input: ", opt$inpath)
-seu <- readRDS(opt$inpath)
+message(">>> Reading input: ", inpath)
+seu <- readRDS(inpath)
 seu <- UpdateSeuratObject(seu)
 DefaultAssay(seu) <- "RNA"
 
@@ -84,7 +90,7 @@ message(">>> QC cells...")
 seu[["percent.mt"]] <- PercentageFeatureSet(seu, pattern = "^MT-")
 
 # Write out some diagnostic plots
-pdf(file=file.path(plotDir, "QC.pdf"),
+pdf(file=file.path(plotdir, "QC.pdf"),
     paper="USr")
 plot1 <- VlnPlot(seu, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 plot2 <- FeatureScatter(seu, feature1 = "nCount_RNA", feature2 = "percent.mt") +
@@ -122,8 +128,8 @@ if (opt$batch == "null") {
                        verbose = FALSE)
   rm(seu.list)
   rm(seu.anchors)
-  message(">>> Saving integrated data to ", opt$debugdir)
-  saveRDS(seu, file.path(opt$debugdir, "integrated.rds"))
+  message(">>> Saving integrated data to ", debugdir)
+  saveRDS(seu, file.path(debugdir, "integrated.rds"))
 }
 
 # If batch integration has occured, PCs, clusters, and UMAP will
@@ -182,8 +188,8 @@ if (adt) {
   seu <- RunUMAP(seu, nn.name = "weighted.nn", reduction.name = "wnn.umap",
                  reduction.key = "wnnUMAP_")
 }
-message(">>> Saving processed data to ", opt$debugdir)
-saveRDS(seu, file.path(opt$debugdir, "process.rds"))
+message(">>> Saving processed data to ", debugdir)
+saveRDS(seu, file.path(debugdir, "process.rds"))
 
 
 # ----- Map to reference -----
@@ -240,7 +246,7 @@ SaveH5Seurat(seu, file.path(opt$hpath), overwrite = TRUE)
 
 # ----- Plots -----
 ### level1 cell type on rna, adt, wnn, and ref umaps
-pdf(file=file.path(plotDir, "celltypel1.pdf"),
+pdf(file=file.path(plotdir, "celltypel1.pdf"),
     paper="USr")
 p1 <- DimPlot(seu,
               reduction = 'rna.umap',
@@ -269,7 +275,7 @@ p1+p2+p3+p4
 dev.off()
 
 ### l2 labels
-pdf(file=file.path(plotDir, "celltypel2.pdf"),
+pdf(file=file.path(plotdir, "celltypel2.pdf"),
     paper="USr")
 p1 <- DimPlot(seu,
               reduction = 'rna.umap',
@@ -299,7 +305,7 @@ p1+p2+p3+p4
 dev.off()
 
 # Merged UMAP
-pdf(file=file.path(plotDir, "merged.pdf"),
+pdf(file=file.path(plotir, "merged.pdf"),
     paper="USr")
 ggplot(data.frame(merged_umap[[, 1:2]])) +
   geom_point(aes(x = UMAP_1, y = UMAP_2, color = merged_umap@misc$id)) +

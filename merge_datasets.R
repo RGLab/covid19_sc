@@ -2,9 +2,9 @@ library(SeuratDisk)
 library(data.table)
 setDTthreads(4)
 
-h5seuratDir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/h5seurat"
-metadataDir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata"
-savePath <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/seu/covid19_datasets.rds"
+h5seuratDir <- file.path(Sys.getenv("DATA_DIR"), "h5seurat")
+metadataDir <- file.path(Sys.getenv("DATA_DIR"), "metadata")
+savePath <- file.path(Sys.getenv("DATA_DIR"), "seu", "covid19_datasets.rds")
 datasets <- c("wilk_2020",
               "chua_2020",
               "silvin_2020",

@@ -490,6 +490,13 @@
       "Repository": "CRAN",
       "Hash": "3d59212f2814d65dff517e6899813c58"
     },
+    "highr": {
+      "Package": "highr",
+      "Version": "0.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "4dc5bb88961e347a0f4d8aad597cbfac"
+    },
     "hms": {
       "Package": "hms",
       "Version": "0.5.3",
@@ -560,6 +567,13 @@
       "Repository": "CRAN",
       "Hash": "1ec84e070b88b37ed169f19def40d47c"
     },
+    "knitr": {
+      "Package": "knitr",
+      "Version": "1.30",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "eed7ee0d02eee88d53881cdc92457c62"
+    },
     "labeling": {
       "Package": "labeling",
       "Version": "0.4.2",
@@ -622,6 +636,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "1bb58822a20301cee84a41678e25d9b7"
+    },
+    "markdown": {
+      "Package": "markdown",
+      "Version": "1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "61e4a10781dd00d7d81dd06ca9b94e95"
     },
     "matrixStats": {
       "Package": "matrixStats",
@@ -847,6 +868,13 @@
       "Repository": "CRAN",
       "Hash": "843a6af51414bce7f8a8e372f11d6cd0"
     },
+    "rmarkdown": {
+      "Package": "rmarkdown",
+      "Version": "2.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "20a0a94af9e8f7040510447763aab3e9"
+    },
     "rpart": {
       "Package": "rpart",
       "Version": "4.1-15",
@@ -1000,6 +1028,13 @@
       "Repository": "CRAN",
       "Hash": "6ea435c354e8448819627cf686f66e0a"
     },
+    "tinytex": {
+      "Package": "tinytex",
+      "Version": "0.27",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "264b4a31d35bb6833566a7763356ab63"
+    },
     "utf8": {
       "Package": "utf8",
       "Version": "1.1.4",
@@ -1039,6 +1074,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "7307d79f58d1885b38c4f4f1a8cb19dd"
+    },
+    "xfun": {
+      "Package": "xfun",
+      "Version": "0.19",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "a42372606cb76f34da9d090326e9f955"
     },
     "xtable": {
       "Package": "xtable",

@@ -15,7 +15,7 @@ option_list = list(
               default = "/fh/fast/gottardo_r/ytian_working/covid19_datasets/seu/liao_processed.rds"),
   make_option(c("-r", "--referencedat"),
               help = "path to reference data for mapping",
-              default = "/fh/fast/gottardo_r/ytian_working/covid19_datasets/data/seurat/pbmc_multimodal.h5seurat"),
+              default = Sys.getenv("REFERENCE_DATASET")),
   make_option(c("-s", "--hpath"),
               help = "path to save h5Seurat object",
               default = "/fh/fast/gottardo_r/ytian_working/covid19_datasets/h5seurat/liao_2020_processed.h5seurat"),

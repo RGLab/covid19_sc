@@ -4,8 +4,10 @@
 library(SeuratDisk)
 library(data.table)
 
-all_meta <- fread("/fh/fast/gottardo_r/ytian_working/covid19_datasets/metadata/all_meta.tsv")
-h5seuratDir <- "/fh/fast/gottardo_r/ytian_working/covid19_datasets/h5seurat"
+all_meta_path <- file.path(Sys.getenv("DATA_DIR"), "metadata", "all_meta.tsv")
+h5seuratDir <- file.path(Sys.getenv("DATA_DIR"), "h5seurat")
+
+all_meta <- fread(all_meta_path)
 
 merge_standard_fields <- function(datasetname, patient_source_field) {
 
