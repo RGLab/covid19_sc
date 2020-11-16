@@ -1,7 +1,7 @@
 # covid19_sc
 Processing workflow for covid19 single cell data associated with (TODO: link)
 
-## Running code
+## Setup
 ### renv
 This project uses [renv](https://rstudio.github.io/renv/articles/renv.html) for package management. 
 To activate, simply open an R session in the top-level directory of the repo. This will prompt the 
@@ -21,15 +21,15 @@ Paths to data directories are set in the project-local `.Renviron`. All R script
 ```
 DATA_DIR
 ├── data/
-│  ├── __raw data for all datasets__
+│  └── __raw data for all datasets__
 ├── h5seurat
-│  ├── __output h5seurat files__
+│  └── __output h5seurat files__
 ├── metadata
-│  ├── __metadata is written here for intermediate standardization__
+│  └── __metadata is written here for intermediate standardization__
 ├── plots
-│  ├── __process.R writes some diagnostic plots here__
-├── seu
-│  ├── __Preprocessed and processed Seurat objects are written here as .rds files__
+│  └── __process.R writes some diagnostic plots here__
+└── seu
+   └── __Preprocessed and processed Seurat objects are written here as .rds files__
 ```
 
 * `REFERENCE_DATASET` -- Path to a local version of the reference dataset from [Hao et al](https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1) available for download [here](https://atlas.fredhutch.org/data/nygc/multimodal/pbmc_multimodal.h5seurat). 
