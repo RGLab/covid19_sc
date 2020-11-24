@@ -1,5 +1,5 @@
 # covid19_sc
-Processing workflow for covid19 single cell data associated with (TODO: link)
+Processing workflow for covid19 single cell data associated with (TODO: link to paper)
 
 ## Setup
 ### renv
@@ -104,7 +104,7 @@ Standard metadata was merged into each dataset using `merge_metadata.R`.
 
 
 ## Data availability
-Links for data sources as provided by the original publication are available below. Processed datasets ready for analysis are available at `TODO` as Seurat objects or [h5seurat](https://mojaveazure.github.io/seurat-disk/articles/h5Seurat-load.html) files. 
+Links for data sources as provided by the original publication are available below. Processed datasets ready for analysis are available at https://atlas.fredhutch.org/fredhutch/covid/ as Seurat objects or [h5seurat](https://mojaveazure.github.io/seurat-disk/articles/h5Seurat-load.html) files. 
 
 ### Data sources
 Data were downloaded from the following locations: 
