@@ -20,7 +20,7 @@ option_list = list(
   make_option(c("-r", "--referencedat"),
               help = "path to reference data for mapping",
               default = Sys.getenv("REFERENCE_DATASET")),
-  make_option(c("-s", "--hdir"),
+  make_option(c("-s", "--h5dir"),
               help = "directory to save h5Seurat object",
               default = file.path(Sys.getenv("DATA_DIR", "h5seurat"))),
   make_option(c("-l", "--plotdir"),
@@ -35,9 +35,17 @@ opt_parser = OptionParser(option_list=option_list)
 opt = parse_args(opt_parser)
 message(paste0(capture.output(opt), collaps = "\n"))
 # check args
-inpath <- file.path(opt$indir, paste0(opt$dataset, "_step1.rds"))
+inpath <- file.path(opt$indir, paste0(opt$dataset, ".step1.rds"))
 if (!file.exists(inpath)) {
   stop("could not find ", inpath)
+}
+outpath_seu <- file.path(opt$outdir, paste0(opt$dataset, "_processed.rds"))
+if (!dir.exists(opt$outdir)) {
+  stop("could not find ", opt$outdir)
+}
+outpath_h5s <- file.path(opt$h5dir, paste0(opt$dataset, "_processed.h5seurat"))
+if (!dir.exists(opt$h5dir)) {
+  stop("could not find ", opt$h5dir)
 }
 debugdir <- file.path(opt$debugdir, opt$dataset)
 if (!dir.exists(debugdir)) {
@@ -239,9 +247,9 @@ rm(refquery)
 
 # Save output
 message(">>> Saving Seurat object...")
-saveRDS(seu, file.path(opt$outpath))
+saveRDS(seu, file.path(outpath_seu))
 message(">>> Saving h5Seurat object...")
-SaveH5Seurat(seu, file.path(opt$hpath), overwrite = TRUE)
+SaveH5Seurat(seu, file.path(outpath_h5s), overwrite = TRUE)
 
 
 # ----- Plots -----
@@ -305,7 +313,7 @@ p1+p2+p3+p4
 dev.off()
 
 # Merged UMAP
-pdf(file=file.path(plotir, "merged.pdf"),
+pdf(file=file.path(plotdir, "merged.pdf"),
     paper="USr")
 ggplot(data.frame(merged_umap[[, 1:2]])) +
   geom_point(aes(x = UMAP_1, y = UMAP_2, color = merged_umap@misc$id)) +

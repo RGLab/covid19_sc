@@ -1,5 +1,5 @@
 #!/bin/bash
-ml fhR/4.0.2-foss-2019b
+ml fhR/4.0.3-foss-2020b
 cd $wd
 DATASET=$1
 
@@ -9,7 +9,7 @@ DEBUGDIR=/fh/scratch/delete10/gottardo_r/hmiller
 PLOTDIR=/fh/fast/gottardo_r/ytian_working/covid19_datasets/plots_seurat
 
 INDIR=${DATADIR}/seu
-OUTDAT=${DATADIR}/seu
+OUTDIR=${DATADIR}/seu
 H5OUT=${DATADIR}/h5seurat
 
-Rscript process.R -D $DATASET -i $INDIR -o $OUTDIR -d $DEBUGDIR -r $REFERENCEDAT --plotdir $PLOTDIR --hdir $H5OUT -b $batch
+Rscript process.R -D $DATASET -i $INDIR -o $OUTDIR -d $DEBUGDIR -r $REFERENCEDAT --plotdir $PLOTDIR --h5dir $H5OUT -b $batch
