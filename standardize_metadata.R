@@ -472,6 +472,38 @@ meckiff <- meckiff[, .(
   days_since_hospitalization_estimated = TRUE
 )]
 
+# ----- schulte-schrepping -----
+schulte_schrepping <- unique(mList$`schulte-schrepping_2020`[, .(donor,
+                                                                 sampleID,
+                                                                 sex,
+                                                                 disease_stage,
+                                                                 group_per_sample,
+                                                                 days_after_onset,
+                                                                 age,
+                                                                 who_per_sample)])
+# NOTE: Using min of age range for age
+schulte_schrepping <- schulte_schrepping[, .(
+  dataset = "schulte-schrepping_2020",
+  sample_source_field = "sampleID",
+  patient = donor,
+  sample = sampleID,
+  tissue = "PBMC",
+  sex = ifelse(sex == "n/a", NA, sex),
+  age = as.numeric(sub("_\\d+", "", age)),
+  disease_status = ifelse(who_per_sample > 0, "COVID-19", "healthy"),
+  disease_severity = ifelse(who_per_sample == 0, "healthy",
+                            ifelse(who_per_sample < 3, "mild",
+                                   ifelse(who_per_sample < 5, "moderate",
+                                          ifelse(who_per_sample >= 5, "severe", NA)))),
+  days_since_symptom_onset = days_after_onset,
+  days_since_hospitalization = NA,
+  days_since_symptom_onset_estimated = FALSE,
+  days_since_hospitalization_estimated = TRUE
+)]
+
+
+# ----- merge all metadata -----
+
 all_meta <- rbind(
   wilk,
   chua,
@@ -483,7 +515,8 @@ all_meta <- rbind(
   arunachalam,
   yu,
   su,
-  meckiff
+  meckiff,
+  schulte_schrepping
 )
 all_meta <- all_meta[disease_status == "healthy", disease_severity := "healthy"]
 all_meta[, `:=`(days_since_symptom_onset = as.numeric(days_since_symptom_onset),
@@ -497,7 +530,7 @@ all_meta[days_since_hospitalization_estimated == TRUE, days_since_hospitalizatio
 all_meta[disease_severity %in% c("mild", "healthy"), `:=`(days_since_hospitalization = NA,
                                                           days_since_hospitalization_estimated = NA)]
 
-# floor "days_since_symptom_onset" at 0
+# floor "days_since_hospitalization" at 0
 all_meta[days_since_hospitalization < 0, days_since_hospitalization := 0]
 
 all_meta[disease_status != "COVID-19", `:=`(

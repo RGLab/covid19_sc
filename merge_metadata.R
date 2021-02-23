@@ -90,7 +90,8 @@ datasets <- c(
   "arunachalam_2020",
   "yu_2020",
   "su_2020",
-  "meckiff_2020")
+  "meckiff_2020",
+  "schulte-schrepping_2020")
 patient_source_fields <- c(
   "Donor",
   "patient",
@@ -102,7 +103,8 @@ patient_source_fields <- c(
   "sample_name",
   "patient",
   "patient",
-  "orig.donor"
+  "orig.donor",
+  "sampleID"
 )
 
 x <- mapply(merge_standard_fields,
