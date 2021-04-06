@@ -1,0 +1,233 @@
+"","sample","patient_id","age","sex","diagnosis","days_from_first_intubation","scRNAseq_id","superinfection"
+"1","300291725","5746",69.1411133926534,"Female","Non-Pneumonia Control",2,NA,NA
+"2","300306779","4359",59.8542094455852,"Male","Other Pneumonia",1,NA,NA
+"3","300306794","1985",62.6139630390144,"Female","Non-Pneumonia Control",13,NA,NA
+"4","300311424","0970",65.5845311430527,"Male","Non-Pneumonia Control",0,NA,NA
+"5","300311432","0997",62.2663700661647,"Female","Other Pneumonia",19,NA,NA
+"6","300311436","0666",69.795459730778,"Male","Other Pneumonia",9,NA,NA
+"7","300311440","8410",29.9460415240703,"Female","Other Pneumonia",2,NA,NA
+"8","300311456","3232",73.9761578827287,"Male","Other Pneumonia",0,NA,NA
+"9","300311466","3008",71.0986767054529,"Male","Other Pneumonia",1,NA,NA
+"10","300311483","4883",44.9192334017796,"Male","Non-Pneumonia Control",0,NA,NA
+"11","300311813","9625",73.8173625370751,"Male","Other Pneumonia",1,NA,NA
+"12","300311832","7447",34.4798083504449,"Male","Other Pneumonia",2,NA,NA
+"13","300311854","2157",39.3669860825918,"Male","Other Pneumonia",0,NA,NA
+"14","300312388","0914",84.8535249828884,"Male","Non-Pneumonia Control",1,NA,NA
+"15","300312389","5840",63.7338580880675,"Male","Other Pneumonia",5,NA,NA
+"16","300312395","6619",76.1637006616473,"Male","Other Pneumonia",11,NA,NA
+"17","300312398","4801",40.4730778005932,"Male","Other Pneumonia",1,NA,NA
+"18","300312401","5330",64.8235227013461,"Female","Other Pneumonia",3,NA,NA
+"19","300312406","3556",69.6420260095825,"Female","Other Pneumonia",12,NA,NA
+"20","300312413","2135",80.9712525667351,"Male","Non-Pneumonia Control",7,NA,NA
+"21","300312414","9449",73.3574036048369,"Male","Other Pneumonia",1,NA,NA
+"22","300312447","6024",57.4970339949806,"Male","Other Viral Pneumonia",63,NA,"Superinfection"
+"23","304011103","4359",59.8624229979466,"Male","Other Pneumonia",4,NA,NA
+"24","304011110","3020",75.2958019621264,"Male","Other Viral Pneumonia",2,NA,"Primary Only"
+"25","304011126","1936",73.9624686287931,"Female","Other Pneumonia",12,NA,NA
+"26","304011150","8194",58.2444672598677,"Male","Other Pneumonia",16,NA,NA
+"27","304011152","1936",73.9515172256445,"Female","Other Pneumonia",8,NA,NA
+"28","304011159","0207",52.5003422313484,"Female","Other Pneumonia",2,NA,NA
+"29","304011160","1350",84.6428245493954,"Male","Other Viral Pneumonia",8,NA,"Primary Only"
+"30","304011161","4794",64.5962810860141,"Male","Other Pneumonia",2,NA,NA
+"31","304012699","9168",73.401209217431,"Male","Other Pneumonia",0,NA,NA
+"32","304012703","5817",43.2164042892996,"Male","Other Pneumonia",11,NA,NA
+"33","304017012","7447",34.4880219028063,"Male","Other Pneumonia",5,NA,NA
+"34","304017020","2181",60.1883413187315,"Female","Other Pneumonia",3,NA,NA
+"35","304017039","4480",56.9000684462697,"Female","Other Pneumonia",8,NA,NA
+"36","304017043","1985",62.6413415468857,"Female","Non-Pneumonia Control",23,NA,NA
+"37","304017047","5445",68.1115674195756,"Male","Other Pneumonia",10,NA,NA
+"38","304017064","0582",34.3183892311202,"Male","Other Viral Pneumonia",3,NA,"Primary Only"
+"39","304017079","9103",80.5468856947296,"Female","Other Pneumonia",2,NA,NA
+"40","304017499","2515",30.0034223134839,"Male","Other Pneumonia",1,NA,NA
+"41","304017502","5817",43.1999771845768,"Male","Other Pneumonia",5,NA,NA
+"42","304017521","3232",73.9843714350901,"Male","Other Pneumonia",3,NA,NA
+"43","304017531","6520",80.26575342,"Female","Other Pneumonia",1,NA,NA
+"44","304017553","2693",66.6440793976728,"Female","Other Pneumonia",2,NA,NA
+"45","304019063","9060",20.7741273100616,"Male","Non-Pneumonia Control",5,NA,NA
+"46","304019079","6680",73.5134610997034,"Male","Other Pneumonia",2,NA,NA
+"47","304019103","9625",73.8255760894365,"Male","Other Pneumonia",4,NA,NA
+"48","304019111","8958",78.1349532283824,"Female","Other Pneumonia",9,NA,NA
+"49","304019119","9056",58.2691079169519,"Male","Other Pneumonia",0,NA,NA
+"50","304020298","5330",64.8317362537075,"Female","Other Pneumonia",6,NA,NA
+"51","304020306","3542",64.5030800821355,"Female","Other Pneumonia",9,NA,NA
+"52","304020314","3752",60.2156057494867,"Female","Non-Pneumonia Control",15,NA,NA
+"53","304020322","3232",73.9953228382386,"Male","Other Pneumonia",7,NA,NA
+"54","304020328","3498",25.7953456536619,"Male","Other Pneumonia",0,NA,NA
+"55","304020332","5840",63.7448094912161,"Male","Other Pneumonia",9,NA,NA
+"56","304020336","3008",71.1068902578143,"Male","Other Pneumonia",4,NA,NA
+"57","304020340","1899",65.6804699977185,"Female","Other Viral Pneumonia",2,NA,"Superinfection"
+"58","304020345","7180",48.4811772758385,"Female","Other Viral Pneumonia",1,NA,"Primary Only"
+"59","304020349","0086",75.1479580196213,"Male","Other Viral Pneumonia",18,NA,"Primary Only"
+"60","304020361","0118",67.0932010038786,"Male","Other Pneumonia",1,NA,NA
+"61","304020362","3020",75.3040155144878,"Male","Other Viral Pneumonia",5,NA,"Primary Only"
+"62","304020363","4631",58.40273973,"Male","Non-Pneumonia Control",49,NA,NA
+"63","304020370","0666",69.8146246862879,"Male","Other Pneumonia",16,NA,NA
+"64","340195046","6174",52.5606890257814,"Female","COVID-19",10,NA,"Superinfection"
+"65","340195048","2626",46.6469313255761,"Male","COVID-19",5,NA,"Primary Only"
+"66","340195058","0312",72.7413871777322,"Female","Non-Pneumonia Control",14,NA,NA
+"67","340197074","0678",64.9220853296829,"Male","COVID-19",7,NA,"Primary Only"
+"68","340197122","1487",51.8378964179786,"Female","COVID-19",4,NA,"Superinfection"
+"69","340199383","4014",44.4318959616701,"Male","COVID-19",6,NA,"Primary Only"
+"70","340199430","2063",28.1498973305955,"Female","COVID-19",0,NA,"Primary Only"
+"71","340201217","8435",30,"Female","Healthy Control",NA,NA,NA
+"72","340201240","4567",48.054186630162,"Male","COVID-19",0,"B","Primary Only"
+"73","340206655","6375",49.9077116130504,"Male","Other Pneumonia",41,NA,NA
+"74","340206672","8953",66.7700205338809,"Male","Other Pneumonia",1,NA,NA
+"75","340206728","3164",50.9453570613735,"Male","COVID-19",7,NA,"Primary Only"
+"76","340206734","7861",72.2950034223135,"Male","Other Pneumonia",0,NA,NA
+"77","340207328","6990",44.965890942277,"Male","COVID-19",8,NA,"Superinfection"
+"78","340207360","1836",43.5285192790326,"Male","COVID-19",0,NA,"Superinfection"
+"79","340211907","7705",37.0945699292722,"Male","Other Pneumonia",23,NA,NA
+"80","340224808","0674",34.9507186858316,"Female","Other Viral Pneumonia",Inf,NA,"Primary Only"
+"81","340224809","4575",84.1144193474789,"Male","Non-Pneumonia Control",2,NA,NA
+"82","340224816","0951",75.9391968971024,"Male","Other Pneumonia",25,NA,NA
+"83","340224819","4922",39.4217430983345,"Male","Other Pneumonia",1,NA,NA
+"84","340224825","2636",49.0971937029432,"Male","Non-Pneumonia Control",2,NA,NA
+"85","340228397","4693",49.3218115446042,"Male","Other Pneumonia",1,NA,NA
+"86","340228398","9183",62.6002737850787,"Male","Other Pneumonia",18,NA,NA
+"87","340228401","4589",70.0747205110655,"Male","Other Pneumonia",2,NA,NA
+"88","340233844","0678",64.9138717773215,"Male","COVID-19",4,NA,"Superinfection"
+"89","340233849","0979",52.1444216290212,"Male","COVID-19",44,NA,"Primary Only"
+"90","340233850","4014",44.4182067077344,"Male","COVID-19",1,NA,"Primary Only"
+"91","340233851","0517",58.5155144877938,"Male","Other Viral Pneumonia",2,NA,"Primary Only"
+"92","340233852","9871",58.5263518138261,"Female","Other Pneumonia",16,NA,NA
+"93","340233853","0791",67.8213552361396,"Female","Other Viral Pneumonia",0,NA,"Primary Only"
+"94","340233856","3793",46.6879990873831,"Male","COVID-19",12,NA,"Primary Only"
+"95","340233857","6460",70.2908966461328,"Female","Non-Pneumonia Control",1,NA,NA
+"96","340233858","1471",51.788501026694,"Male","Other Pneumonia",26,NA,NA
+"97","340233860","3342",38.8713210130048,"Female","Other Viral Pneumonia",17,NA,"Superinfection"
+"98","340233861","0221",70.8303673283139,"Male","Other Pneumonia",23,NA,NA
+"99","340233864","0979",52.1143052703628,"Male","COVID-19",33,NA,"Superinfection"
+"100","340233865","3833",28.7988820442619,"Female","Non-Pneumonia Control",0,NA,NA
+"101","340233867","0387",51.0110654802647,"Female","COVID-19",8,NA,"Superinfection"
+"102","340233868","8782",74.6003878621949,"Male","Other Pneumonia",2,NA,NA
+"103","340233872","2483",65.9378279717089,"Female","Non-Pneumonia Control",2,NA,NA
+"104","340233881","0129",59.69041096,"Female","COVID-19",17,NA,NA
+"105","340233886","3164",50.9754734200319,"Male","COVID-19",18,NA,"Superinfection"
+"106","340233888","6608",87.1889117043121,"Female","Other Pneumonia",2,NA,NA
+"107","340233896","0391",61.609285877253,"Female","COVID-19",15,NA,"Primary Only"
+"108","340233904","2434",52.8945927446954,"Male","Other Viral Pneumonia",0,NA,"Primary Only"
+"109","340233906","1560",64.1088295687885,"Male","COVID-19",5,NA,"Primary Only"
+"110","340233911","3778",37.2915811088296,"Male","Other Pneumonia",0,NA,NA
+"111","340233920","7715",62.48493151,"Female","Non-Pneumonia Control",51,NA,NA
+"112","340234645","0424",37.7653433721196,"Male","COVID-19",11,NA,"Primary Only"
+"113","340235090","1500",47.7612365959389,"Female","Other Viral Pneumonia",3,NA,"Primary Only"
+"114","340235091","9978",59.7145790554415,"Female","Other Pneumonia",5,NA,NA
+"115","340235105","5446",88.0485968514716,"Male","Other Viral Pneumonia",0,NA,"Primary Only"
+"116","340235110","4217",34.0281770476842,"Female","Other Pneumonia",4,NA,NA
+"117","340235120_R","8175",51.2191421400867,"Female","Other Pneumonia",2,NA,NA
+"118","340235121","1404",70.4333789641798,"Female","Other Pneumonia",56,NA,NA
+"119","340235125","5982",57.423112023728,"Male","Other Viral Pneumonia",0,NA,"Primary Only"
+"120","340235126","6504",69.7379648642482,"Female","Other Viral Pneumonia",0,NA,"Primary Only"
+"121","340235128","1471",51.7337440109514,"Male","Other Pneumonia",6,NA,NA
+"122","340235136","5987",120.103353867214,"Female","Other Pneumonia",0,NA,NA
+"123","340235140","5637",73.2067077344285,"Male","Other Pneumonia",0,NA,NA
+"124","340235141","2928",19.6379192334018,"Male","Non-Pneumonia Control",1,NA,NA
+"125","340235148","7293",68.262263289984,"Female","Other Pneumonia",0,NA,NA
+"126","340235149","5476",31.0877253023044,"Female","Other Pneumonia",2,NA,NA
+"127","340235150","8965",69.031485284052,"Female","Other Pneumonia",23,NA,NA
+"128","340235158","8491",72.5059320100388,"Female","Other Pneumonia",3,NA,NA
+"129","340235159","3363",77.3107460643395,"Female","Other Viral Pneumonia",1,NA,"Primary Only"
+"130","340235161","7293",68.2841660962811,"Female","Other Pneumonia",8,NA,NA
+"131","340235166","2704",85.8555783709788,"Female","Other Pneumonia",0,NA,NA
+"132","340235168","0393",75.6161305042208,"Male","Other Pneumonia",5,NA,NA
+"133","340235169","9193",42.8767967145791,"Male","Non-Pneumonia Control",0,NA,NA
+"134","340235173","6552",50.4058863791923,"Female","Other Pneumonia",7,NA,NA
+"135","340235175","8916",55.5366187542779,"Male","Other Viral Pneumonia",7,NA,"Primary Only"
+"136","340235376","2063",28.1553730321697,"Female","COVID-19",2,NA,"Primary Only"
+"137","340236042","0043",72.2895277207392,"Female","COVID-19",1,NA,"Primary Only"
+"138","340236044","9988",72.5277207392197,"Male","COVID-19",1,"3","Primary Only"
+"139","340236045","3298",58.8358430298882,"Male","Other Pneumonia",30,NA,NA
+"140","340236050","4096",32,"Female","Healthy Control",NA,NA,NA
+"141","340236051","3164",50.9672598676705,"Male","COVID-19",15,NA,"Superinfection"
+"142","340236054","3247",35.0247547342003,"Female","Other Pneumonia",7,NA,NA
+"143","340236056","6334",86.4551676933607,"Male","COVID-19",29,NA,"Superinfection"
+"144","340236058","1294",46,"Female","Healthy Control",NA,NA,NA
+"145","340236060","3164",51.0192790326261,"Male","COVID-19",34,NA,"Superinfection"
+"146","340236066","1471",51.7994524298426,"Male","Other Pneumonia",30,NA,NA
+"147","340236067","4263",36.8289984029204,"Female","Other Pneumonia",4,NA,NA
+"148","340236075","2062",61.6558293406343,"Female","COVID-19",1,"9","Primary Only"
+"149","340236077","0791",67.8268309377139,"Female","Other Viral Pneumonia",2,NA,"Primary Only"
+"150","340236083","2063",28.1690622861054,"Female","COVID-19",7,NA,NA
+"151","340236089","6962",72.3416609628109,"Female","Other Pneumonia",1,NA,NA
+"152","340236090","2063",28.1800136892539,"Female","COVID-19",11,NA,"Superinfection"
+"153","340236091","4598",52.6209217430983,"Male","COVID-19",27,NA,"Superinfection"
+"154","340236096","7208",37.258726899384,"Male","COVID-19",1,NA,"Primary Only"
+"155","340236097","6811",58.1731690622861,"Male","Non-Pneumonia Control",4,NA,NA
+"156","340236102","6388",42.3401779603012,"Male","Non-Pneumonia Control",1,NA,NA
+"157","340236118","4410",60.0759753593429,"Male","Other Viral Pneumonia",6,NA,"Primary Only"
+"158","340236128","1750",77.1000456308465,"Male","COVID-19",0,NA,"Primary Only"
+"159","340236134","5982",57.4368012776637,"Male","Other Viral Pneumonia",5,NA,"Superinfection"
+"160","340236135","3271",56.1690622861054,"Female","COVID-19",1,NA,"Primary Only"
+"161","340236136","1783",80.987793748574,"Male","Other Pneumonia",1,NA,NA
+"162","340236729","5357",25,"Female","Healthy Control",NA,NA,NA
+"163","340237150","4644",46.791923340178,"Female","Other Pneumonia",9,NA,NA
+"164","340237794","4598",52.6072324891627,"Male","COVID-19",22,NA,"Primary Only"
+"165","340238439","7232",68.4758156513803,"Female","Other Pneumonia",2,NA,NA
+"166","340238496","3342",38.8521560574949,"Female","Other Viral Pneumonia",10,NA,"Primary Only"
+"167","340238513","7357",83.6133926534337,"Male","Other Pneumonia",29,NA,NA
+"168","340238687","5660",69.9159251654118,"Female","Other Pneumonia",16,NA,NA
+"169","340238691","0576",29.5189368012777,"Male","Other Pneumonia",5,NA,NA
+"170","340238716","7027",34.4770704996578,"Female","Other Pneumonia",2,NA,NA
+"171","340238739","7715",62.41369863,"Female","Non-Pneumonia Control",25,NA,NA
+"172","340238927","7754",75.3423454255076,"Female","Other Viral Pneumonia",2,NA,"Primary Only"
+"173","340239607","8807",64.4373716632443,"Male","COVID-19",0,NA,"Primary Only"
+"174","340239782","3342",38.8302532511978,"Female","Other Viral Pneumonia",2,NA,"Primary Only"
+"175","340239784","7013",53.713324207164,"Male","Other Pneumonia",Inf,NA,NA
+"176","340239788","1102",62.1841204654346,"Male","COVID-19",43,NA,"Superinfection"
+"177","340239789","4598",52.593543235227,"Male","COVID-19",17,NA,"Primary Only"
+"178","340239790","2460",73.6366643851243,"Male","COVID-19",24,NA,"Primary Only"
+"179","340239792","2888",58.4936116814967,"Female","Other Viral Pneumonia",22,NA,"Primary Only"
+"180","340239797","9183",62.5865845311431,"Male","Other Pneumonia",13,NA,NA
+"181","340239802","2702",32.8563769107917,"Male","Other Pneumonia",3,NA,NA
+"182","340239804","2626",46.6633584302989,"Male","COVID-19",11,NA,"Superinfection"
+"183","340239805","9821",56.0485968514716,"Female","COVID-19",12,NA,"Primary Only"
+"184","340239806","9978",59.7063655030801,"Female","Other Pneumonia",2,NA,NA
+"185","340239808","8217",87.9144421629021,"Female","Non-Pneumonia Control",1,NA,NA
+"186","340239818","0051",60.5606890257814,"Male","COVID-19",2,NA,NA
+"187","340239821","0954",69.8666438512434,"Male","Other Viral Pneumonia",7,NA,"Primary Only"
+"188","340239822","0391",61.6147615788273,"Female","COVID-19",17,NA,"Primary Only"
+"189","340239823","9769",61.5381017567876,"Female","COVID-19",3,NA,"Primary Only"
+"190","340239828","7096",42,"Female","Healthy Control",NA,NA,NA
+"191","340239829","3147",61.9979466119097,"Male","Other Pneumonia",0,NA,NA
+"192","340239830","5806",33.6666666666667,"Male","Non-Pneumonia Control",6,NA,NA
+"193","340239838","6276",85.9898471366644,"Male","COVID-19",0,NA,"Primary Only"
+"194","340239839","4598",52.6373488478211,"Male","COVID-19",33,NA,"Superinfection"
+"195","340239840","4217",34.0829340634269,"Female","Other Pneumonia",24,NA,NA
+"196","340239841","2499",50.460643394935,"Male","COVID-19",0,NA,"Primary Only"
+"197","340239842","7642",52.8563769107917,"Male","Other Pneumonia",7,NA,NA
+"198","340239843","0828",66.4743326488706,"Female","COVID-19",15,NA,NA
+"199","340239844","0979",52.1334702258727,"Male","COVID-19",40,NA,"Superinfection"
+"200","340239847","4217",34.044604152407,"Female","Other Pneumonia",10,NA,NA
+"201","340239848","1560",64.09787816564,"Male","COVID-19",1,NA,"Primary Only"
+"202","340239852","3164",51.0110654802647,"Male","COVID-19",31,NA,"Primary Only"
+"203","340239853","6602",64.9850558977869,"Female","Other Pneumonia",1,NA,NA
+"204","340239856","2888",58.5100387862195,"Female","Other Viral Pneumonia",28,NA,"Primary Only"
+"205","340239858","2707",59.7940908053844,"Female","COVID-19",0,NA,"Primary Only"
+"206","340239863","0948",77.2342003194159,"Male","Other Pneumonia",26,NA,NA
+"207","340239864","5516",31.5066164727356,"Female","Other Pneumonia",90,NA,NA
+"208","340239866","4217",34.0582934063427,"Female","Other Pneumonia",15,NA,NA
+"209","340239867","2460",73.6558293406343,"Male","COVID-19",31,NA,"Superinfection"
+"210","340239870","4049",68.697581565138,"Female","Non-Pneumonia Control",4,NA,NA
+"211","368500690","8059",62.3702943189596,"Male","COVID-19",0,"A","Superinfection"
+"212","368500691","8806",55.2819986310746,"Male","COVID-19",1,NA,"Primary Only"
+"213","368522743","4598",52.6866301619895,"Male","COVID-19",51,NA,"Superinfection"
+"214","368522763","2283",72.637234770705,"Male","COVID-19",10,NA,"Superinfection"
+"215","368522765","1014",68.2895277207392,"Female","COVID-19",9,NA,"Primary Only"
+"216","368522776","5771",38.3100616016427,"Male","COVID-19",2,"1","Primary Only"
+"217","368522783","4399",39.5860141455624,"Male","Other Pneumonia",1,"6",NA
+"218","368522785","0812",75.9118183892311,"Male","Other Pneumonia",1,NA,NA
+"219","368522793","5827",32.1909650924025,"Male","COVID-19",6,NA,"Primary Only"
+"220","368522804","4365",30.8851243440566,"Female","COVID-19",2,NA,"Superinfection"
+"221","368522805","9694",27.640771161305,"Female","COVID-19",20,NA,"Primary Only"
+"222","368522831","9115",76.1034679443304,"Male","Other Pneumonia",0,NA,NA
+"223","368523515","6334",86.4661190965092,"Male","COVID-19",33,NA,"Primary Only"
+"224","368523523","1339",46.6962126397445,"Male","COVID-19",3,NA,"Primary Only"
+"225","368523734","6990",44.9850558977869,"Male","COVID-19",15,NA,"Primary Only"
+"226","368524206","9586",36.6510381017568,"Male","COVID-19",1,NA,"Primary Only"
+"227","368524210","4598",52.6592516541182,"Male","COVID-19",41,NA,"Superinfection"
+"228","368524239","1330",43.4325804243669,"Female","COVID-19",28,NA,"Primary Only"
+"229","368524253","3878",44.6044946383755,"Male","COVID-19",42,NA,"Primary Only"
+"230","368524275","2800",38.8413187314625,"Male","COVID-19",7,NA,"Superinfection"
+"231","368525513","1102",62.2060232717317,"Male","COVID-19",51,NA,"Primary Only"
+"232","368525517","2283",72.6098562628337,"Male","COVID-19",0,NA,"Primary Only"

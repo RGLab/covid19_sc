@@ -1,6 +1,6 @@
 # Data is saved in subdirectories under DATA_DIR
 DATA_DIR=/fh/fast/gottardo_r/ytian_working/covid19_datasets
 # Location of reference dataset, downloaded from https://atlas.fredhutch.org/data/nygc/multimodal/pbmc_multimodal.h5seurat
-REFERENCE_DATASET=/fh/fast/gottardo_r/ytian_working/covid19_datasets/data/seurat/pbmc_multimodal.h5seurat
+REFERENCE_DATASET=/fh/scratch/delete10/gottardo_r/hmiller/pbmc_multimodal.h5seurat
 # Directory to save intermediate objects for debugging
 DEBUG_DIR=/fh/scratch/delete10/gottardo_r/hmiller

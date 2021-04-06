@@ -1,0 +1,13 @@
+ID	Infection	Response	ICU	Day	Age	Sex	Ethnicity
+cov1	COVID-19	Severe, dec.	Y	15	60	F	B
+cov2	COVID-19	Severe	N	15	75	F	W
+cov3	COVID-19	Severe	N	16	59	M	B
+cov4	COVID-19	Severe	N	8	48	M	B
+cov5	COVID-19	Moderate	N	9	53	F	B
+cov6	COVID-19	Moderate	N	2	75	F	W
+cov7	COVID-19	Moderate	N	9	47	F	B
+hd1	Healthy	–	– 	– 	84	F	W
+hd2	Healthy	–	–	–	68	F	W
+hd3	Healthy	–	–	–	38	M	W
+hd4	Healthy	–	–	–	90	M	W
+hd5	Healthy	–	–	–	70	F	W

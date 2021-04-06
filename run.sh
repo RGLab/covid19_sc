@@ -11,5 +11,5 @@ sbatch --constraint=gizmok \
   --cpus-per-task=$2 \
   --time=48:00:00 \
   --export=wd=${0%/*},batch=${3-null}\
-  process.sh ${1}
+  ./process/process.sh ${1}
 

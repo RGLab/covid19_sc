@@ -1,0 +1,1084 @@
+dataset	sample_source_field	patient	sample	tissue	sample_type	sample_type_note	sex	age	race_reported	covid19	disease_status	disease_severity	days_since_symptom_onset	days_since_hospitalization	days_since_symptom_onset_estimated	days_since_hospitalization_estimated
+wilk_2020	Donor.full	C1	C1 A	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	9	2	FALSE	TRUE
+wilk_2020	Donor.full	C1	C1 B	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	11	4	FALSE	TRUE
+wilk_2020	Donor.full	C2	C2	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	16	9	FALSE	TRUE
+wilk_2020	Donor.full	C3	C3	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	9	2	FALSE	TRUE
+wilk_2020	Donor.full	C4	C4	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	9	2	FALSE	TRUE
+wilk_2020	Donor.full	C5	C5	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	15	8	FALSE	TRUE
+wilk_2020	Donor.full	C6	C6	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	2	0	FALSE	TRUE
+wilk_2020	Donor.full	C7	C7	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	12	5	FALSE	TRUE
+wilk_2020	Donor.full	H1	H1	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+wilk_2020	Donor.full	H2	H2	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+wilk_2020	Donor.full	H3	H3	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+wilk_2020	Donor.full	H4	H4	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+wilk_2020	Donor.full	H5	H5	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+wilk_2020	Donor.full	H6	H6	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+chua_2020	sample	BIH-CoV-15	BIH-CoV-15_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	21		TRUE	COVID-19	moderate	25	18	FALSE	TRUE
+chua_2020	sample	BIH-CoV-15	BIH-CoV-15_NS_2	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	21		TRUE	COVID-19	moderate	27	20	FALSE	TRUE
+chua_2020	sample	BIH-CoV-15	BIH-CoV-15_NS_4	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	21		TRUE	COVID-19	moderate	30	23	FALSE	TRUE
+chua_2020	sample	BIH-CoV-15	BIH-CoV-15_NS_3	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	21		TRUE	COVID-19	moderate	33	26	FALSE	TRUE
+chua_2020	sample	BIH-CoV-14	BIH-CoV-14_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	45		TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+chua_2020	sample	BIH-CoV-14	BIH-CoV-14_NS_2	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	45		TRUE	COVID-19	moderate	16	9	FALSE	TRUE
+chua_2020	sample	BIH-CoV-16	BIH-CoV-16_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		female	50		TRUE	COVID-19	moderate	10	3	FALSE	TRUE
+chua_2020	sample	BIH-CoV-13	BIH-CoV-13_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	52		TRUE	COVID-19	moderate	10	3	FALSE	TRUE
+chua_2020	sample	BIH-CoV-19	BIH-CoV-19_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	64		TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+chua_2020	sample	BIH-CoV-12	BIH-CoV-12_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	71		TRUE	COVID-19	moderate	16	9	FALSE	TRUE
+chua_2020	sample	BIH-CoV-12	BIH-CoV-12_NS_2	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	71		TRUE	COVID-19	moderate	18	11	FALSE	TRUE
+chua_2020	sample	BIH-CoV-12	BIH-CoV-12_NS_3	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	71		TRUE	COVID-19	moderate	21	14	FALSE	TRUE
+chua_2020	sample	BIH-CoV-17	BIH-CoV-17_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	73		TRUE	COVID-19	moderate	30	23	FALSE	TRUE
+chua_2020	sample	BIH-CoV-18	BIH-CoV-18_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	76		TRUE	COVID-19	moderate	3	0	FALSE	TRUE
+chua_2020	sample	BIH-CoV-07	BIH-CoV-07_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	32		TRUE	COVID-19	severe	8	1	FALSE	TRUE
+chua_2020	sample	BIH-CoV-07	BIH-CoV-07_NS_2	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	32		TRUE	COVID-19	severe	11	4	FALSE	TRUE
+chua_2020	sample	BIH-CoV-11	BIH-CoV-11_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	61		TRUE	COVID-19	severe	11	4	FALSE	TRUE
+chua_2020	sample	BIH-CoV-06	BIH-CoV-06_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	63		TRUE	COVID-19	severe	4	0	FALSE	TRUE
+chua_2020	sample	BIH-CoV-06	BIH-CoV-06_NS_2	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	63		TRUE	COVID-19	severe	7	0	FALSE	TRUE
+chua_2020	sample	BIH-CoV-05	BIH-CoV-05_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	75		TRUE	COVID-19	severe	7	0	FALSE	TRUE
+chua_2020	sample	BIH-CoV-09	BIH-CoV-09_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		female	53		TRUE	COVID-19	severe	12	5	FALSE	TRUE
+chua_2020	sample	BIH-CoV-03	BIH-CoV-03_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	52		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+chua_2020	sample	BIH-CoV-08	BIH-CoV-08_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		female	62		TRUE	COVID-19	severe	8	1	FALSE	TRUE
+chua_2020	sample	BIH-CoV-04	BIH-CoV-04_BL_1	Bronchus	Bronchial Lavage		male	73		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+chua_2020	sample	BIH-CoV-04	BIH-CoV-04_PS_1	Bronchus	Bronchial Protected Specimen Brush		male	73		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+chua_2020	sample	BIH-CoV-04	BIH-CoV-04_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	73		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+chua_2020	sample	BIH-CoV-10	BIH-CoV-10_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	68		TRUE	COVID-19	severe	20	13	FALSE	TRUE
+chua_2020	sample	BIH-CoV-01	BIH-CoV-01_BL_1	Bronchus	Bronchial Lavage		female	50		TRUE	COVID-19	severe	17	10	FALSE	TRUE
+chua_2020	sample	BIH-CoV-01	BIH-CoV-01_PS_1	Bronchus	Bronchial Protected Specimen Brush		female	50		TRUE	COVID-19	severe	17	10	FALSE	TRUE
+chua_2020	sample	BIH-CoV-01	BIH-CoV-01_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		female	50		TRUE	COVID-19	severe	17	10	FALSE	TRUE
+chua_2020	sample	BIH-CoV-02	BIH-CoV-02_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs		male	54		TRUE	COVID-19	severe	7	0	FALSE	TRUE
+chua_2020	sample	BIH-Con-01	BIH-Con-01_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs					FALSE	healthy					
+chua_2020	sample	BIH-Con-02	BIH-Con-02_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs					FALSE	healthy					
+chua_2020	sample	BIH-Con-03	BIH-Con-03_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs					FALSE	healthy					
+chua_2020	sample	BIH-Con-04	BIH-Con-04_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs					FALSE	healthy					
+chua_2020	sample	BIH-Con-05	BIH-Con-05_NS_1	Nasopharynx	Nasopharyngeal or Pooled Nasopharyngeal/Pharyngeal Swabs					FALSE	healthy					
+silvin_2020	sample	Control #1	Control #1_0	Blood	Whole Blood	Red blood cells depleted whole blood	female	54		FALSE	healthy					
+silvin_2020	sample	Control #2	Control #2_0	Blood	Whole Blood	Red blood cells depleted whole blood	female	27		FALSE	healthy					
+silvin_2020	sample	Control #3	Control #3_0	Blood	Whole Blood	Red blood cells depleted whole blood	female	58		FALSE	healthy					
+silvin_2020	sample	SARS-CoV2 pos Mild	SARS-CoV2 pos Mild_0	Blood	Whole Blood	Red blood cells depleted whole blood	female	21		TRUE	COVID-19	mild	7		TRUE	
+silvin_2020	sample	SARS-CoV2 pos Mild	SARS-CoV2 pos Mild_10	Blood	Whole Blood	Red blood cells depleted whole blood	female	21		TRUE	COVID-19	mild	17		TRUE	
+silvin_2020	sample	SARS-CoV2 pos Severe #1	SARS-CoV2 pos Severe #1_0	Blood	Whole Blood	Red blood cells depleted whole blood	male	69		TRUE	COVID-19	severe	21	14	TRUE	FALSE
+silvin_2020	sample	SARS-CoV2 pos Severe #1	SARS-CoV2 pos Severe #1_10	Blood	Whole Blood	Red blood cells depleted whole blood	male	69		TRUE	COVID-19	severe	31	24	TRUE	FALSE
+silvin_2020	sample	SARS-CoV2 pos Severe #2	SARS-CoV2 pos Severe #2_0	Blood	Whole Blood	Red blood cells depleted whole blood	female	26		TRUE	COVID-19	severe	17	10	TRUE	FALSE
+silvin_2020	sample	SARS-CoV2 pos Severe #2	SARS-CoV2 pos Severe #2_10	Blood	Whole Blood	Red blood cells depleted whole blood	female	26		TRUE	COVID-19	severe	27	20	TRUE	FALSE
+silvin_2020	sample	SARS-CoV2 pos Severe #3	SARS-CoV2 pos Severe #3_17	Blood	Whole Blood	Red blood cells depleted whole blood				TRUE	COVID-19	severe	24	17	TRUE	FALSE
+wen_2020	sample	ERS1	ERS1-10X5_S17	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS1	ERS1-10X5_S18	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS1	ERS1-10X5_S19	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS1	ERS1-10X5_S20	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS2	ERS2-10X5_S5	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS2	ERS2-10X5_S6	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS2	ERS2-10X5_S7	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS2	ERS2-10X5_S8	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS3	ERS3-10X5_S10	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS3	ERS3-10X5_S11	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS3	ERS3-10X5_S12	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS3	ERS3-10X5_S9	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS4	ERS4-10X5_S13	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS4	ERS4-10X5_S14	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS4	ERS4-10X5_S15	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS4	ERS4-10X5_S16	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	15	8	TRUE	TRUE
+wen_2020	sample	ERS5	ERS5-10X5_S17	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS5	ERS5-10X5_S18	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS5	ERS5-10X5_S19	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	ERS5	ERS5-10X5_S20	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	15	8	TRUE	TRUE
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S65	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S66	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S67	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S68	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S84	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S85	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S86	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_1	Healthy_Control_1-04-10X5_S87	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_2	Healthy_Control_2-06-10X5_S77	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_2	Healthy_Control_2-06-10X5_S78	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_2	Healthy_Control_2-06-10X5_S79	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_2	Healthy_Control_2-06-10X5_S80	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S17_L004	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S18_L004	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S19_L004	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S20_L004	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S41	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S42	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S43	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S44	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S53	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S54	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S55	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_3	Healthy_Control_3-3-RNA_S56	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_4	Healthy_Control_4-5_S169	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_4	Healthy_Control_4-5_S170	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_4	Healthy_Control_4-5_S171	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_4	Healthy_Control_4-5_S5	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_4	Healthy_Control_4-5_S6	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_4	Healthy_Control_4-5_S7	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_4	Healthy_Control_4-5_S8	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_5	Healthy_Control_5-6_S17	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_5	Healthy_Control_5-6_S18	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_5	Healthy_Control_5-6_S19	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_5	Healthy_Control_5-6_S20	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	Healthy_Control_5	Healthy_Control_5-6_S75	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+wen_2020	sample	LRS1	LRS1-10X5_S1	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS1	LRS1-10X5_S2	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS1	LRS1-10X5_S3	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS1	LRS1-10X5_S4	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS2	LRS2-10X5_S5	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS2	LRS2-10X5_S6	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS2	LRS2-10X5_S7	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS2	LRS2-10X5_S8	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS3	LRS3-10X5_S21	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS3	LRS3-10X5_S22	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS3	LRS3-10X5_S23	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS3	LRS3-10X5_S24	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	29	22	TRUE	TRUE
+wen_2020	sample	LRS4	LRS4-10X5_S61	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS4	LRS4-10X5_S62	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS4	LRS4-10X5_S63	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS4	LRS4-10X5_S64	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS5	LRS5-10X5_S17	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS5	LRS5-10X5_S18	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS5	LRS5-10X5_S19	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+wen_2020	sample	LRS5	LRS5-10X5_S20	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	severe	29	22	TRUE	TRUE
+lee_2020	Patient	F1	Flu 1 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	68		FALSE	other					
+lee_2020	Patient	F2	Flu 2 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	75		FALSE	other					
+lee_2020	Patient	F3	Flu 3 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	70		FALSE	other					
+lee_2020	Patient	F4	Flu 4 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	56		FALSE	other					
+lee_2020	Patient	F5	Flu 5 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	78		FALSE	other					
+lee_2020	Patient	N1	Normal 1 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	63		FALSE	healthy					
+lee_2020	Patient	N2	Normal 2 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	54		FALSE	healthy					
+lee_2020	Patient	N3	Normal 3 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	67		FALSE	healthy					
+lee_2020	Patient	N4	Normal 4 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	63		FALSE	healthy					
+lee_2020	Patient	C1	nCoV 1 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	63		TRUE	COVID-19	severe	23	16	TRUE	FALSE
+lee_2020	Patient	C7	nCoV 10 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	61		TRUE	COVID-19	moderate	17	10	TRUE	FALSE
+lee_2020	Patient	C8	nCoV 11 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	62		TRUE	COVID-19	moderate	12	5	TRUE	FALSE
+lee_2020	Patient	C2	nCoV 2 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	82		TRUE	COVID-19	moderate	17	10	TRUE	FALSE
+lee_2020	Patient	C3	nCoV 3 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	67		TRUE	COVID-19	severe	10	3	TRUE	FALSE
+lee_2020	Patient	C3	nCoV 4 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	67		TRUE	COVID-19	severe	14	7	TRUE	FALSE
+lee_2020	Patient	C4	nCoV 5 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	46		TRUE	COVID-19	moderate	20	13	TRUE	FALSE
+lee_2020	Patient	C5	nCoV 6 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	38		TRUE	COVID-19	moderate	10	3	TRUE	FALSE
+lee_2020	Patient	C6	nCoV 7 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	73		TRUE	COVID-19	severe	12	5	TRUE	FALSE
+lee_2020	Patient	C6	nCoV 8 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		female	73		TRUE	COVID-19	severe	16	9	TRUE	FALSE
+lee_2020	Patient	C7	nCoV 9 scRNA-seq	Blood	Peripheral Blood Mononuclear Cells		male	61		TRUE	COVID-19	severe	10	3	TRUE	FALSE
+liao_2020	sample	HC1	C51	Bronchus	Bronchoalveolar Lavage Fluid					FALSE	healthy					
+liao_2020	sample	HC2	C52	Bronchus	Bronchoalveolar Lavage Fluid					FALSE	healthy					
+liao_2020	sample	HC3	C100	Bronchus	Bronchoalveolar Lavage Fluid					FALSE	healthy					
+liao_2020	sample	HC4	GSM3660650	Bronchus	Bronchoalveolar Lavage Fluid					FALSE	healthy					
+liao_2020	sample	M1	C141	Bronchus	Bronchoalveolar Lavage Fluid		male	36		TRUE	COVID-19	moderate	11	4	FALSE	FALSE
+liao_2020	sample	M2	C142	Bronchus	Bronchoalveolar Lavage Fluid		female	37		TRUE	COVID-19	moderate	9	4	FALSE	FALSE
+liao_2020	sample	M3	C144	Bronchus	Bronchoalveolar Lavage Fluid		male	35		TRUE	COVID-19	moderate	13	7	FALSE	FALSE
+liao_2020	sample	S1	C145	Bronchus	Bronchoalveolar Lavage Fluid		male	62		TRUE	COVID-19	moderate	11	4	FALSE	FALSE
+liao_2020	sample	S2	C143	Bronchus	Bronchoalveolar Lavage Fluid		male	66		TRUE	COVID-19	severe	18	10	FALSE	FALSE
+liao_2020	sample	S3	C146	Bronchus	Bronchoalveolar Lavage Fluid		male	63		TRUE	COVID-19	severe	14	7	FALSE	FALSE
+liao_2020	sample	S4	C148	Bronchus	Bronchoalveolar Lavage Fluid		female	65		TRUE	COVID-19	severe	25	9	FALSE	FALSE
+liao_2020	sample	S5	C149	Bronchus	Bronchoalveolar Lavage Fluid		female	57		TRUE	COVID-19	severe	8	6	FALSE	FALSE
+liao_2020	sample	S6	C152	Bronchus	Bronchoalveolar Lavage Fluid		male	46		TRUE	COVID-19	severe	12	11	FALSE	FALSE
+zhu_2020	batch	COV-1	COV-1-D1	Blood	Peripheral Blood Mononuclear Cells		male	15		TRUE	COVID-19	moderate	7	4	FALSE	FALSE
+zhu_2020	batch	COV-1	COV-1-D4	Blood	Peripheral Blood Mononuclear Cells		male	15		TRUE	COVID-19	moderate	10	7	FALSE	FALSE
+zhu_2020	batch	COV-1	COV-1-D16	Blood	Peripheral Blood Mononuclear Cells		male	15		TRUE	COVID-19	moderate	22	19	FALSE	FALSE
+zhu_2020	batch	COV-2	COV-2-D1	Blood	Peripheral Blood Mononuclear Cells		male	45		TRUE	COVID-19	moderate	7	4	FALSE	FALSE
+zhu_2020	batch	COV-2	COV-2-D4	Blood	Peripheral Blood Mononuclear Cells		male	45		TRUE	COVID-19	moderate	10	7	FALSE	FALSE
+zhu_2020	batch	COV-2	COV-2-D7	Blood	Peripheral Blood Mononuclear Cells		male	45		TRUE	COVID-19	moderate	13	10	FALSE	FALSE
+zhu_2020	batch	COV-2	COV-2-D10	Blood	Peripheral Blood Mononuclear Cells		male	45		TRUE	COVID-19	moderate	16	13	FALSE	FALSE
+zhu_2020	batch	COV-2	COV-2-D16	Blood	Peripheral Blood Mononuclear Cells		male	45		TRUE	COVID-19	moderate	22	19	FALSE	FALSE
+zhu_2020	batch	COV-3	COV-3-D1	Blood	Peripheral Blood Mononuclear Cells		female	41		TRUE	COVID-19	moderate	13	4	FALSE	FALSE
+zhu_2020	batch	COV-3	COV-3-D4	Blood	Peripheral Blood Mononuclear Cells		female	41		TRUE	COVID-19	moderate	16	7	FALSE	FALSE
+zhu_2020	batch	COV-3	COV-3-D16	Blood	Peripheral Blood Mononuclear Cells		female	41		TRUE	COVID-19	moderate	28	19	FALSE	FALSE
+zhu_2020	batch	COV-4	COV-4-D4	Blood	Peripheral Blood Mononuclear Cells		female	44		TRUE	COVID-19	moderate	13	5	FALSE	FALSE
+zhu_2020	batch	COV-4	COV-4-D16	Blood	Peripheral Blood Mononuclear Cells		female	44		TRUE	COVID-19	moderate	25	17	FALSE	FALSE
+zhu_2020	batch	COV-5	COV-5-D1	Blood	Peripheral Blood Mononuclear Cells		female	85		TRUE	COVID-19	moderate	3	1	FALSE	FALSE
+zhu_2020	batch	COV-5	COV-5-D7	Blood	Peripheral Blood Mononuclear Cells		female	85		TRUE	COVID-19	moderate	9	7	FALSE	FALSE
+zhu_2020	batch	COV-5	COV-5-D13	Blood	Peripheral Blood Mononuclear Cells		female	85		TRUE	COVID-19	moderate	15	13	FALSE	FALSE
+zhu_2020	batch	Ctrl-1	Ctrl-1	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+zhu_2020	batch	Ctrl-2	Ctrl-2	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+zhu_2020	batch	Ctrl-3	Ctrl-3	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+zhu_2020	batch	Flu-1	Flu-1-D1	Blood	Peripheral Blood Mononuclear Cells		male	68		FALSE	other					
+zhu_2020	batch	Flu-1	Flu-1-D14	Blood	Peripheral Blood Mononuclear Cells		male	68		FALSE	other					
+zhu_2020	batch	Flu-2	Flu-2-D1	Blood	Peripheral Blood Mononuclear Cells		female	74		FALSE	other					
+zhu_2020	batch	Flu-2	Flu-2-D9	Blood	Peripheral Blood Mononuclear Cells		female	74		FALSE	other					
+arunachalam_2020	sample_name	nCOV3EUHM	nCOV3EUHM	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	75		TRUE	COVID-19	moderate	15	8	FALSE	TRUE
+arunachalam_2020	sample_name	nCOV7EUHM	nCOV7EUHM	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	53		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+arunachalam_2020	sample_name	nCOV1EUHM	nCOV1EUHM	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	75		TRUE	COVID-19	moderate	2	0	FALSE	TRUE
+arunachalam_2020	sample_name	nCOV6EUHM	nCOV6EUHM	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	male	59		TRUE	COVID-19	moderate	16	9	FALSE	TRUE
+arunachalam_2020	sample_name	280	280	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	84		FALSE	healthy					
+arunachalam_2020	sample_name	259	259	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	68		FALSE	healthy					
+arunachalam_2020	sample_name	279	279	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	male	38		FALSE	healthy					
+arunachalam_2020	sample_name	nCOV021EUHM	nCOV021EUHM	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	60		TRUE	COVID-19	severe	15	8	FALSE	TRUE
+arunachalam_2020	sample_name	nCOV024EUHM	nCOV024EUHM	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	male	48		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+arunachalam_2020	sample_name	nCOV0029EUHM	nCOV0029EUHM	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	47		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+arunachalam_2020	sample_name	265	265	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	male	90		FALSE	healthy					
+arunachalam_2020	sample_name	258	258	Blood	Peripheral Blood Mononuclear Cells	DCs enriched	female	70		FALSE	healthy					
+yu_2020	sample	CM1	CM1-1	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	CM1	CM1-2	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	CM1	CM1-3	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	CM1	CM1-4	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	CM2	CM2-1	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	16	9	TRUE	FALSE
+yu_2020	sample	CM2	CM2-2	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	16	9	TRUE	FALSE
+yu_2020	sample	CM2	CM2-3	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	16	9	TRUE	FALSE
+yu_2020	sample	CM2	CM2-4	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	16	9	TRUE	FALSE
+yu_2020	sample	CM3	CM3-1	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	CM3	CM3-2	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	CM3	CM3-3	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	CM3	CM3-4	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	HD1	HD1-1	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD1	HD1-2	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD1	HD1-3	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD1	HD1-4	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD2	HD2-1	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD2	HD2-2	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD2	HD2-3	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD2	HD2-4	Blood	Peripheral Blood Mononuclear Cells		male			FALSE	healthy					
+yu_2020	sample	HD3	HD3-1	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+yu_2020	sample	HD3	HD3-2	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+yu_2020	sample	HD3	HD3-3	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+yu_2020	sample	HD3	HD3-4	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+yu_2020	sample	PM1	PM1-1	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	PM1	PM1-2	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	PM1	PM1-3	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	PM1	PM1-4	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	21	14	TRUE	FALSE
+yu_2020	sample	PM2	PM2-1	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM2	PM2-2	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM2	PM2-3	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM2	PM2-4	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM3	PM3-1	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM3	PM3-2	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM3	PM3-3	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM3	PM3-4	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate	14	7	TRUE	FALSE
+yu_2020	sample	PM3CM3	PM3CM3-Combine-1	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate				
+yu_2020	sample	PM3CM3	PM3CM3-Combine-2	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate				
+yu_2020	sample	PM3CM3	PM3CM3-Combine-3	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate				
+yu_2020	sample	PM3CM3	PM3CM3-Combine-4	Blood	Peripheral Blood Mononuclear Cells		male			TRUE	COVID-19	moderate				
+su_2020	sample	1	1-1	Blood	Peripheral Blood Mononuclear Cells		female	77	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	1	1-2	Blood	Peripheral Blood Mononuclear Cells		female	77	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	10	10-1	Blood	Peripheral Blood Mononuclear Cells		female	40	Black or African American	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	10	10-2	Blood	Peripheral Blood Mononuclear Cells		female	40	Black or African American	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	100	100-1	Blood	Peripheral Blood Mononuclear Cells		female	32	Asian	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	100	100-2	Blood	Peripheral Blood Mononuclear Cells		female	32	Asian	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	101	101-1	Blood	Peripheral Blood Mononuclear Cells		female	19	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	101	101-2	Blood	Peripheral Blood Mononuclear Cells		female	19	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	102	102-1	Blood	Peripheral Blood Mononuclear Cells		female	55	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	102	102-2	Blood	Peripheral Blood Mononuclear Cells		female	55	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	103	103-1	Blood	Peripheral Blood Mononuclear Cells		female	25	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	103	103-2	Blood	Peripheral Blood Mononuclear Cells		female	25	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	104	104-1	Blood	Peripheral Blood Mononuclear Cells		female	32	Unknown / Not Reported	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	104	104-2	Blood	Peripheral Blood Mononuclear Cells		female	32	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	105	105-1	Blood	Peripheral Blood Mononuclear Cells		female	27	Unknown / Not Reported	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	105	105-2	Blood	Peripheral Blood Mononuclear Cells		female	27	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	1053BW	1053BW	Blood	Peripheral Blood Mononuclear Cells		female	52		FALSE	healthy					
+su_2020	sample	106	106-1	Blood	Peripheral Blood Mononuclear Cells		female	81	American Indian/Alaska Native	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	106	106-2	Blood	Peripheral Blood Mononuclear Cells		female	81	American Indian/Alaska Native	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	107	107-1	Blood	Peripheral Blood Mononuclear Cells		male	71	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	107	107-2	Blood	Peripheral Blood Mononuclear Cells		male	71	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	108	108-1	Blood	Peripheral Blood Mononuclear Cells		male	57	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	108	108-2	Blood	Peripheral Blood Mononuclear Cells		male	57	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	109	109-1	Blood	Peripheral Blood Mononuclear Cells		female	36	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	109	109-2	Blood	Peripheral Blood Mononuclear Cells		female	36	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	11	11-1	Blood	Peripheral Blood Mononuclear Cells		male	89	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	11	11-2	Blood	Peripheral Blood Mononuclear Cells		male	89	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	110	110-1	Blood	Peripheral Blood Mononuclear Cells		female	41	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	110	110-2	Blood	Peripheral Blood Mononuclear Cells		female	41	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	111	111-1	Blood	Peripheral Blood Mononuclear Cells		male	28	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	111	111-2	Blood	Peripheral Blood Mononuclear Cells		male	28	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	112	112-1	Blood	Peripheral Blood Mononuclear Cells		male	32	Unknown / Not Reported	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	112	112-2	Blood	Peripheral Blood Mononuclear Cells		male	32	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	113	113-1	Blood	Peripheral Blood Mononuclear Cells		female	33	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	113	113-2	Blood	Peripheral Blood Mononuclear Cells		female	33	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	114	114-1	Blood	Peripheral Blood Mononuclear Cells		female	32	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	114	114-2	Blood	Peripheral Blood Mononuclear Cells		female	32	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	115	115-1	Blood	Peripheral Blood Mononuclear Cells		male	69	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	115	115-2	Blood	Peripheral Blood Mononuclear Cells		male	69	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	116	116-1	Blood	Peripheral Blood Mononuclear Cells		female	27	Unknown / Not Reported	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	116	116-2	Blood	Peripheral Blood Mononuclear Cells		female	27	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	117	117-1	Blood	Peripheral Blood Mononuclear Cells		male	39	Unknown / Not Reported	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	117	117-2	Blood	Peripheral Blood Mononuclear Cells		male	39	Unknown / Not Reported	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	119	119-1	Blood	Peripheral Blood Mononuclear Cells		female	53	Black or African American	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	119	119-2	Blood	Peripheral Blood Mononuclear Cells		female	53	Black or African American	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	1193BW	1193BW	Blood	Peripheral Blood Mononuclear Cells		female	29		FALSE	healthy					
+su_2020	sample	12	12-1	Blood	Peripheral Blood Mononuclear Cells		female	73	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	12	12-2	Blood	Peripheral Blood Mononuclear Cells		female	73	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	120	120-1	Blood	Peripheral Blood Mononuclear Cells		female	26	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	120	120-2	Blood	Peripheral Blood Mononuclear Cells		female	26	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	121	121-1	Blood	Peripheral Blood Mononuclear Cells		female	86	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	121	121-2	Blood	Peripheral Blood Mononuclear Cells		female	86	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	122	122-1	Blood	Peripheral Blood Mononuclear Cells		female	53	Asian	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	122	122-2	Blood	Peripheral Blood Mononuclear Cells		female	53	Asian	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	123	123-1	Blood	Peripheral Blood Mononuclear Cells		female	42	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	123	123-2	Blood	Peripheral Blood Mononuclear Cells		female	42	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	124	124-1	Blood	Peripheral Blood Mononuclear Cells		male	48	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	124	124-2	Blood	Peripheral Blood Mononuclear Cells		male	48	Asian	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	125	125-1	Blood	Peripheral Blood Mononuclear Cells		male	50	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	125	125-2	Blood	Peripheral Blood Mononuclear Cells		male	50	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	126	126-1	Blood	Peripheral Blood Mononuclear Cells		female	36	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	126	126-2	Blood	Peripheral Blood Mononuclear Cells		female	36	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	127	127-1	Blood	Peripheral Blood Mononuclear Cells		male	63	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	127	127-2	Blood	Peripheral Blood Mononuclear Cells		male	63	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	128	128-1	Blood	Peripheral Blood Mononuclear Cells		female	62	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	128	128-2	Blood	Peripheral Blood Mononuclear Cells		female	62	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	129	129-1	Blood	Peripheral Blood Mononuclear Cells		male	27	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	129	129-2	Blood	Peripheral Blood Mononuclear Cells		male	27	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	13	13-1	Blood	Peripheral Blood Mononuclear Cells		female	71	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	13	13-2	Blood	Peripheral Blood Mononuclear Cells		female	71	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	130	130-1	Blood	Peripheral Blood Mononuclear Cells		male	44	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	130	130-2	Blood	Peripheral Blood Mononuclear Cells		male	44	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	131	131-1	Blood	Peripheral Blood Mononuclear Cells		female	55	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	131	131-2	Blood	Peripheral Blood Mononuclear Cells		female	55	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	132	132-1	Blood	Peripheral Blood Mononuclear Cells		female	37	Black or African American	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	132	132-2	Blood	Peripheral Blood Mononuclear Cells		female	37	Black or African American	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	133	133-1	Blood	Peripheral Blood Mononuclear Cells		female	63	Black or African American	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	133	133-2	Blood	Peripheral Blood Mononuclear Cells		female	63	Black or African American	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	134	134-1	Blood	Peripheral Blood Mononuclear Cells		female	28	Black or African American	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	134	134-2	Blood	Peripheral Blood Mononuclear Cells		female	28	Black or African American	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	135	135-1	Blood	Peripheral Blood Mononuclear Cells		female	50	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	135	135-2	Blood	Peripheral Blood Mononuclear Cells		female	50	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	136	136-1	Blood	Peripheral Blood Mononuclear Cells		female	42	Unknown / Not Reported	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	136	136-2	Blood	Peripheral Blood Mononuclear Cells		female	42	Unknown / Not Reported	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	137	137-1	Blood	Peripheral Blood Mononuclear Cells		male	53	Black or African American	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	137	137-2	Blood	Peripheral Blood Mononuclear Cells		male	53	Black or African American	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	14	14-1	Blood	Peripheral Blood Mononuclear Cells		male	76	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	141	141-1	Blood	Peripheral Blood Mononuclear Cells		male	31	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	141	141-2	Blood	Peripheral Blood Mononuclear Cells		male	31	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	142	142-1	Blood	Peripheral Blood Mononuclear Cells		male	64	Asian	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	142	142-2	Blood	Peripheral Blood Mononuclear Cells		male	64	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	144	144-1	Blood	Peripheral Blood Mononuclear Cells		female	67	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	144	144-2	Blood	Peripheral Blood Mononuclear Cells		female	67	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	145	145-1	Blood	Peripheral Blood Mononuclear Cells		male	55	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	145	145-2	Blood	Peripheral Blood Mononuclear Cells		male	55	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	147	147-1	Blood	Peripheral Blood Mononuclear Cells		female	62	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	147	147-2	Blood	Peripheral Blood Mononuclear Cells		female	62	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	15	15-1	Blood	Peripheral Blood Mononuclear Cells		female	67	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	15	15-2	Blood	Peripheral Blood Mononuclear Cells		female	67	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	16	16-1	Blood	Peripheral Blood Mononuclear Cells		male	37	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	16	16-2	Blood	Peripheral Blood Mononuclear Cells		male	37	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	17	17-1	Blood	Peripheral Blood Mononuclear Cells		male	57	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	17	17-2	Blood	Peripheral Blood Mononuclear Cells		male	57	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	18	18-1	Blood	Peripheral Blood Mononuclear Cells		male	69	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	18	18-2	Blood	Peripheral Blood Mononuclear Cells		male	69	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	19	19-1	Blood	Peripheral Blood Mononuclear Cells		male	81	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	19	19-2	Blood	Peripheral Blood Mononuclear Cells		male	81	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	2	2-1	Blood	Peripheral Blood Mononuclear Cells		male	39	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	2	2-2	Blood	Peripheral Blood Mononuclear Cells		male	39	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	20	20-1	Blood	Peripheral Blood Mononuclear Cells		male	55	Unknown / Not Reported	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	20	20-2	Blood	Peripheral Blood Mononuclear Cells		male	55	Unknown / Not Reported	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	22	22-1	Blood	Peripheral Blood Mononuclear Cells		female	55	Black or African American	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	22	22-2	Blood	Peripheral Blood Mononuclear Cells		female	55	Black or African American	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	23	23-1	Blood	Peripheral Blood Mononuclear Cells		female	71	Black or African American	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	23	23-2	Blood	Peripheral Blood Mononuclear Cells		female	71	Black or African American	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	24	24-1	Blood	Peripheral Blood Mononuclear Cells		female	61	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	24	24-2	Blood	Peripheral Blood Mononuclear Cells		female	61	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	25	25-1	Blood	Peripheral Blood Mononuclear Cells		female	67	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	25	25-2	Blood	Peripheral Blood Mononuclear Cells		female	67	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	26	26-1	Blood	Peripheral Blood Mononuclear Cells		male	33	Unknown / Not Reported	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	26	26-2	Blood	Peripheral Blood Mononuclear Cells		male	33	Unknown / Not Reported	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	27	27-1	Blood	Peripheral Blood Mononuclear Cells		female	38	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	27	27-2	Blood	Peripheral Blood Mononuclear Cells		female	38	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	2773BW	2773BW	Blood	Peripheral Blood Mononuclear Cells		female	56		FALSE	healthy					
+su_2020	sample	28	28-1	Blood	Peripheral Blood Mononuclear Cells		male	64	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	28	28-2	Blood	Peripheral Blood Mononuclear Cells		male	64	Native Hawaiian or Other Pacific Islander	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	29	29-1	Blood	Peripheral Blood Mononuclear Cells		female	66	Black or African American	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	29	29-2	Blood	Peripheral Blood Mononuclear Cells		female	66	Black or African American	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	2982BW	2982BW	Blood	Peripheral Blood Mononuclear Cells		female	26		FALSE	healthy					
+su_2020	sample	3	3-1	Blood	Peripheral Blood Mononuclear Cells		male	64	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	3	3-2	Blood	Peripheral Blood Mononuclear Cells		male	64	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	30	30-1	Blood	Peripheral Blood Mononuclear Cells		female	86	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	30	30-2	Blood	Peripheral Blood Mononuclear Cells		female	86	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	31	31-1	Blood	Peripheral Blood Mononuclear Cells		male	47	Unknown / Not Reported	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	31	31-2	Blood	Peripheral Blood Mononuclear Cells		male	47	Unknown / Not Reported	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	3126BW	3126BW	Blood	Peripheral Blood Mononuclear Cells		male	60		FALSE	healthy					
+su_2020	sample	32	32-1	Blood	Peripheral Blood Mononuclear Cells		male	63	Unknown / Not Reported	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	32	32-2	Blood	Peripheral Blood Mononuclear Cells		male	63	Unknown / Not Reported	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	3283BW	3283BW	Blood	Peripheral Blood Mononuclear Cells		female	36		FALSE	healthy					
+su_2020	sample	33	33-1	Blood	Peripheral Blood Mononuclear Cells		female	88	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	33	33-2	Blood	Peripheral Blood Mononuclear Cells		female	88	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	34	34-1	Blood	Peripheral Blood Mononuclear Cells		male	30	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	34	34-2	Blood	Peripheral Blood Mononuclear Cells		male	30	Asian	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	35	35-1	Blood	Peripheral Blood Mononuclear Cells		male	61	Asian	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	35	35-2	Blood	Peripheral Blood Mononuclear Cells		male	61	Asian	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	3577BW	3577BW	Blood	Peripheral Blood Mononuclear Cells		male	79		FALSE	healthy					
+su_2020	sample	36	36-1	Blood	Peripheral Blood Mononuclear Cells		male	51	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	36	36-2	Blood	Peripheral Blood Mononuclear Cells		male	51	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	39	39-1	Blood	Peripheral Blood Mononuclear Cells		female	38	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	39	39-2	Blood	Peripheral Blood Mononuclear Cells		female	38	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	4	4-1	Blood	Peripheral Blood Mononuclear Cells		male	76	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	4	4-2	Blood	Peripheral Blood Mononuclear Cells		male	76	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	40	40-1	Blood	Peripheral Blood Mononuclear Cells		female	76	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	40	40-2	Blood	Peripheral Blood Mononuclear Cells		female	76	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	41	41-1	Blood	Peripheral Blood Mononuclear Cells		male	65	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	41	41-2	Blood	Peripheral Blood Mononuclear Cells		male	65	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	42	42-1	Blood	Peripheral Blood Mononuclear Cells		female	60	Unknown / Not Reported	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	42	42-2	Blood	Peripheral Blood Mononuclear Cells		female	60	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	43	43-1	Blood	Peripheral Blood Mononuclear Cells		male	75	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	43	43-2	Blood	Peripheral Blood Mononuclear Cells		male	75	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	44	44-1	Blood	Peripheral Blood Mononuclear Cells		female	82	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	44	44-2	Blood	Peripheral Blood Mononuclear Cells		female	82	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	45	45-1	Blood	Peripheral Blood Mononuclear Cells		female	48	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	45	45-2	Blood	Peripheral Blood Mononuclear Cells		female	48	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	47	47-1	Blood	Peripheral Blood Mononuclear Cells		male	61	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	47	47-2	Blood	Peripheral Blood Mononuclear Cells		male	61	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	48	48-1	Blood	Peripheral Blood Mononuclear Cells		male	64	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	49	49-1	Blood	Peripheral Blood Mononuclear Cells		male	82	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	49	49-2	Blood	Peripheral Blood Mononuclear Cells		male	82	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	5	5-1	Blood	Peripheral Blood Mononuclear Cells		male	75	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	5	5-2	Blood	Peripheral Blood Mononuclear Cells		male	75	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	50	50-1	Blood	Peripheral Blood Mononuclear Cells		female	89	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	50	50-2	Blood	Peripheral Blood Mononuclear Cells		female	89	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	5046BW	5046BW	Blood	Peripheral Blood Mononuclear Cells		female	53		FALSE	healthy					
+su_2020	sample	51	51-1	Blood	Peripheral Blood Mononuclear Cells		male	34	Unknown / Not Reported	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	51	51-2	Blood	Peripheral Blood Mononuclear Cells		male	34	Unknown / Not Reported	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	52	52-1	Blood	Peripheral Blood Mononuclear Cells		female	89	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	52	52-2	Blood	Peripheral Blood Mononuclear Cells		female	89	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	53	53-1	Blood	Peripheral Blood Mononuclear Cells		male	86	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	53	53-2	Blood	Peripheral Blood Mononuclear Cells		male	86	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	55	55-1	Blood	Peripheral Blood Mononuclear Cells		female	67	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	56	56-1	Blood	Peripheral Blood Mononuclear Cells		female	61	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	56	56-2	Blood	Peripheral Blood Mononuclear Cells		female	61	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	57	57-1	Blood	Peripheral Blood Mononuclear Cells		female	39	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	57	57-2	Blood	Peripheral Blood Mononuclear Cells		female	39	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	58	58-1	Blood	Peripheral Blood Mononuclear Cells		female	63	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	58	58-2	Blood	Peripheral Blood Mononuclear Cells		female	63	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	59	59-1	Blood	Peripheral Blood Mononuclear Cells		female	82	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	59	59-2	Blood	Peripheral Blood Mononuclear Cells		female	82	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	6	6-1	Blood	Peripheral Blood Mononuclear Cells		male	26	Unknown / Not Reported	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	6	6-2	Blood	Peripheral Blood Mononuclear Cells		male	26	Unknown / Not Reported	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	60	60-1	Blood	Peripheral Blood Mononuclear Cells		female	39	Unknown / Not Reported	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	60	60-2	Blood	Peripheral Blood Mononuclear Cells		female	39	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	61	61-1	Blood	Peripheral Blood Mononuclear Cells		female	61	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	61	61-2	Blood	Peripheral Blood Mononuclear Cells		female	61	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	6130BW	6130BW	Blood	Peripheral Blood Mononuclear Cells		male	21		FALSE	healthy					
+su_2020	sample	62	62-1	Blood	Peripheral Blood Mononuclear Cells		female	77	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	62	62-2	Blood	Peripheral Blood Mononuclear Cells		female	77	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	63	63-1	Blood	Peripheral Blood Mononuclear Cells		female	81	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	63	63-2	Blood	Peripheral Blood Mononuclear Cells		female	81	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	66	66-1	Blood	Peripheral Blood Mononuclear Cells		male	53	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	66	66-2	Blood	Peripheral Blood Mononuclear Cells		male	53	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	67	67-1	Blood	Peripheral Blood Mononuclear Cells		female	41	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	67	67-2	Blood	Peripheral Blood Mononuclear Cells		female	41	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	68	68-1	Blood	Peripheral Blood Mononuclear Cells		female	66	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	68	68-2	Blood	Peripheral Blood Mononuclear Cells		female	66	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	69	69-1	Blood	Peripheral Blood Mononuclear Cells		male	61	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	69	69-2	Blood	Peripheral Blood Mononuclear Cells		male	61	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	7	7-1	Blood	Peripheral Blood Mononuclear Cells		male	57	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	7	7-2	Blood	Peripheral Blood Mononuclear Cells		male	57	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	70	70-1	Blood	Peripheral Blood Mononuclear Cells		male	42	Unknown / Not Reported	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	70	70-2	Blood	Peripheral Blood Mononuclear Cells		male	42	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	71	71-1	Blood	Peripheral Blood Mononuclear Cells		female	80	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	71	71-2	Blood	Peripheral Blood Mononuclear Cells		female	80	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	72	72-1	Blood	Peripheral Blood Mononuclear Cells		female	84	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	72	72-2	Blood	Peripheral Blood Mononuclear Cells		female	84	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	73	73-1	Blood	Peripheral Blood Mononuclear Cells		female	55	Unknown / Not Reported	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	73	73-2	Blood	Peripheral Blood Mononuclear Cells		female	55	Unknown / Not Reported	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	74	74-1	Blood	Peripheral Blood Mononuclear Cells		female	30	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	74	74-2	Blood	Peripheral Blood Mononuclear Cells		female	30	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	75	75-1	Blood	Peripheral Blood Mononuclear Cells		male	57	Asian	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	75	75-2	Blood	Peripheral Blood Mononuclear Cells		male	57	Asian	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	7541BW	7541BW	Blood	Peripheral Blood Mononuclear Cells		female	51		FALSE	healthy					
+su_2020	sample	76	76-1	Blood	Peripheral Blood Mononuclear Cells		female	47	Asian	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	76	76-2	Blood	Peripheral Blood Mononuclear Cells		female	47	Asian	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	77	77-1	Blood	Peripheral Blood Mononuclear Cells		female	51	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	77	77-2	Blood	Peripheral Blood Mononuclear Cells		female	51	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	78	78-1	Blood	Peripheral Blood Mononuclear Cells		female	58	More Than One Race	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	78	78-2	Blood	Peripheral Blood Mononuclear Cells		female	58	More Than One Race	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	79	79-1	Blood	Peripheral Blood Mononuclear Cells		female	83	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	79	79-2	Blood	Peripheral Blood Mononuclear Cells		female	83	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	8	8-1	Blood	Peripheral Blood Mononuclear Cells		male	78	Black or African American	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	80	80-1	Blood	Peripheral Blood Mononuclear Cells		male	66	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	80	80-2	Blood	Peripheral Blood Mononuclear Cells		male	66	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	81	81-1	Blood	Peripheral Blood Mononuclear Cells		male	23	Unknown / Not Reported	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	81	81-2	Blood	Peripheral Blood Mononuclear Cells		male	23	Unknown / Not Reported	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	82	82-1	Blood	Peripheral Blood Mononuclear Cells		female	60	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	82	82-2	Blood	Peripheral Blood Mononuclear Cells		female	60	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	83	83-1	Blood	Peripheral Blood Mononuclear Cells		female	42	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	83	83-2	Blood	Peripheral Blood Mononuclear Cells		female	42	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	86	86-1	Blood	Peripheral Blood Mononuclear Cells		male	71	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	86	86-2	Blood	Peripheral Blood Mononuclear Cells		male	71	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	87	87-1	Blood	Peripheral Blood Mononuclear Cells		male	56	Unknown / Not Reported	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	87	87-2	Blood	Peripheral Blood Mononuclear Cells		male	56	Unknown / Not Reported	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	88	88-1	Blood	Peripheral Blood Mononuclear Cells		male	24	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	88	88-2	Blood	Peripheral Blood Mononuclear Cells		male	24	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	9	9-1	Blood	Peripheral Blood Mononuclear Cells		female	65	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	9	9-2	Blood	Peripheral Blood Mononuclear Cells		female	65	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	90	90-1	Blood	Peripheral Blood Mononuclear Cells		female	69	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	90	90-2	Blood	Peripheral Blood Mononuclear Cells		female	69	White	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	91	91-1	Blood	Peripheral Blood Mononuclear Cells		male	81	Asian	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	91	91-2	Blood	Peripheral Blood Mononuclear Cells		male	81	Asian	FALSE	COVID-19	moderate	14	7	TRUE	TRUE
+su_2020	sample	92	92-1	Blood	Peripheral Blood Mononuclear Cells		female	75	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	92	92-2	Blood	Peripheral Blood Mononuclear Cells		female	75	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	93	93-1	Blood	Peripheral Blood Mononuclear Cells		male	66	White	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	93	93-2	Blood	Peripheral Blood Mononuclear Cells		male	66	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	94	94-1	Blood	Peripheral Blood Mononuclear Cells		female	38	White	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	94	94-2	Blood	Peripheral Blood Mononuclear Cells		female	38	White	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	96	96-1	Blood	Peripheral Blood Mononuclear Cells		male	72	White	FALSE	COVID-19	severe	7	0	TRUE	TRUE
+su_2020	sample	96	96-2	Blood	Peripheral Blood Mononuclear Cells		male	72	White	FALSE	COVID-19	severe	14	7	TRUE	TRUE
+su_2020	sample	97	97-1	Blood	Peripheral Blood Mononuclear Cells		female	26	Asian	FALSE	COVID-19	mild	7		TRUE	
+su_2020	sample	97	97-2	Blood	Peripheral Blood Mononuclear Cells		female	26	Asian	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	98	98-1	Blood	Peripheral Blood Mononuclear Cells		female	50	American Indian/Alaska Native	FALSE	COVID-19	moderate	7	0	TRUE	TRUE
+su_2020	sample	98	98-2	Blood	Peripheral Blood Mononuclear Cells		female	50	American Indian/Alaska Native	FALSE	COVID-19	mild	14		TRUE	
+su_2020	sample	BP0219101	BP0219101	Blood	Peripheral Blood Mononuclear Cells		female	31		FALSE	healthy					
+su_2020	sample	BP0319250	BP0319250	Blood	Peripheral Blood Mononuclear Cells		male	39		FALSE	healthy					
+su_2020	sample	BP05191345	BP05191345	Blood	Peripheral Blood Mononuclear Cells		male	28		FALSE	healthy					
+su_2020	sample	BP08191115	BP08191115	Blood	Peripheral Blood Mononuclear Cells		female	35		FALSE	healthy					
+su_2020	sample	CL2	CL2	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+su_2020	sample	Mix_donor1	Mix_donor1	Blood	Peripheral Blood Mononuclear Cells		female			FALSE	healthy					
+meckiff_2020	orig.donor	HT01	HT01	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female			FALSE	healthy					
+meckiff_2020	orig.donor	HT02	HT02	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female			FALSE	healthy					
+meckiff_2020	orig.donor	HT03	HT03	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male			FALSE	healthy					
+meckiff_2020	orig.donor	HT04	HT04	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male			FALSE	healthy					
+meckiff_2020	orig.donor	P01	P01	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	58	Indian	TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+meckiff_2020	orig.donor	P03	P03	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	74	White British	TRUE	COVID-19	moderate	22	15	FALSE	TRUE
+meckiff_2020	orig.donor	P04	P04	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	72	White British	TRUE	COVID-19	moderate	15	8	FALSE	TRUE
+meckiff_2020	orig.donor	P05	P05	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	62	White British	TRUE	COVID-19	severe	14	7	FALSE	TRUE
+meckiff_2020	orig.donor	P06	P06	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	72	White British	TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+meckiff_2020	orig.donor	P07	P07	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	52	White British	TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+meckiff_2020	orig.donor	P08	P08	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	68	White British	TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+meckiff_2020	orig.donor	P0901	P0901	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male			FALSE	healthy					
+meckiff_2020	orig.donor	P10	P10	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	65	Black British	TRUE	COVID-19	severe	32	25	FALSE	TRUE
+meckiff_2020	orig.donor	P12	P12	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	82	White British	TRUE	COVID-19	moderate	2	0	FALSE	TRUE
+meckiff_2020	orig.donor	P15	P15	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	50	Black British	TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+meckiff_2020	orig.donor	P16	P16	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	39	Indian	TRUE	COVID-19	moderate	10	3	FALSE	TRUE
+meckiff_2020	orig.donor	P17	P17	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	57	White British	TRUE	COVID-19	moderate	20	13	FALSE	TRUE
+meckiff_2020	orig.donor	P18	P18	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	64	White British	TRUE	COVID-19	moderate	7	0	FALSE	TRUE
+meckiff_2020	orig.donor	P19	P19	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	77	White British	TRUE	COVID-19	moderate	34	27	FALSE	TRUE
+meckiff_2020	orig.donor	P20	P20	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	61	White British	TRUE	COVID-19	severe	19	12	FALSE	TRUE
+meckiff_2020	orig.donor	P22	P22	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	46	Arab	TRUE	COVID-19	mild	17		FALSE	
+meckiff_2020	orig.donor	P24	P24	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	57	White British	TRUE	COVID-19	severe	35	28	FALSE	TRUE
+meckiff_2020	orig.donor	P25	P25	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	37	White British	TRUE	COVID-19	mild	22		FALSE	
+meckiff_2020	orig.donor	P26	P26	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	39	White British	TRUE	COVID-19	mild	22		FALSE	
+meckiff_2020	orig.donor	P27	P27	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	60	Indian	TRUE	COVID-19	severe	21	14	FALSE	TRUE
+meckiff_2020	orig.donor	P29	P29	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	50	White British	TRUE	COVID-19	mild	14		FALSE	
+meckiff_2020	orig.donor	P30	P30	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	50	White British	TRUE	COVID-19	mild	24		FALSE	
+meckiff_2020	orig.donor	P31	P31	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	47	White British	TRUE	COVID-19	mild	20		FALSE	
+meckiff_2020	orig.donor	P32	P32	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	39	White British	TRUE	COVID-19	mild	16		FALSE	
+meckiff_2020	orig.donor	P37	P37	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	31	White British	TRUE	COVID-19	mild	38		FALSE	
+meckiff_2020	orig.donor	P40	P40	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	26	White British	TRUE	COVID-19	mild	18		FALSE	
+meckiff_2020	orig.donor	P42	P42	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	49	White Other	TRUE	COVID-19	severe	20	13	FALSE	TRUE
+meckiff_2020	orig.donor	P43	P43	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	60	White British	TRUE	COVID-19	severe	31	24	FALSE	TRUE
+meckiff_2020	orig.donor	P44	P44	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	40	White Other	TRUE	COVID-19	mild	29		FALSE	
+meckiff_2020	orig.donor	P45	P45	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	42	White British	TRUE	COVID-19	mild	27		FALSE	
+meckiff_2020	orig.donor	P46	P46	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	53	White British	TRUE	COVID-19	severe	47	40	FALSE	TRUE
+meckiff_2020	orig.donor	P47	P47	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	35	White British	TRUE	COVID-19	mild	11		FALSE	
+meckiff_2020	orig.donor	P49	P49	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	33	Indian	TRUE	COVID-19	severe	24	17	FALSE	TRUE
+meckiff_2020	orig.donor	P57	P57	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	48	White British	TRUE	COVID-19	mild	32		FALSE	
+meckiff_2020	orig.donor	P61	P61	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	22	White Other	TRUE	COVID-19	mild	34		FALSE	
+meckiff_2020	orig.donor	P64	P64	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	38	White British	TRUE	COVID-19	mild	37		FALSE	
+meckiff_2020	orig.donor	P66	P66	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	48	White British	TRUE	COVID-19	mild	23		FALSE	
+meckiff_2020	orig.donor	SDBB051	SDBB051	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male			FALSE	healthy					
+meckiff_2020	orig.donor	SDBB079	SDBB079	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male			FALSE	healthy					
+meckiff_2020	orig.donor	SDBB082	SDBB082	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male			FALSE	healthy					
+meckiff_2020	orig.donor	SDBB088	SDBB088	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male			FALSE	healthy					
+kusnadi_2021	orig.donor	P01	P01	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	58	Indian	TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+kusnadi_2021	orig.donor	P03	P03	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	74	White British	TRUE	COVID-19	moderate	22	15	FALSE	TRUE
+kusnadi_2021	orig.donor	P04	P04	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	72	White British	TRUE	COVID-19	moderate	15	8	FALSE	TRUE
+kusnadi_2021	orig.donor	P05	P05	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	62	White British	TRUE	COVID-19	severe	14	7	FALSE	TRUE
+kusnadi_2021	orig.donor	P06	P06	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	72	White British	TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+kusnadi_2021	orig.donor	P07	P07	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	52	White British	TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+kusnadi_2021	orig.donor	P08	P08	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	68	White British	TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+kusnadi_2021	orig.donor	P09	P09	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	40	White Other	TRUE	COVID-19	moderate	10	3	FALSE	TRUE
+kusnadi_2021	orig.donor	P10	P10	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	65	Black British	TRUE	COVID-19	severe	32	25	FALSE	TRUE
+kusnadi_2021	orig.donor	P12	P12	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	82	White British	TRUE	COVID-19	moderate	2	0	FALSE	TRUE
+kusnadi_2021	orig.donor	P15	P15	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	50	Black British	TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+kusnadi_2021	orig.donor	P16	P16	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	39	Indian	TRUE	COVID-19	moderate	10	3	FALSE	TRUE
+kusnadi_2021	orig.donor	P17	P17	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	57	White British	TRUE	COVID-19	moderate	20	13	FALSE	TRUE
+kusnadi_2021	orig.donor	P18	P18	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	64	White British	TRUE	COVID-19	moderate	7	0	FALSE	TRUE
+kusnadi_2021	orig.donor	P19	P19	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	77	White British	TRUE	COVID-19	moderate	34	27	FALSE	TRUE
+kusnadi_2021	orig.donor	P20	P20	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	61	White British	TRUE	COVID-19	severe	19	12	FALSE	TRUE
+kusnadi_2021	orig.donor	P22	P22	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		46	Arab	TRUE	COVID-19	mild	17		FALSE	
+kusnadi_2021	orig.donor	P24	P24	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	57	White British	TRUE	COVID-19	severe	35	28	FALSE	TRUE
+kusnadi_2021	orig.donor	P25	P25	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	37	White British	TRUE	COVID-19	mild	22		FALSE	
+kusnadi_2021	orig.donor	P26	P26	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	39	White British	TRUE	COVID-19	mild	22		FALSE	
+kusnadi_2021	orig.donor	P27	P27	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	60	Indian	TRUE	COVID-19	severe	21	14	FALSE	TRUE
+kusnadi_2021	orig.donor	P29	P29	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	50	White British	TRUE	COVID-19	mild	14		FALSE	
+kusnadi_2021	orig.donor	P31	P31	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	47	White British	TRUE	COVID-19	mild	20		FALSE	
+kusnadi_2021	orig.donor	P32	P32	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		39	White British	TRUE	COVID-19	mild	16		FALSE	
+kusnadi_2021	orig.donor	P37	P37	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	31	White British	TRUE	COVID-19	mild	38		FALSE	
+kusnadi_2021	orig.donor	P40	P40	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	26	White British	TRUE	COVID-19	mild	18		FALSE	
+kusnadi_2021	orig.donor	P42	P42	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	49	White Other	TRUE	COVID-19	severe	20	13	FALSE	TRUE
+kusnadi_2021	orig.donor	P43	P43	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	60	White British	TRUE	COVID-19	severe	31	24	FALSE	TRUE
+kusnadi_2021	orig.donor	P44	P44	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	female	40	White Other	TRUE	COVID-19	mild	29		FALSE	
+kusnadi_2021	orig.donor	P45	P45	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	42	White British	TRUE	COVID-19	mild	27		FALSE	
+kusnadi_2021	orig.donor	P46	P46	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	53	White British	TRUE	COVID-19	severe	47	40	FALSE	TRUE
+kusnadi_2021	orig.donor	P47	P47	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		35	White British	TRUE	COVID-19	mild	11		FALSE	
+kusnadi_2021	orig.donor	P49	P49	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE	male	33	Indian	TRUE	COVID-19	severe	24	17	FALSE	TRUE
+kusnadi_2021	orig.donor	P57	P57	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		48	White British	TRUE	COVID-19	mild	32		FALSE	
+kusnadi_2021	orig.donor	P61	P61	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		22	White Other	TRUE	COVID-19	mild	34		FALSE	
+kusnadi_2021	orig.donor	P64	P64	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		38	White British	TRUE	COVID-19	mild	37		FALSE	
+kusnadi_2021	orig.donor	P66	P66	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		48	White British	TRUE	COVID-19	mild	23		FALSE	
+kusnadi_2021	orig.donor	SDBB020	SDBB020	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		37		FALSE	healthy					
+kusnadi_2021	orig.donor	SDBB051	SDBB051	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		54		FALSE	healthy					
+kusnadi_2021	orig.donor	SDBB063	SDBB063	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		29		FALSE	healthy					
+kusnadi_2021	orig.donor	SDBB073	SDBB073	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		73		FALSE	healthy					
+kusnadi_2021	orig.donor	SDBB077	SDBB077	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		71		FALSE	healthy					
+kusnadi_2021	orig.donor	SDBB079	SDBB079	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		71		FALSE	healthy					
+kusnadi_2021	orig.donor	SDBB082	SDBB082	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		37		FALSE	healthy					
+kusnadi_2021	orig.donor	SDBB088	SDBB088	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE		55		FALSE	healthy					
+kusnadi_2021	orig.donor	void	void	Blood	Peripheral Blood Mononuclear Cells	CD8 ARTE				FALSE	healthy					
+bacher_2020	sample	J09835	J09835	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	27		TRUE	COVID-19	mild	36		FALSE	
+bacher_2020	sample	J09836	J09836	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	27		TRUE	COVID-19	mild	36		FALSE	
+bacher_2020	sample	J10535	J10535	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	68		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+bacher_2020	sample	J10624	J10624	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	40		TRUE	COVID-19	mild	55		FALSE	
+bacher_2020	sample	J10625	J10625	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	28		TRUE	COVID-19	mild	45		FALSE	
+bacher_2020	sample	J10886	J10886	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	51		TRUE	COVID-19	moderate	38	31	FALSE	TRUE
+bacher_2020	sample	J10887	J10887	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	76		TRUE	COVID-19	severe	51	44	FALSE	TRUE
+bacher_2020	sample	J10888	J10888	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	54		TRUE	COVID-19	moderate	50	43	FALSE	TRUE
+bacher_2020	sample	J11689	J11689	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	33		TRUE	COVID-19	mild	31		FALSE	
+bacher_2020	sample	J14204	J14204	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	62		TRUE	COVID-19	severe	42	35	FALSE	TRUE
+bacher_2020	sample	J14205	J14205	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	53		TRUE	COVID-19	moderate	69	62	FALSE	TRUE
+bacher_2020	sample	J15890	J15890	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	70		TRUE	COVID-19	mild	53		FALSE	
+bacher_2020	sample	J15891	J15891	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	27		FALSE	healthy					
+bacher_2020	sample	J15892	J15892	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	35		FALSE	healthy					
+bacher_2020	sample	J15893	J15893	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	69		TRUE	COVID-19	moderate	44	37	FALSE	TRUE
+bacher_2020	sample	J15899	J15899	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	27		FALSE	healthy					
+bacher_2020	sample	J15900	J15900	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	41		FALSE	healthy					
+bacher_2020	sample	J21854	J21854	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	male	58		TRUE	COVID-19	severe	107	100	FALSE	TRUE
+bacher_2020	sample	J21855	J21855	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	61		FALSE	healthy					
+bacher_2020	sample	J21856	J21856	Blood	Peripheral Blood Mononuclear Cells	CD4 ARTE	female	50		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C19-CB-0001	C19-CB-0001_d11_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	21		TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0003	C19-CB-0003_d13_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	41		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0002	C19-CB-0002_d13_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	31		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0002	C19-CB-0002_d8_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	31		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0001	C19-CB-0001_d16_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	21		TRUE	COVID-19	moderate	16	9	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0005	C19-CB-0005_d20_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	moderate	20	13	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0001	C19-CB-0001_d7_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	21		TRUE	COVID-19	moderate	7	0	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0003	C19-CB-0003_d18_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	41		TRUE	COVID-19	moderate	18	11	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0005	C19-CB-0005_d15_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	moderate	15	8	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0009	C19-CB-0009_d9_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	76		TRUE	COVID-19	severe	9	2	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0012	C19-CB-0012_d9_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	severe	9	2	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0013	C19-CB-0013_d8_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	severe	8	1	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0011	C19-CB-0011_d13_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	61		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0008	C19-CB-0008_d13_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	61		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0020	C19-CB-0020_d16_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	51		TRUE	COVID-19	severe	16	9	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0013	C19-CB-0013_d15_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	severe	15	8	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0009	C19-CB-0009_d16_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	76		TRUE	COVID-19	severe	16	9	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0008	C19-CB-0008_d20_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	61		TRUE	COVID-19	severe	20	13	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0021	C19-CB-0021_d18_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	51		TRUE	COVID-19	severe	18	11	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0012	C19-CB-0012_d16_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	severe	16	9	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0016	C19-CB-0016_d16_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	severe	16	9	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0198	C19-CB-0198_d18_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	41		TRUE	COVID-19	severe	18	11	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0204	C19-CB-0204_d15_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	71		TRUE	COVID-19	moderate	15	8	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0199	C19-CB-0199_d8_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	56		TRUE	COVID-19	severe	8	1	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0214	C19-CB-0214_d7_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	66		TRUE	COVID-19	moderate	7	0	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0053	C19-CB-0053_d3_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	71		TRUE	COVID-19	moderate	3	0	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	C19-CB-0052	C19-CB-0052_d10_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	66		TRUE	COVID-19	moderate	10	3	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	P18F	P18F_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P17H	P17H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P20H	P20H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P15F	P15F_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P08H	P08H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P13H	P13H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P07H	P07H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P06F	P06F_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P04H	P04H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P01H	C2P01H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P09H	P09H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	P02H	P02H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P05F	C2P05F_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P07H	C2P07H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P13F	C2P13F_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P16H	C2P16H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P10H	C2P10H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P19H	C2P19H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	C2P15H	C2P15H_d0_CD45-sorted frozen PBMC	Blood	Peripheral Blood Mononuclear Cells	CD45-sorted frozen PBMC				FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	one_k_v3	one_k_v3_d0_PBMC	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	Five_k_v3	Five_k_v3_d0_PBMC	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	Ten_k_v3	Ten_k_v3_d0_PBMC	Blood	Peripheral Blood Mononuclear Cells					FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-04	BN-04_FreshPBMC_23.04.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	61		TRUE	COVID-19	moderate	17	10	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-06	BN-06_FreshPBMC_23.04.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	71		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-11	BN-11_FreshEryLysis_23.04.2020_Whole_blood	Blood	Whole Blood		male	51		TRUE	COVID-19	severe	20	13	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-05	BN-05_FreshEryLysis_23.04.2020_Whole_blood	Blood	Whole Blood		female	81		TRUE	COVID-19	moderate	17	10	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-11	BN-11_FreshPBMC_23.04.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	51		TRUE	COVID-19	severe	20	13	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-22	BN-22_FreshEryLysis_23.04.2020_Whole_blood	Blood	Whole Blood		male	46		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-06	BN-06_FreshEryLysis_23.04.2020_Whole_blood	Blood	Whole Blood		female	71		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-05	BN-05_FreshPBMC_23.04.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	81		TRUE	COVID-19	moderate	17	10	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-04	BN-04_FreshEryLysis_23.04.2020_Whole_blood	Blood	Whole Blood		male	61		TRUE	COVID-19	moderate	17	10	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-22	BN-22_FreshPBMC_23.04.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	46		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-26	BN-26_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		female	46		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-19	BN-19_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	moderate	3	0	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-25	BN-25_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		female	71		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-30	BN-30_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		male	76		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-28	BN-28_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		female	56		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-31	BN-31_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		male	61		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-18	BN-18_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		female	76		TRUE	COVID-19	severe	12	5	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-27	BN-27_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		female	61		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-23	BN-23_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		male	51		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-24	BN-24_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		male	51		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-29	BN-29_FreshEryLysis_12.05.2020_Whole_blood	Blood	Whole Blood		female	66		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshEryLysis_14.05.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	moderate	4	0	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-19	BN-19_FreshEryLysis_14.05.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	severe	5	0	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-18	BN-18_FreshEryLysis_14.05.2020_Whole_blood	Blood	Whole Blood		female	76		TRUE	COVID-19	severe	14	7	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-18	BN-18_FreshEryLysis_18.05.2020_Whole_blood	Blood	Whole Blood		female	76		TRUE	COVID-19	severe	18	11	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-19	BN-19_FreshEryLysis_18.05.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	severe	9	2	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshEryLysis_18.05.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-32	BN-32_FreshEryLysis_29.05.2020_Whole_blood	Blood	Whole Blood		male	41		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-08	BN-08_FreshEryLysis_29.05.2020_Whole_blood	Blood	Whole Blood		female	41		TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-19	BN-19_FreshPBMC_29.05.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	61		TRUE	COVID-19	moderate	20	13	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-19	BN-19_FreshPBMC_29.05.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	moderate	20	13	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-33	BN-33_FreshEryLysis_29.05.2020_Whole_blood	Blood	Whole Blood		male	51		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshPBMC_29.05.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	61		TRUE	COVID-19	severe	19	12	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshEryLysis_29.05.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	severe	19	12	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique		NA_PBMC	Blood	Peripheral Blood Mononuclear Cells		female			TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-33	BN-33_FreshPBMC_29.05.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	51		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-32	BN-32_FreshPBMC_29.05.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	41		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-19	BN-19_FreshPBMC_02.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	61		TRUE	COVID-19	moderate	24	17	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshEryLysis_02.06.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	severe	22	15	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-19	BN-19_FreshEryLysis_02.06.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	moderate	24	17	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshPBMC_02.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	61		TRUE	COVID-19	severe	22	15	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-35	BN-35_FreshEryLysis_05.06.2020_Whole_blood	Blood	Whole Blood		male	56		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-34	BN-34_FreshPBMC_05.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	51		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshPBMC_05.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		female	61		TRUE	COVID-19	severe	25	18	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-35	BN-35_FreshPBMC_05.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	56		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-34	BN-34_FreshEryLysis_05.06.2020_Whole_blood	Blood	Whole Blood		female	51		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-37	BN-37_FreshPBMC_05.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	56		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-36	BN-36_FreshEryLysis_05.06.2020_Whole_blood	Blood	Whole Blood		male	46		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-36	BN-36_FreshEryLysis_05.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	46		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-12	BN-12_FreshEryLysis_05.06.2020_Whole_blood	Blood	Whole Blood		female	61		TRUE	COVID-19	severe	25	18	FALSE	TRUE
+schulte-schrepping_2020	sampleid_unique	BN-22	BN-22_FreshEryLysis_09.06.2020_Whole_blood	Blood	Whole Blood		male	46		FALSE	healthy					
+schulte-schrepping_2020	sampleid_unique	BN-22	BN-22_FreshPBMC_09.06.2020_PBMC	Blood	Peripheral Blood Mononuclear Cells		male	46		FALSE	healthy					
+grant_2021	Sample	1	5	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	38		TRUE	COVID-19	severe				
+grant_2021	Sample	1	6	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	38		TRUE	COVID-19	severe				
+grant_2021	Sample	2	7	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	77		TRUE	COVID-19	severe				
+grant_2021	Sample	3	3	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	72		TRUE	COVID-19	severe				
+grant_2021	Sample	3	4	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	72		TRUE	COVID-19	severe				
+grant_2021	Sample	4	1	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	64		TRUE	COVID-19	severe				
+grant_2021	Sample	5	2	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	37		TRUE	COVID-19	severe				
+grant_2021	Sample	6	8	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	39		FALSE	other					
+grant_2021	Sample	6	9	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	39		FALSE	other					
+grant_2021	Sample	7	17	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	female	70		TRUE	COVID-19	severe				
+grant_2021	Sample	8	19	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	21		TRUE	COVID-19	severe				
+grant_2021	Sample	8	18	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	21		TRUE	COVID-19	severe				
+grant_2021	Sample	9	13	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	female	61		TRUE	COVID-19	severe				
+grant_2021	Sample	9	12	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	female	61		TRUE	COVID-19	severe				
+grant_2021	Sample	A	16	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	62		TRUE	COVID-19	severe				
+grant_2021	Sample	A	14	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	62		TRUE	COVID-19	severe				
+grant_2021	Sample	B	15	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	male	48		TRUE	COVID-19	severe				
+grant_2021	Sample	C	11	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	female	50		FALSE	other					
+grant_2021	Sample	C	10	Bronchus	Bronchoalveolar Lavage Fluid	sorted T cells and macrophages	female	50		FALSE	other					
+stephenson_2021	sample_id	AP1	AP1	Blood	Peripheral Blood Mononuclear Cells		male	56		TRUE	COVID-19	severe	28	21	FALSE	TRUE
+stephenson_2021	sample_id	AP10	AP10	Blood	Peripheral Blood Mononuclear Cells		female	70		TRUE	COVID-19	moderate	1	0	FALSE	TRUE
+stephenson_2021	sample_id	AP11	AP11	Blood	Peripheral Blood Mononuclear Cells		female	70		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+stephenson_2021	sample_id	AP12	AP12	Blood	Peripheral Blood Mononuclear Cells		male	73		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+stephenson_2021	sample_id	AP2	AP2	Blood	Peripheral Blood Mononuclear Cells		male	66		TRUE	COVID-19	severe	47	40	FALSE	TRUE
+stephenson_2021	sample_id	AP3	AP3	Blood	Peripheral Blood Mononuclear Cells		male	92		TRUE	COVID-19	moderate	3	0	FALSE	TRUE
+stephenson_2021	sample_id	AP4	AP4	Blood	Peripheral Blood Mononuclear Cells		male	25		TRUE	COVID-19	moderate	15	8	FALSE	TRUE
+stephenson_2021	sample_id	AP5	AP5	Blood	Peripheral Blood Mononuclear Cells		female	52		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+stephenson_2021	sample_id	AP6	AP6	Blood	Peripheral Blood Mononuclear Cells		female	80		TRUE	COVID-19	moderate	17	10	FALSE	TRUE
+stephenson_2021	sample_id	AP8	AP8	Blood	Peripheral Blood Mononuclear Cells		female	39		TRUE	COVID-19	severe	11	4	FALSE	TRUE
+stephenson_2021	sample_id	AP9	AP9	Blood	Peripheral Blood Mononuclear Cells		female	76		TRUE	COVID-19	moderate	5	0	FALSE	TRUE
+stephenson_2021	sample_id	CV0025	BGCV01_CV0025	Blood	Peripheral Blood Mononuclear Cells		male	56		TRUE	COVID-19	moderate	16	9	FALSE	TRUE
+stephenson_2021	sample_id	CV0144	BGCV01_CV0144	Blood	Peripheral Blood Mononuclear Cells		male	51		TRUE	COVID-19	severe	12	5	TRUE	TRUE
+stephenson_2021	sample_id	CV0902	BGCV01_CV0902	Blood	Peripheral Blood Mononuclear Cells		male	57		FALSE	healthy					
+stephenson_2021	sample_id	CV0904	BGCV01_CV0904	Blood	Peripheral Blood Mononuclear Cells		female	38		FALSE	healthy					
+stephenson_2021	sample_id	CV0052	BGCV02_CV0052	Blood	Peripheral Blood Mononuclear Cells		female	83		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+stephenson_2021	sample_id	CV0059	BGCV02_CV0059	Blood	Peripheral Blood Mononuclear Cells		male	47		TRUE	COVID-19	mild	7		FALSE	
+stephenson_2021	sample_id	CV0068	BGCV02_CV0068	Blood	Peripheral Blood Mononuclear Cells		female	26		TRUE	COVID-19	mild	17		FALSE	
+stephenson_2021	sample_id	CV0902	BGCV02_CV0902	Blood	Peripheral Blood Mononuclear Cells		male	57		FALSE	healthy					
+stephenson_2021	sample_id	CV0074	BGCV03_CV0074	Blood	Peripheral Blood Mononuclear Cells		female	59		TRUE	COVID-19	moderate	18	11	FALSE	TRUE
+stephenson_2021	sample_id	CV0084	BGCV03_CV0084	Blood	Peripheral Blood Mononuclear Cells		male	65		TRUE	COVID-19	moderate	5	0	FALSE	TRUE
+stephenson_2021	sample_id	CV0176	BGCV03_CV0176	Blood	Peripheral Blood Mononuclear Cells		male	77		TRUE	COVID-19	severe	31	24	FALSE	TRUE
+stephenson_2021	sample_id	CV0200	BGCV03_CV0200	Blood	Peripheral Blood Mononuclear Cells		female	51		TRUE	COVID-19	severe	40	33	FALSE	TRUE
+stephenson_2021	sample_id	CV0100	BGCV04_CV0100	Blood	Peripheral Blood Mononuclear Cells		female	30		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+stephenson_2021	sample_id	CV0164	BGCV04_CV0164	Blood	Peripheral Blood Mononuclear Cells		male	30		TRUE	COVID-19	mild	9		FALSE	
+stephenson_2021	sample_id	CV0262	BGCV04_CV0262	Blood	Peripheral Blood Mononuclear Cells		female	44		TRUE	COVID-19	mild	42		FALSE	
+stephenson_2021	sample_id	CV0911	BGCV04_CV0911	Blood	Peripheral Blood Mononuclear Cells		female	40		FALSE	healthy					
+stephenson_2021	sample_id	CV0120	BGCV05_CV0120	Blood	Peripheral Blood Mononuclear Cells		female	87		TRUE	COVID-19	moderate	4	0	FALSE	TRUE
+stephenson_2021	sample_id	CV0128	BGCV05_CV0128	Blood	Peripheral Blood Mononuclear Cells		female	31		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+stephenson_2021	sample_id	CV0284	BGCV05_CV0284	Blood	Peripheral Blood Mononuclear Cells		female	63		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+stephenson_2021	sample_id	CV0929	BGCV05_CV0929	Blood	Peripheral Blood Mononuclear Cells		male	64		FALSE	healthy					
+stephenson_2021	sample_id	CV0037	BGCV06_CV0037	Blood	Peripheral Blood Mononuclear Cells		male	38		TRUE	COVID-19	moderate	12	5	FALSE	TRUE
+stephenson_2021	sample_id	CV0178	BGCV06_CV0178	Blood	Peripheral Blood Mononuclear Cells		male	69		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+stephenson_2021	sample_id	CV0234	BGCV06_CV0234	Blood	Peripheral Blood Mononuclear Cells		male	65		TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+stephenson_2021	sample_id	CV0326	BGCV06_CV0326	Blood	Peripheral Blood Mononuclear Cells		female	46		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+stephenson_2021	sample_id	CV0094	BGCV07_CV0094	Blood	Peripheral Blood Mononuclear Cells		male	60		TRUE	COVID-19	moderate	3	0	FALSE	TRUE
+stephenson_2021	sample_id	CV0104	BGCV07_CV0104	Blood	Peripheral Blood Mononuclear Cells		male	84		TRUE	COVID-19	moderate	5	0	FALSE	TRUE
+stephenson_2021	sample_id	CV0134	BGCV07_CV0134	Blood	Peripheral Blood Mononuclear Cells		male	64		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+stephenson_2021	sample_id	CV0137	BGCV07_CV0137	Blood	Peripheral Blood Mononuclear Cells		male	66		TRUE	COVID-19	moderate	12	5	FALSE	TRUE
+stephenson_2021	sample_id	CV0073	BGCV08_CV0073	Blood	Peripheral Blood Mononuclear Cells		female	55		TRUE	COVID-19	moderate	27	20	FALSE	TRUE
+stephenson_2021	sample_id	CV0155	BGCV08_CV0155	Blood	Peripheral Blood Mononuclear Cells		male	47		TRUE	COVID-19	mild	9		FALSE	
+stephenson_2021	sample_id	CV0201	BGCV08_CV0201	Blood	Peripheral Blood Mononuclear Cells		male	50		TRUE	COVID-19	severe	27	20	FALSE	TRUE
+stephenson_2021	sample_id	CV0915	BGCV08_CV0915	Blood	Peripheral Blood Mononuclear Cells		female	44		FALSE	healthy					
+stephenson_2021	sample_id	CV0062	BGCV09_CV0062	Blood	Peripheral Blood Mononuclear Cells		male	49		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+stephenson_2021	sample_id	CV0171	BGCV09_CV0171	Blood	Peripheral Blood Mononuclear Cells		male	58		TRUE	COVID-19	mild	15		FALSE	
+stephenson_2021	sample_id	CV0279	BGCV09_CV0279	Blood	Peripheral Blood Mononuclear Cells		male	49		TRUE	COVID-19	severe	51	44	FALSE	TRUE
+stephenson_2021	sample_id	CV0917	BGCV09_CV0917	Blood	Peripheral Blood Mononuclear Cells		female	62		FALSE	healthy					
+stephenson_2021	sample_id	CV0160	BGCV10_CV0160	Blood	Peripheral Blood Mononuclear Cells		female	68		TRUE	COVID-19	moderate	14	7	FALSE	TRUE
+stephenson_2021	sample_id	CV0198	BGCV10_CV0198	Blood	Peripheral Blood Mononuclear Cells		male	76		TRUE	COVID-19	severe	14	7	TRUE	TRUE
+stephenson_2021	sample_id	CV0231	BGCV10_CV0231	Blood	Peripheral Blood Mononuclear Cells		female	71		TRUE	COVID-19	mild	15		TRUE	
+stephenson_2021	sample_id	CV0939	BGCV10_CV0939	Blood	Peripheral Blood Mononuclear Cells		male	73		FALSE	healthy					
+stephenson_2021	sample_id	CV0050	BGCV11_CV0050	Blood	Peripheral Blood Mononuclear Cells		female	52		TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+stephenson_2021	sample_id	CV0058	BGCV11_CV0058	Blood	Peripheral Blood Mononuclear Cells		female	49		TRUE	COVID-19	mild	0		FALSE	
+stephenson_2021	sample_id	CV0180	BGCV11_CV0180	Blood	Peripheral Blood Mononuclear Cells		female	62		TRUE	COVID-19	severe	40	33	FALSE	TRUE
+stephenson_2021	sample_id	CV0257	BGCV11_CV0257	Blood	Peripheral Blood Mononuclear Cells		male	54		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+stephenson_2021	sample_id	CV0062	BGCV12_CV0062	Blood	Peripheral Blood Mononuclear Cells		male	49		TRUE	COVID-19	moderate	41	34	FALSE	TRUE
+stephenson_2021	sample_id	CV0068	BGCV12_CV0068	Blood	Peripheral Blood Mononuclear Cells		female	26		TRUE	COVID-19	mild	45		FALSE	
+stephenson_2021	sample_id	CV0178	BGCV12_CV0178	Blood	Peripheral Blood Mononuclear Cells		male	69		TRUE	COVID-19	severe	38	31	FALSE	TRUE
+stephenson_2021	sample_id	CV0926	BGCV12_CV0926	Blood	Peripheral Blood Mononuclear Cells		female	70		FALSE	healthy					
+stephenson_2021	sample_id	CV0073	BGCV13_CV0073	Blood	Peripheral Blood Mononuclear Cells		female	55		TRUE	COVID-19	moderate	55	48	FALSE	TRUE
+stephenson_2021	sample_id	CV0171	BGCV13_CV0171	Blood	Peripheral Blood Mononuclear Cells		male	58		TRUE	COVID-19	mild	43		FALSE	
+stephenson_2021	sample_id	CV0201	BGCV13_CV0201	Blood	Peripheral Blood Mononuclear Cells		male	50		TRUE	COVID-19	severe	55	48	FALSE	TRUE
+stephenson_2021	sample_id	CV0934	BGCV13_CV0934	Blood	Peripheral Blood Mononuclear Cells		female	21		FALSE	healthy					
+stephenson_2021	sample_id	CV0050	BGCV14_CV0050	Blood	Peripheral Blood Mononuclear Cells		female	52		TRUE	COVID-19	moderate	39	32	FALSE	TRUE
+stephenson_2021	sample_id	CV0137	BGCV14_CV0137	Blood	Peripheral Blood Mononuclear Cells		male	66		TRUE	COVID-19	moderate	40	33	FALSE	TRUE
+stephenson_2021	sample_id	CV0284	BGCV14_CV0284	Blood	Peripheral Blood Mononuclear Cells		female	63		TRUE	COVID-19	severe	38	31	FALSE	TRUE
+stephenson_2021	sample_id	CV0940	BGCV14_CV0940	Blood	Peripheral Blood Mononuclear Cells		male	63		FALSE	healthy					
+stephenson_2021	sample_id	CV0176	BGCV15_CV0176	Blood	Peripheral Blood Mononuclear Cells		male	77		TRUE	COVID-19	severe	59	52	FALSE	TRUE
+stephenson_2021	sample_id	CV0231	BGCV15_CV0231	Blood	Peripheral Blood Mononuclear Cells		female	71		TRUE	COVID-19	mild	43		TRUE	
+stephenson_2021	sample_id	CV0257	BGCV15_CV0257	Blood	Peripheral Blood Mononuclear Cells		male	54		TRUE	COVID-19	moderate	41	34	FALSE	TRUE
+stephenson_2021	sample_id	CV0944	BGCV15_CV0944	Blood	Peripheral Blood Mononuclear Cells		male	58		FALSE	healthy					
+stephenson_2021	sample_id	C-8938	MH8919176	Blood	Peripheral Blood Mononuclear Cells		female	28		FALSE	healthy					
+stephenson_2021	sample_id	C-8941	MH8919177	Blood	Peripheral Blood Mononuclear Cells		female	58		FALSE	healthy					
+stephenson_2021	sample_id	C-8928	MH8919178	Blood	Peripheral Blood Mononuclear Cells		male	51		FALSE	healthy					
+stephenson_2021	sample_id	C-8930	MH8919179	Blood	Peripheral Blood Mononuclear Cells		male	30		FALSE	healthy					
+stephenson_2021	sample_id	C-8914	MH8919226	Blood	Peripheral Blood Mononuclear Cells		male	29		FALSE	healthy					
+stephenson_2021	sample_id	C-8939	MH8919227	Blood	Peripheral Blood Mononuclear Cells		male	34		FALSE	healthy					
+stephenson_2021	sample_id	IVLPS-1	MH8919228	Blood	Peripheral Blood Mononuclear Cells		female	36		FALSE	other					
+stephenson_2021	sample_id	IVLPS-1	MH8919229	Blood	Peripheral Blood Mononuclear Cells		female	36		FALSE	other					
+stephenson_2021	sample_id	IVLPS-2	MH8919230	Blood	Peripheral Blood Mononuclear Cells		female	37		FALSE	other					
+stephenson_2021	sample_id	IVLPS-2	MH8919231	Blood	Peripheral Blood Mononuclear Cells		female	37		FALSE	other					
+stephenson_2021	sample_id	IVLPS-3	MH8919232	Blood	Peripheral Blood Mononuclear Cells		female	32		FALSE	other					
+stephenson_2021	sample_id	IVLPS-3	MH8919233	Blood	Peripheral Blood Mononuclear Cells		female	32		FALSE	other					
+stephenson_2021	sample_id	IVLPS-4	MH8919276	Blood	Peripheral Blood Mononuclear Cells		male	29		FALSE	other					
+stephenson_2021	sample_id	IVLPS-4	MH8919277	Blood	Peripheral Blood Mononuclear Cells		male	29		FALSE	other					
+stephenson_2021	sample_id	IVLPS-6	MH8919278	Blood	Peripheral Blood Mononuclear Cells		male	23		FALSE	other					
+stephenson_2021	sample_id	IVLPS-6	MH8919279	Blood	Peripheral Blood Mononuclear Cells		male	23		FALSE	other					
+stephenson_2021	sample_id	IVLPS-12	MH8919280	Blood	Peripheral Blood Mononuclear Cells		male	24		FALSE	other					
+stephenson_2021	sample_id	IVLPS-12	MH8919281	Blood	Peripheral Blood Mononuclear Cells		male	24		FALSE	other					
+stephenson_2021	sample_id	C-8942	MH8919282	Blood	Peripheral Blood Mononuclear Cells		female	32		FALSE	healthy					
+stephenson_2021	sample_id	C-8943	MH8919283	Blood	Peripheral Blood Mononuclear Cells		female	22		FALSE	healthy					
+stephenson_2021	sample_id	C-8823	MH8919326	Blood	Peripheral Blood Mononuclear Cells		male	43		TRUE	COVID-19	moderate	5	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8896	MH8919327	Blood	Peripheral Blood Mononuclear Cells		male	44		TRUE	COVID-19	severe	6	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8896	MH8919328	Blood	Peripheral Blood Mononuclear Cells		male	44		TRUE	COVID-19	severe	19	12	FALSE	TRUE
+stephenson_2021	sample_id	C-8912	MH8919329	Blood	Peripheral Blood Mononuclear Cells		female	77		TRUE	COVID-19	severe	5	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8915	MH8919330	Blood	Peripheral Blood Mononuclear Cells		female	86		TRUE	COVID-19	moderate	6	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8926	MH8919331	Blood	Peripheral Blood Mononuclear Cells		female	41		TRUE	COVID-19	moderate	10	3	FALSE	TRUE
+stephenson_2021	sample_id	C-8940	MH8919332	Blood	Peripheral Blood Mononuclear Cells		female	39		FALSE	healthy					
+stephenson_2021	sample_id	C-8946	MH8919333	Blood	Peripheral Blood Mononuclear Cells		male	49		FALSE	healthy					
+stephenson_2021	sample_id	C-8816	MH9143270	Blood	Peripheral Blood Mononuclear Cells		male	31		TRUE	COVID-19	moderate	6	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8827	MH9143271	Blood	Peripheral Blood Mononuclear Cells		male	54		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+stephenson_2021	sample_id	C-8886	MH9143272	Blood	Peripheral Blood Mononuclear Cells		female	63		TRUE	COVID-19	moderate	1	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8896	MH9143273	Blood	Peripheral Blood Mononuclear Cells		male	44		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+stephenson_2021	sample_id	C-8903	MH9143274	Blood	Peripheral Blood Mononuclear Cells		female	59		TRUE	COVID-19	severe	21	14	FALSE	TRUE
+stephenson_2021	sample_id	C-8918	MH9143275	Blood	Peripheral Blood Mononuclear Cells		male	37		TRUE	COVID-19	moderate	4	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8929	MH9143276	Blood	Peripheral Blood Mononuclear Cells		female	38		TRUE	COVID-19	moderate	7	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8944	MH9143277	Blood	Peripheral Blood Mononuclear Cells		male	49		TRUE	COVID-19	severe	26	19	FALSE	TRUE
+stephenson_2021	sample_id	C-8820	MH9143320	Blood	Peripheral Blood Mononuclear Cells		female	58		TRUE	COVID-19	severe	15	8	FALSE	TRUE
+stephenson_2021	sample_id	C-8825	MH9143321	Blood	Peripheral Blood Mononuclear Cells		female	64		TRUE	COVID-19	moderate	6	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8882	MH9143322	Blood	Peripheral Blood Mononuclear Cells		female	56		TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+stephenson_2021	sample_id	C-8890	MH9143323	Blood	Peripheral Blood Mononuclear Cells		male	41		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+stephenson_2021	sample_id	C-8893	MH9143324	Blood	Peripheral Blood Mononuclear Cells		male	26		TRUE	COVID-19	moderate	16	9	FALSE	TRUE
+stephenson_2021	sample_id	C-8899	MH9143325	Blood	Peripheral Blood Mononuclear Cells		female	80		TRUE	COVID-19	severe	7	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8934	MH9143326	Blood	Peripheral Blood Mononuclear Cells		male	55		TRUE	COVID-19	moderate	22	15	FALSE	TRUE
+stephenson_2021	sample_id	C-8935	MH9143327	Blood	Peripheral Blood Mononuclear Cells		male	52		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+stephenson_2021	sample_id	C-8892	MH9143370	Blood	Peripheral Blood Mononuclear Cells		female	73		FALSE	other					
+stephenson_2021	sample_id	C-8898	MH9143371	Blood	Peripheral Blood Mononuclear Cells		male	49		TRUE	COVID-19	moderate	1	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8927	MH9143372	Blood	Peripheral Blood Mononuclear Cells		female	52		FALSE	other					
+stephenson_2021	sample_id	C-8933	MH9143373	Blood	Peripheral Blood Mononuclear Cells		male	54		FALSE	other					
+stephenson_2021	sample_id	C-8826	MH9143420	Blood	Peripheral Blood Mononuclear Cells		male	68		TRUE	COVID-19	moderate	11	4	FALSE	TRUE
+stephenson_2021	sample_id	C-8885	MH9143421	Blood	Peripheral Blood Mononuclear Cells		male	64		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+stephenson_2021	sample_id	C-8897	MH9143422	Blood	Peripheral Blood Mononuclear Cells		female	44		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+stephenson_2021	sample_id	C-8902	MH9143423	Blood	Peripheral Blood Mononuclear Cells		female	56		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+stephenson_2021	sample_id	C-8905	MH9143424	Blood	Peripheral Blood Mononuclear Cells		male	65		TRUE	COVID-19	moderate	7	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8922	MH9143425	Blood	Peripheral Blood Mononuclear Cells		male	76		TRUE	COVID-19	mild	1		FALSE	
+stephenson_2021	sample_id	C-8909	MH9143426	Blood	Peripheral Blood Mononuclear Cells		female	85		TRUE	COVID-19	moderate	2	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8921	MH9143427	Blood	Peripheral Blood Mononuclear Cells		female	56		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+stephenson_2021	sample_id	C-8821	MH9179821	Blood	Peripheral Blood Mononuclear Cells		male	75		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+stephenson_2021	sample_id	C-8822	MH9179822	Blood	Peripheral Blood Mononuclear Cells		female	46		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+stephenson_2021	sample_id	C-8828	MH9179823	Blood	Peripheral Blood Mononuclear Cells		male	41		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+stephenson_2021	sample_id	C-8829	MH9179824	Blood	Peripheral Blood Mononuclear Cells		female	54		TRUE	COVID-19	moderate	8	1	FALSE	TRUE
+stephenson_2021	sample_id	C-8895	MH9179825	Blood	Peripheral Blood Mononuclear Cells		male	58		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+stephenson_2021	sample_id	C-8887	MH9179826	Blood	Peripheral Blood Mononuclear Cells		female	51		TRUE	COVID-19	severe	14	7	FALSE	TRUE
+stephenson_2021	sample_id	C-8913	MH9179827	Blood	Peripheral Blood Mononuclear Cells		male	65		FALSE	other					
+stephenson_2021	sample_id	C-8923	MH9179828	Blood	Peripheral Blood Mononuclear Cells		female	61		FALSE	other					
+stephenson_2021	sample_id	C-8821	newcastle004v2	Blood	Peripheral Blood Mononuclear Cells		male	75		TRUE	COVID-19	severe	21	14	FALSE	TRUE
+stephenson_2021	sample_id	C-8883	newcastle20	Blood	Peripheral Blood Mononuclear Cells		female	75		TRUE	COVID-19	moderate	22	15	FALSE	TRUE
+stephenson_2021	sample_id	C-8884	newcastle21	Blood	Peripheral Blood Mononuclear Cells		female	71		TRUE	COVID-19	severe	14	7	FALSE	TRUE
+stephenson_2021	sample_id	C-8884	newcastle21v2	Blood	Peripheral Blood Mononuclear Cells		female	71		TRUE	COVID-19	severe	23	16	FALSE	TRUE
+stephenson_2021	sample_id	C-8910	newcastle49	Blood	Peripheral Blood Mononuclear Cells		male	73		TRUE	COVID-19	severe	12	5	TRUE	TRUE
+stephenson_2021	sample_id	C-8931	newcastle59	Blood	Peripheral Blood Mononuclear Cells		male	86		TRUE	COVID-19	moderate	2	0	FALSE	TRUE
+stephenson_2021	sample_id	C-8937	newcastle65	Blood	Peripheral Blood Mononuclear Cells		female	59		FALSE	healthy					
+stephenson_2021	sample_id	C-8936	newcastle74	Blood	Peripheral Blood Mononuclear Cells		male	55		FALSE	healthy					
+heming_2021	patient_id	IIH91012	IIH91012	Central Nervous System	Cerebrospinal Fluid		female	34		FALSE	other					
+heming_2021	patient_id	VE66730	VE66730	Central Nervous System	Cerebrospinal Fluid		male	42		FALSE	other					
+heming_2021	patient_id	COV1933	COV1933	Central Nervous System	Cerebrospinal Fluid		male	68		TRUE	COVID-19	mild				
+heming_2021	patient_id	VE23642	VE23642	Central Nervous System	Cerebrospinal Fluid		female	25		FALSE	other					
+heming_2021	patient_id	COV1954	COV1954	Central Nervous System	Cerebrospinal Fluid		male	53		TRUE	COVID-19	moderate				
+heming_2021	patient_id	MS76177	MS76177	Central Nervous System	Cerebrospinal Fluid		female	25		FALSE	other					
+heming_2021	patient_id	MS58637	MS58637	Central Nervous System	Cerebrospinal Fluid		male	22		FALSE	other					
+heming_2021	patient_id	MS79670	MS79670	Central Nervous System	Cerebrospinal Fluid		male	51		FALSE	other					
+heming_2021	patient_id	IIH41540	IIH41540	Central Nervous System	Cerebrospinal Fluid		female	32		FALSE	other					
+heming_2021	patient_id	IIH45044	IIH45044	Central Nervous System	Cerebrospinal Fluid		female	25		FALSE	other					
+heming_2021	patient_id	IIH68490	IIH68490	Central Nervous System	Cerebrospinal Fluid		female	20		FALSE	other					
+heming_2021	patient_id	VE48279	VE48279	Central Nervous System	Cerebrospinal Fluid		female	57		FALSE	other					
+heming_2021	patient_id	MS90896	MS90896	Central Nervous System	Cerebrospinal Fluid		male	22		FALSE	other					
+heming_2021	patient_id	MS19270	MS19270	Central Nervous System	Cerebrospinal Fluid		female	35		FALSE	other					
+heming_2021	patient_id	IIH47578	IIH47578	Central Nervous System	Cerebrospinal Fluid		male	33		FALSE	other					
+heming_2021	patient_id	MS49131	MS49131	Central Nervous System	Cerebrospinal Fluid		female	47		FALSE	other					
+heming_2021	patient_id	MS25719	MS25719	Central Nervous System	Cerebrospinal Fluid		female	43		FALSE	other					
+heming_2021	patient_id	IIH85037	IIH85037	Central Nervous System	Cerebrospinal Fluid		female	25		FALSE	other					
+heming_2021	patient_id	VE61728	VE61728	Central Nervous System	Cerebrospinal Fluid		female	69		FALSE	other					
+heming_2021	patient_id	IIH32190	IIH32190	Central Nervous System	Cerebrospinal Fluid		male	33		FALSE	other					
+heming_2021	patient_id	IIH10999	IIH10999	Central Nervous System	Cerebrospinal Fluid		female	45		FALSE	other					
+heming_2021	patient_id	MS77654	MS77654	Central Nervous System	Cerebrospinal Fluid		male	54		FALSE	other					
+heming_2021	patient_id	COV1924	COV1924	Central Nervous System	Cerebrospinal Fluid		female	65		TRUE	COVID-19	moderate				
+heming_2021	patient_id	IIH53423	IIH53423	Central Nervous System	Cerebrospinal Fluid		female	38		FALSE	other					
+heming_2021	patient_id	MS71658	MS71658	Central Nervous System	Cerebrospinal Fluid		female	47		FALSE	other					
+heming_2021	patient_id	VE57538	VE57538	Central Nervous System	Cerebrospinal Fluid		female	77		FALSE	other					
+heming_2021	patient_id	COV1950	COV1950	Central Nervous System	Cerebrospinal Fluid		male	77		TRUE	COVID-19	moderate				
+heming_2021	patient_id	COV1923	COV1923	Central Nervous System	Cerebrospinal Fluid		male	82		TRUE	COVID-19	severe				
+heming_2021	patient_id	COV1930	COV1930	Central Nervous System	Cerebrospinal Fluid		male	63		TRUE	COVID-19	moderate				
+heming_2021	patient_id	COV1919	COV1919	Central Nervous System	Cerebrospinal Fluid		male	58		TRUE	COVID-19	severe				
+heming_2021	patient_id	COV1943	COV1943	Central Nervous System	Cerebrospinal Fluid		male	71		TRUE	COVID-19	moderate				
+trump_2020	sample	BIH-SCV2-10	BIH-SCV2-10	Nasopharynx	Nasopharyngeal Swab		male	59		TRUE	COVID-19	severe	12	5	FALSE	TRUE
+trump_2020	sample	BIH-Con-05	BIH-Con-05	Nasopharynx	Nasopharyngeal Swab		female	36		FALSE	healthy					
+trump_2020	sample	BIH-SCV2-26	BIH-SCV2-26	Nasopharynx	Nasopharyngeal Swab		male	68		TRUE	COVID-19	severe	20	13	FALSE	TRUE
+trump_2020	sample	BIH-Con-01	BIH-Con-01	Nasopharynx	Nasopharyngeal Swab		female	34		FALSE	healthy					
+trump_2020	sample	BIH-Con-02	BIH-Con-02	Nasopharynx	Nasopharyngeal Swab		female	41		FALSE	healthy					
+trump_2020	sample	BIH-Con-10	BIH-Con-10	Nasopharynx	Nasopharyngeal Swab		male	58		FALSE	healthy					
+trump_2020	sample	BIH-Con-03	BIH-Con-03	Nasopharynx	Nasopharyngeal Swab		male	24		FALSE	healthy					
+trump_2020	sample	BIH-Con-04	BIH-Con-04	Nasopharynx	Nasopharyngeal Swab		male	33		FALSE	healthy					
+trump_2020	sample	BIH-Con-09	BIH-Con-09	Nasopharynx	Nasopharyngeal Swab		female	67		FALSE	healthy					
+trump_2020	sample	BIH-SCV2-15	BIH-SCV2-15	Nasopharynx	Nasopharyngeal Swab		female	91		TRUE	COVID-19	severe	11	4	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-23	BIH-SCV2-23	Nasopharynx	Nasopharyngeal Swab		male	76		TRUE	COVID-19	severe	4	0	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-14	BIH-SCV2-14	Nasopharynx	Nasopharyngeal Swab		male	53		TRUE	COVID-19	severe	7	0	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-03	BIH-SCV2-03	Nasopharynx	Nasopharyngeal Swab		male	71		TRUE	COVID-19	severe	18	11	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-13	BIH-SCV2-13	Nasopharynx	Nasopharyngeal Swab		female	51		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-12	BIH-SCV2-12	Nasopharynx	Nasopharyngeal Swab		male	56		TRUE	COVID-19	severe	12	5	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-22	BIH-SCV2-22	Nasopharynx	Nasopharyngeal Swab		male	71		TRUE	COVID-19	severe	16	9	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-04	BIH-SCV2-04	Nasopharynx	Nasopharyngeal Swab		male	52		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-02	BIH-SCV2-02	Nasopharynx	Nasopharyngeal Swab		female	58		TRUE	COVID-19	severe	9	2	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-01	BIH-SCV2-01	Nasopharynx	Nasopharyngeal Swab		female	70		TRUE	COVID-19	severe	19	12	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-17	BIH-SCV2-17	Nasopharynx	Nasopharyngeal Swab		male	78		TRUE	COVID-19	severe	27	20	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-21	BIH-SCV2-21	Nasopharynx	Nasopharyngeal Swab		male	75		TRUE	COVID-19	severe	15	8	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-16	BIH-SCV2-16	Nasopharynx	Nasopharyngeal Swab		male	68		TRUE	COVID-19	severe	17	10	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-06	BIH-SCV2-06	Nasopharynx	Nasopharyngeal Swab		female	58		TRUE	COVID-19	severe	12	5	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-18	BIH-SCV2-18	Nasopharynx	Nasopharyngeal Swab		male	84		TRUE	COVID-19	severe	15	8	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-19	BIH-SCV2-19	Nasopharynx	Nasopharyngeal Swab		male	55		TRUE	COVID-19	severe	-4	0	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-08	BIH-SCV2-08	Nasopharynx	Nasopharyngeal Swab		male	71		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-07	BIH-SCV2-07	Nasopharynx	Nasopharyngeal Swab		male	67		TRUE	COVID-19	severe	17	10	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-20	BIH-SCV2-20	Nasopharynx	Nasopharyngeal Swab		male	71		TRUE	COVID-19	severe	24	17	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-09	BIH-SCV2-09	Nasopharynx	Nasopharyngeal Swab		male	66		TRUE	COVID-19	severe	17	10	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-11	BIH-SCV2-11	Nasopharynx	Nasopharyngeal Swab		female	82		TRUE	COVID-19	severe	14	7	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-29	BIH-SCV2-29	Nasopharynx	Nasopharyngeal Swab		male	61		TRUE	COVID-19	severe	11	4	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-05	BIH-SCV2-05	Nasopharynx	Nasopharyngeal Swab		male	32		TRUE	COVID-19	severe	8	1	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-27	BIH-SCV2-27	Nasopharynx	Nasopharyngeal Swab		male	63		TRUE	COVID-19	severe	4	0	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-32	BIH-SCV2-32	Nasopharynx	Nasopharyngeal Swab		male	75		TRUE	COVID-19	severe	7	0	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-28	BIH-SCV2-28	Nasopharynx	Nasopharyngeal Swab		female	53		TRUE	COVID-19	severe	12	5	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-24	BIH-SCV2-24	Nasopharynx	Nasopharyngeal Swab		male	52		TRUE	COVID-19	severe	10	3	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-31	BIH-SCV2-31	Nasopharynx	Nasopharyngeal Swab		female	62		TRUE	COVID-19	severe	8	1	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-25	BIH-SCV2-25	Nasopharynx	Nasopharyngeal Swab		female	50		TRUE	COVID-19	severe	17	10	FALSE	TRUE
+trump_2020	sample	BIH-SCV2-30	BIH-SCV2-30	Nasopharynx	Nasopharyngeal Swab		male	73		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+trump_2020	sample	BIH-Con-13	BIH-Con-13	Nasopharynx	Nasopharyngeal Swab		male	50		FALSE	healthy					
+trump_2020	sample	BIH-Con-07	BIH-Con-07	Nasopharynx	Nasopharyngeal Swab		female	67		FALSE	healthy					
+trump_2020	sample	BIH-Con-08	BIH-Con-08	Nasopharynx	Nasopharyngeal Swab		female	79		FALSE	healthy					
+trump_2020	sample	BIH-Con-14	BIH-Con-14	Nasopharynx	Nasopharyngeal Swab		male	50		FALSE	healthy					
+trump_2020	sample	BIH-Con-15	BIH-Con-15	Nasopharynx	Nasopharyngeal Swab		female	76		FALSE	healthy					
+trump_2020	sample	BIH-Con-11	BIH-Con-11	Nasopharynx	Nasopharyngeal Swab		male	63		FALSE	healthy					
+trump_2020	sample	BIH-Con-12	BIH-Con-12	Nasopharynx	Nasopharyngeal Swab		male	70		FALSE	healthy					
+trump_2020	sample	BIH-Con-16	BIH-Con-16	Nasopharynx	Nasopharyngeal Swab		male	56		FALSE	healthy					
+trump_2020	sample	BIH-Con-06	BIH-Con-06	Nasopharynx	Nasopharyngeal Swab		male	29		FALSE	healthy					
+yao_2021	patient	CM1	CM1	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	moderate	14	4	TRUE	TRUE
+yao_2021	patient	CM2	CM2	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	moderate	14	4	TRUE	TRUE
+yao_2021	patient	CM4	CM4	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	moderate	14	4	TRUE	TRUE
+yao_2021	patient	CM3	CM3	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	moderate	14	4	TRUE	TRUE
+yao_2021	patient	CM5	CM5	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	moderate	14	4	TRUE	TRUE
+yao_2021	patient	CR13	CR13	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	26	19	TRUE	TRUE
+yao_2021	patient	CR14	CR14	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	26	19	TRUE	TRUE
+yao_2021	patient	CR15	CR15	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	26	19	TRUE	TRUE
+yao_2021	patient	CR16	CR16	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	26	19	TRUE	TRUE
+yao_2021	patient	CR18	CR18	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	26	19	TRUE	TRUE
+yao_2021	patient	CR17	CR17	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	26	19	TRUE	TRUE
+yao_2021	patient	CS8	CS8	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	11	2	TRUE	TRUE
+yao_2021	patient	CS7	CS7	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	11	2	TRUE	TRUE
+yao_2021	patient	CS10	CS10	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	11	2	TRUE	TRUE
+yao_2021	patient	CS9	CS9	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	11	2	TRUE	TRUE
+yao_2021	patient	CS11	CS11	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	11	2	TRUE	TRUE
+yao_2021	patient	CS12	CS12	Blood	Peripheral Blood Mononuclear Cells					TRUE	COVID-19	severe	11	2	TRUE	TRUE
+combes_2021	sample	MVIR1-HS1-D0BLD1-SCG1	MVIR1-HS1-D0BLD1-SCG1	Blood	Whole Blood		female	34		TRUE	COVID-19	severe	12	5	FALSE	TRUE
+combes_2021	sample	MVIR1-HS10-D0BLD1-SCG1	MVIR1-HS10-D0BLD1-SCG1	Blood	Whole Blood		female	50		FALSE	other					
+combes_2021	sample	MVIR1-HS12-D0BLD1-SCG1	MVIR1-HS12-D0BLD1-SCG1	Blood	Whole Blood		male	41		TRUE	COVID-19	moderate	6	0	TRUE	TRUE
+combes_2021	sample	MVIR1-HS14-D0BLD1-SCG1	MVIR1-HS14-D0BLD1-SCG1	Blood	Whole Blood		male	58		TRUE	COVID-19	moderate	4	0	FALSE	TRUE
+combes_2021	sample	MVIR1-HS16-D0BLD1-SCG1	MVIR1-HS16-D0BLD1-SCG1	Blood	Whole Blood		female	63		FALSE	other					
+combes_2021	sample	MVIR1-HS17-D0BLD1-SCG1	MVIR1-HS17-D0BLD1-SCG1	Blood	Whole Blood		female	65		FALSE	other					
+combes_2021	sample	MVIR1-HS2-D0BLD1-SCG1	MVIR1-HS2-D0BLD1-SCG1	Blood	Whole Blood		male	79		TRUE	COVID-19	severe	13	6	TRUE	TRUE
+combes_2021	sample	MVIR1-HS20-D0BLD1-SCG1	MVIR1-HS20-D0BLD1-SCG1	Blood	Whole Blood		male	78		FALSE	other					
+combes_2021	sample	MVIR1-HS25-D0BLD1-SCG1	MVIR1-HS25-D0BLD1-SCG1	Blood	Whole Blood		male	73		TRUE	COVID-19	moderate	6	0	TRUE	TRUE
+combes_2021	sample	MVIR1-HS26-D0BLD1-SCG1	MVIR1-HS26-D0BLD1-SCG1	Blood	Whole Blood		female	45		TRUE	COVID-19	moderate	6	0	FALSE	TRUE
+combes_2021	sample	MVIR1-HS29-D0BLD1-SCG1	MVIR1-HS29-D0BLD1-SCG1	Blood	Whole Blood		female	85		TRUE	COVID-19	moderate	2	0	FALSE	TRUE
+combes_2021	sample	MVIR1-HS3-D0BLD1-SCG1	MVIR1-HS3-D0BLD1-SCG1	Blood	Whole Blood		female	43		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+combes_2021	sample	MVIR1-HS31-D0BLD1-SCG1	MVIR1-HS31-D0BLD1-SCG1	Blood	Whole Blood		male	44		TRUE	COVID-19	severe	20	13	FALSE	TRUE
+combes_2021	sample	MVIR1-HS38-D0BLD1-SCG1	MVIR1-HS38-D0BLD1-SCG1	Blood	Whole Blood		female	61		TRUE	COVID-19	severe	14	7	FALSE	TRUE
+combes_2021	sample	MVIR1-HS44-D0BLD1-SCG1	MVIR1-HS44-D0BLD1-SCG1	Blood	Whole Blood		male	73		TRUE	COVID-19	moderate	6	0	TRUE	TRUE
+combes_2021	sample	MVIR1-HS45-D0BLD1-SCG1	MVIR1-HS45-D0BLD1-SCG1	Blood	Whole Blood		male	82		FALSE	other					
+combes_2021	sample	MVIR1-HS46-D0BLD1-SCG1	MVIR1-HS46-D0BLD1-SCG1	Blood	Whole Blood		male	49		FALSE	other					
+combes_2021	sample	MVIR1-HS47-D0BLD1-SCG1	MVIR1-HS47-D0BLD1-SCG1	Blood	Whole Blood		female	48		TRUE	COVID-19	severe	6	0	FALSE	TRUE
+combes_2021	sample	MVIR1-HS49-D0BLD1-SCG1	MVIR1-HS49-D0BLD1-SCG1	Blood	Whole Blood		female	68		FALSE	other					
+combes_2021	sample	MVIR1-HS5-D0BLD1-SCG1	MVIR1-HS5-D0BLD1-SCG1	Blood	Whole Blood		male	83		TRUE	COVID-19	moderate	9	2	FALSE	TRUE
+combes_2021	sample	MVIR1-HS50-D0BLD1-SCG1	MVIR1-HS50-D0BLD1-SCG1	Blood	Whole Blood		male	55		TRUE	COVID-19	severe	13	6	FALSE	TRUE
+combes_2021	sample	MVIR1-HS52-D0BLD1-SCG1	MVIR1-HS52-D0BLD1-SCG1	Blood	Whole Blood		female	37		TRUE	COVID-19	moderate	4	0	FALSE	TRUE
+combes_2021	sample	MVIR1-HS54-D0BLD1-SCG1	MVIR1-HS54-D0BLD1-SCG1	Blood	Whole Blood		male	25		TRUE	COVID-19	moderate	6	0	TRUE	TRUE
+combes_2021	sample	MVIR1-HS55-D0BLD1-SCG1	MVIR1-HS55-D0BLD1-SCG1	Blood	Whole Blood		male	62		TRUE	COVID-19	severe	13	6	TRUE	TRUE
+combes_2021	sample	MVIR1-HS6-D0BLD1-SCG1	MVIR1-HS6-D0BLD1-SCG1	Blood	Whole Blood		female	71		TRUE	COVID-19	moderate	16	9	FALSE	TRUE
+combes_2021	sample	MVIR1-HS60-D0BLD1-SCG1	MVIR1-HS60-D0BLD1-SCG1	Blood	Whole Blood		male	44		TRUE	COVID-19	severe	6	0	FALSE	TRUE
+combes_2021	sample	MVIR1-HS62-D0BLD1-SCG1	MVIR1-HS62-D0BLD1-SCG1	Blood	Whole Blood		female	75		FALSE	other					
+combes_2021	sample	MVIR1-HS7-D0BLD1-SCG1	MVIR1-HS7-D0BLD1-SCG1	Blood	Whole Blood		male	55		TRUE	COVID-19	moderate	13	6	FALSE	TRUE
+combes_2021	sample	MVIR1-HS8-D0BLD1-SCG1	MVIR1-HS8-D0BLD1-SCG1	Blood	Whole Blood		male	35		FALSE	other					
+combes_2021	sample	MVIR1-HS9-D0BLD1-SCG1	MVIR1-HS9-D0BLD1-SCG1	Blood	Whole Blood		male	67		FALSE	other					
+combes_2021	sample	XHLT1-HS14-BLD1-SCG1	XHLT1-HS14-BLD1-SCG1	Blood	Whole Blood		male	34		FALSE	healthy					
+combes_2021	sample	XHLT1-HS19-BLD1-SCG1	XHLT1-HS19-BLD1-SCG1	Blood	Whole Blood		female	28		FALSE	healthy					
+combes_2021	sample	XHLT1-HS20-BLD1-SCG1	XHLT1-HS20-BLD1-SCG1	Blood	Whole Blood		male	41		FALSE	healthy					
+combes_2021	sample	XHLT1-HS23-BLD1-SCG1	XHLT1-HS23-BLD1-SCG1	Blood	Whole Blood		male	39		FALSE	healthy					
+combes_2021	sample	XHLT1-HS29-BLD1-SCG1	XHLT1-HS29-BLD1-SCG1	Blood	Whole Blood		male	34		FALSE	healthy					
+combes_2021	sample	XHLT1-HS3-BLD1-SCG1	XHLT1-HS3-BLD1-SCG1	Blood	Whole Blood		male	24		FALSE	healthy					
+combes_2021	sample	XHLT1-HS30-BLD1-SCG1	XHLT1-HS30-BLD1-SCG1	Blood	Whole Blood		female	34		FALSE	healthy					
+combes_2021	sample	XHLT1-HS31-BLD1-SCG1	XHLT1-HS31-BLD1-SCG1	Blood	Whole Blood		female	40		FALSE	healthy					
+combes_2021	sample	XHLT1-HS32-BLD1-SCG1	XHLT1-HS32-BLD1-SCG1	Blood	Whole Blood		female	59		FALSE	healthy					
+combes_2021	sample	XHLT1-HS33-BLD1-SCG1	XHLT1-HS33-BLD1-SCG1	Blood	Whole Blood		female	45		FALSE	healthy					
+combes_2021	sample	XHLT1-HS4-BLD1-SCG1	XHLT1-HS4-BLD1-SCG1	Blood	Whole Blood		female	37		FALSE	healthy					
+combes_2021	sample	XHLT1-HS5-BLD1-SCG1	XHLT1-HS5-BLD1-SCG1	Blood	Whole Blood		male	52		FALSE	healthy					
+combes_2021	sample	XHLT1-HS6-BLD2-SCG1	XHLT1-HS6-BLD2-SCG1	Blood	Whole Blood		male	31		FALSE	healthy					
+combes_2021	sample	XHLT1-HS7-BLD2-SCG1	XHLT1-HS7-BLD2-SCG1	Blood	Whole Blood		male	30		FALSE	healthy					
+bost_2021	sample	Patient 1	Patient 1_BAL	Bronchus	Bronchoalveolar Lavage Fluid		female	68		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 10	Patient 10_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	58		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 11	Patient 11_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	77		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 14	Patient 14_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	65		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 16	Patient 16_BAL	Bronchus	Bronchoalveolar Lavage Fluid		female	51		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 17	Patient 17_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	55		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 18	Patient 18_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	80		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 2	Patient 2_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	67		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 22	Patient 22_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	69		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 23	Patient 23_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	61		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 24	Patient 24_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	71		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 25	Patient 25_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	68		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 27	Patient 27_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	70		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 29	Patient 29_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	60		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 3	Patient 3_BAL	Bronchus	Bronchoalveolar Lavage Fluid		female	71		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 4	Patient 4_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	54		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 5	Patient 5_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	68		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 6	Patient 6_BAL	Bronchus	Bronchoalveolar Lavage Fluid		female	59		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 7	Patient 7_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	70		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 8	Patient 8_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	55		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 9	Patient 9_BAL	Bronchus	Bronchoalveolar Lavage Fluid		male	58		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 1	Patient 1_Blood	Blood	Whole Blood		female	68		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 10	Patient 10_Blood	Blood	Whole Blood		male	58		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 11	Patient 11_Blood	Blood	Whole Blood		male	77		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 14	Patient 14_Blood	Blood	Whole Blood		male	65		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 16	Patient 16_Blood	Blood	Whole Blood		female	51		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 17	Patient 17_Blood	Blood	Whole Blood		male	55		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 18	Patient 18_Blood	Blood	Whole Blood		male	80		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 2	Patient 2_Blood	Blood	Whole Blood		male	67		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 22	Patient 22_Blood	Blood	Whole Blood		male	69		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 23	Patient 23_Blood	Blood	Whole Blood		male	61		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 24	Patient 24_Blood	Blood	Whole Blood		male	71		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 25	Patient 25_Blood	Blood	Whole Blood		male	68		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 27	Patient 27_Blood	Blood	Whole Blood		male	70		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 29	Patient 29_Blood	Blood	Whole Blood		male	60		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 3	Patient 3_Blood	Blood	Whole Blood		female	71		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 31	Patient 31_Blood	Blood	Whole Blood		female			TRUE	COVID-19	moderate	5	0	TRUE	TRUE
+bost_2021	sample	Patient 32	Patient 32_Blood	Blood	Whole Blood		male			TRUE	COVID-19	moderate	5	0	TRUE	TRUE
+bost_2021	sample	Patient 33	Patient 33_Blood	Blood	Whole Blood		female			TRUE	COVID-19	moderate	5	0	TRUE	TRUE
+bost_2021	sample	Patient 34	Patient 34_Blood	Blood	Whole Blood		female			TRUE	COVID-19	moderate	5	0	TRUE	TRUE
+bost_2021	sample	Patient 35	Patient 35_Blood	Blood	Whole Blood		male			TRUE	COVID-19	moderate	5	0	TRUE	TRUE
+bost_2021	sample	Patient 36	Patient 36_Blood	Blood	Whole Blood		male			TRUE	COVID-19	moderate	5	0	TRUE	TRUE
+bost_2021	sample	Patient 37	Patient 37_Blood	Blood	Whole Blood		male			TRUE	COVID-19	moderate	5	0	TRUE	TRUE
+bost_2021	sample	Patient 38	Patient 38_Blood	Blood	Whole Blood		male			FALSE	healthy					
+bost_2021	sample	Patient 39	Patient 39_Blood	Blood	Whole Blood		male			FALSE	healthy					
+bost_2021	sample	Patient 4	Patient 4_Blood	Blood	Whole Blood		male	54		FALSE	healthy					
+bost_2021	sample	Patient 40	Patient 40_Blood	Blood	Whole Blood		male			FALSE	healthy					
+bost_2021	sample	Patient 41	Patient 41_Blood	Blood	Whole Blood		female			FALSE	healthy					
+bost_2021	sample	Patient 42	Patient 42_Blood	Blood	Whole Blood		male			FALSE	healthy					
+bost_2021	sample	Patient 5	Patient 5_Blood	Blood	Whole Blood		male	68		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 6	Patient 6_Blood	Blood	Whole Blood		female	59		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 7	Patient 7_Blood	Blood	Whole Blood		male	70		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 8	Patient 8_Blood	Blood	Whole Blood		male	55		TRUE	COVID-19	severe	6	0	TRUE	TRUE
+bost_2021	sample	Patient 9	Patient 9_Blood	Blood	Whole Blood		male	58		TRUE	COVID-19	severe	6	0	TRUE	TRUE
