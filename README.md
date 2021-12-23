@@ -1,5 +1,7 @@
 # covid19_sc
-Processing workflow for covid19 single cell data associated with (TODO: link to paper)
+Processing workflow for covid19 single cell data 
+* Publication: [Single-cell immunology of SARS-CoV-2 infection](https://www.nature.com/articles/s41587-021-01131-y)
+* Explore and download data: [Atlas](https://atlas.fredhutch.org/fredhutch/covid/)
 
 ## Setup
 ### renv
